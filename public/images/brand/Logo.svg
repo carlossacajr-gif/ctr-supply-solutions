@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_组_4" data-name="组_4" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 200 120">
+  <!-- Generator: Adobe Illustrator 29.8.2, SVG Export Plug-In . SVG Version: 2.1.1 Build 3)  -->
+  <defs>
+    <style>
+      .st0, .st1 {
+        fill: #004098;
+      }
+
+      .st1, .st2 {
+        fill-rule: evenodd;
+      }
+
+      .st2 {
+        fill: #e50112;
+      }
+    </style>
+  </defs>
+  <g id="_组_2" data-name="组_2">
+    <g id="_组_1" data-name="组_1">
+      <g id="_矩形_1" data-name="矩形_1">
+        <polygon class="st1" points="48.28 40.95 41.5 47.74 48.28 54.53 55.05 47.74 48.28 40.95"/>
+      </g>
+      <g id="_矩形_1_拷贝" data-name="矩形_1_拷贝">
+        <polygon class="st1" points="30.9 42.46 25.27 47.98 30.9 53.5 36.54 47.98 30.9 42.46"/>
+      </g>
+      <g id="_矩形_1_拷贝_2" data-name="矩形_1_拷贝_2">
+        <polygon class="st1" points="16.65 44.62 13.29 47.98 16.65 51.34 20 47.98 16.65 44.62"/>
+      </g>
+    </g>
+    <g id="_组_1_拷贝" data-name="组_1_拷贝">
+      <g id="_矩形_11" data-name="矩形_1">
+        <polygon class="st1" points="41.01 54.63 34.24 61.42 41.01 68.21 47.78 61.42 41.01 54.63"/>
+      </g>
+      <g id="_矩形_1_拷贝1" data-name="矩形_1_拷贝">
+        <polygon class="st1" points="24.62 56.14 19 61.66 24.62 67.18 30.25 61.66 24.62 56.14"/>
+      </g>
+      <g id="_矩形_1_拷贝_21" data-name="矩形_1_拷贝_2">
+        <polygon class="st1" points="11.58 58.3 8.23 61.66 11.58 65.02 14.93 61.66 11.58 58.3"/>
+      </g>
+      <g id="_矩形_1_拷贝_3" data-name="矩形_1_拷贝_3">
+        <polygon class="st1" points="2.25 60 .59 61.66 2.25 63.31 3.9 61.66 2.25 60"/>
+      </g>
+    </g>
+    <g id="_组_1_拷贝_2" data-name="组_1_拷贝_2">
+      <g id="_矩形_12" data-name="矩形_1">
+        <rect class="st0" x="43.03" y="72.58" width="6.06" height="6.06" transform="translate(-39.98 54.74) rotate(-45.02)"/>
+      </g>
+      <g id="_矩形_1_拷贝2" data-name="矩形_1_拷贝">
+        <polygon class="st1" points="31.4 70.06 25.76 75.58 31.4 81.1 37.03 75.58 31.4 70.06"/>
+      </g>
+      <g id="_矩形_1_拷贝_22" data-name="矩形_1_拷贝_2">
+        <rect class="st0" x="15.95" y="73.2" width="4.75" height="4.75" transform="translate(-48.09 35.11) rotate(-45.02)"/>
+      </g>
+      <g id="_矩形_1_拷贝_4" data-name="矩形_1_拷贝_4">
+        <rect class="st0" x="5.89" y="73.94" width="3.28" height="3.28" transform="translate(-51.25 27.48) rotate(-45.02)"/>
+      </g>
+    </g>
+  </g>
+  <g id="_形状_4" data-name="形状_4">
+    <path class="st1" d="M195.11,43.97h-56.12l-4.98,9.61h53.21c.89,0,.86.44.86,1.54,0,1.86-1.91,1.89-2.75,1.89h-19.05l-9.78,19.52h11.67l4.98-10.08,7.21,10.08h13.04l-7.38-11.79s13.17-.89,13.39-13.04c.09-5.02-1.1-7.72-4.29-7.72Z"/>
+  </g>
+  <g id="_形状_5" data-name="形状_5">
+    <polygon class="st2" points="142.42 57.02 132.64 76.54 145.34 76.54 154.95 57.02 142.42 57.02"/>
+  </g>
+  <g id="_形状_3" data-name="形状_3">
+    <path class="st1" d="M116.76,41.8h42.39l14.46-28.42h-65.33c-9.86,0-33.8,9.9-45.38,29.92-11.58,20.02-5.69,38.74-1.99,45.88,5.03,9.7,16.71,17.45,21.44,17.45h46.88l12.97-27.93h-36.4c-9.29,0-12.97-8.35-12.97-12.97s.18-23.94,23.94-23.94Z"/>
+  </g>
+</svg>

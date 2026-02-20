@@ -1,0 +1,145 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 15, 23, 42;
+  --background-start-rgb: 248, 250, 252;
+  --background-end-rgb: 255, 255, 255;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
+}
+
+/* ─── Selection Colors ─── */
+::selection {
+  background-color: rgba(14, 165, 233, 0.25);
+  color: #0f172a;
+}
+
+/* ─── Glassmorphism Design System ─── */
+@layer components {
+
+  /* Light frosted glass */
+  .glass {
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    box-shadow:
+      0 4px 30px rgba(0, 0, 0, 0.06),
+      inset 0 1px 0 rgba(255, 255, 255, 0.1);
+    will-change: backdrop-filter;
+    transform: translateZ(0);
+  }
+
+  /* Dark section frosted glass */
+  .glass-dark {
+    background: rgba(15, 23, 42, 0.6);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    box-shadow:
+      0 8px 32px rgba(0, 0, 0, 0.2),
+      inset 0 1px 0 rgba(255, 255, 255, 0.05);
+    will-change: backdrop-filter;
+    transform: translateZ(0);
+  }
+
+  /* Blue-tinted frost for accent areas */
+  .glass-blue {
+    background: rgba(14, 165, 233, 0.08);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid rgba(14, 165, 233, 0.15);
+    box-shadow:
+      0 4px 30px rgba(14, 165, 233, 0.08),
+      inset 0 1px 0 rgba(255, 255, 255, 0.08);
+    will-change: backdrop-filter;
+    transform: translateZ(0);
+  }
+
+  /* White frost for light backgrounds
+     NOTE: intentionally no will-change/transform here —
+     these create stacking contexts that break backdrop-filter
+     when nested inside other transformed parents (e.g. about page). */
+  .glass-white {
+    background: rgba(255, 255, 255, 0.45);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid rgba(255, 255, 255, 0.35);
+    box-shadow:
+      0 4px 30px rgba(0, 0, 0, 0.04),
+      inset 0 1px 0 rgba(255, 255, 255, 0.6);
+  }
+}
+
+/* ─── Section Dividers (Organic Flow) ─── */
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .section-fade-down {
+    mask-image: linear-gradient(to bottom, black 80%, transparent);
+    -webkit-mask-image: linear-gradient(to bottom, black 80%, transparent);
+  }
+}
+
+/* ─── Animated Gradient Background ─── */
+@keyframes gradient-shift {
+
+  0%,
+  100% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+.animate-gradient {
+  background-size: 200% 200%;
+  animation: gradient-shift 8s ease infinite;
+}
+
+/* ─── Glow Effects ─── */
+@keyframes pulse-glow {
+
+  0%,
+  100% {
+    opacity: 0.3;
+  }
+
+  50% {
+    opacity: 0.6;
+  }
+}
+
+.animate-pulse-glow {
+  animation: pulse-glow 6s ease-in-out infinite;
+  will-change: opacity;
+  transform: translateZ(0);
+}
+
+/* ─── Scroll Progress Bar ─── */
+@keyframes scroll-progress-fill {
+  from {
+    transform: scaleY(0);
+  }
+
+  to {
+    transform: scaleY(1);
+  }
+}
