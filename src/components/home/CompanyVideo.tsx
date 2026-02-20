@@ -21,21 +21,14 @@ export function CompanyVideo() {
                 </div>
 
                 <FadeIn delay={0.2} className="mx-auto max-w-5xl">
-                    <div className="relative aspect-video w-full rounded-2xl overflow-hidden glass-dark ring-1 ring-white/10 shadow-glass-lg group cursor-pointer bg-slate-900/80 flex items-center justify-center">
-
-                        {/* Placeholder Content - Replace this entire div with an iframe or <video> tag when the actual video is ready */}
-                        <div className="absolute inset-0 flex flex-col items-center justify-center p-6 text-center z-20">
-                            <div className="w-16 h-16 sm:w-20 sm:h-20 rounded-full bg-ctr-blue/20 flex items-center justify-center mb-6 group-hover:scale-110 group-hover:bg-ctr-blue/40 transition-all duration-300 ring-1 ring-white/20 backdrop-blur-md">
-                                <Play className="w-8 h-8 sm:w-10 sm:h-10 text-white ml-2" />
-                            </div>
-                            <h3 className="text-xl sm:text-2xl font-bold text-white mb-2">Company Video Placeholder</h3>
-                            <p className="text-sm sm:text-base text-slate-400 max-w-md">
-                                Replace this component with an embedded YouTube/Vimeo player or a direct HTML5 &lt;video&gt; tag loading a local .mp4 file.
-                            </p>
-                        </div>
-
-                        {/* Faux thumbnail gradient to make the placeholder look pretty */}
-                        <div className="absolute inset-0 bg-gradient-to-br from-ctr-blue/20 via-slate-900 to-ctr-cyan/20 opacity-50 group-hover:opacity-75 transition-opacity duration-500" />
+                    <div className="relative aspect-video w-full rounded-2xl overflow-hidden shadow-glass-lg bg-slate-900 ring-1 ring-white/10">
+                        <iframe
+                            className="absolute top-0 left-0 w-full h-full"
+                            src="https://www.youtube.com/embed/X263_cirHO0?rel=0"
+                            title="CTR Supply Solutions Company Video"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowFullScreen
+                        />
                     </div>
                 </FadeIn>
             </Container>
