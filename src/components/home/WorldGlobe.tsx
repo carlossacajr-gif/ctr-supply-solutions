@@ -68,7 +68,7 @@ export function WorldGlobe({ showLabel = true }: WorldGlobeProps = {}) {
     }, []);
 
     return (
-        <div className="relative flex items-center justify-center w-full max-w-2xl mx-auto pb-12 overflow-hidden sm:overflow-visible">
+        <div className="relative flex items-center justify-center w-full max-w-2xl mx-auto pb-16 overflow-hidden sm:overflow-visible">
             {/* Decorative Orbit Rings */}
             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[300px] h-[300px] sm:w-[500px] sm:h-[500px] rounded-full border border-slate-300/40 animate-[spin_20s_linear_infinite] border-dashed pointer-events-none" />
             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[380px] h-[380px] sm:w-[650px] sm:h-[650px] rounded-full border border-slate-200/50 animate-[spin_30s_linear_reverse_infinite] border-dotted pointer-events-none" />
@@ -90,12 +90,12 @@ export function WorldGlobe({ showLabel = true }: WorldGlobeProps = {}) {
 
             {/* Live Indicator Pill */}
             {showLabel && (
-                <div className="absolute bottom-4 sm:bottom-0 left-1/2 -translate-x-1/2 px-4 py-2 rounded-full bg-white shadow-[0_8px_30px_rgb(0,0,0,0.12)] border border-slate-100 z-20 flex items-center gap-3">
+                <div className="absolute bottom-6 sm:bottom-0 left-1/2 -translate-x-1/2 px-4 py-2 rounded-full bg-white shadow-[0_8px_30px_rgb(0,0,0,0.12)] border border-slate-100 z-20 flex items-center gap-3">
                     <span className="relative flex h-2.5 w-2.5">
                         <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-ctr-blue opacity-75"></span>
                         <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-ctr-blue"></span>
                     </span>
-                    <p className="text-xs text-slate-600 font-bold tracking-widest uppercase">Live Logistics Network</p>
+                    <p className="text-xs text-slate-600 font-bold tracking-widest uppercase mb-0">Live Logistics Network</p>
                 </div>
             )}
         </div>
