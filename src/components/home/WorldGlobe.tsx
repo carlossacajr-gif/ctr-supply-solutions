@@ -68,7 +68,7 @@ export function WorldGlobe({ showLabel = true }: WorldGlobeProps = {}) {
     }, []);
 
     return (
-        <div className="relative flex items-center justify-center w-full max-w-2xl mx-auto pb-16 overflow-hidden sm:overflow-visible">
+        <div className="relative flex items-center justify-center w-full max-w-2xl mx-auto pb-16">
             {/* Decorative Orbit Rings */}
             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[300px] h-[300px] sm:w-[500px] sm:h-[500px] rounded-full border border-slate-300/40 animate-[spin_20s_linear_infinite] border-dashed pointer-events-none" />
             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[380px] h-[380px] sm:w-[650px] sm:h-[650px] rounded-full border border-slate-200/50 animate-[spin_30s_linear_reverse_infinite] border-dotted pointer-events-none" />
