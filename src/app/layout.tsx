@@ -49,9 +49,11 @@ export default function RootLayout({
 }>) {
     return (
         <html lang="en">
-            <body className={`${inter.variable} ${manrope.variable} font-sans overflow-x-hidden bg-slate-50 text-slate-900 antialiased`}>
+            <body className={`${inter.variable} ${manrope.variable} font-sans overflow-x-hidden w-full bg-slate-50 text-slate-900 antialiased`}>
                 <CustomCursor />
-                {children}
+                <main className="overflow-x-hidden w-full flex flex-col min-h-screen relative">
+                    {children}
+                </main>
             </body>
         </html>
     );

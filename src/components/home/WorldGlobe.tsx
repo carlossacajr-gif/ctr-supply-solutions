@@ -90,7 +90,7 @@ export function WorldGlobe({ showLabel = true }: WorldGlobeProps = {}) {
 
             {/* Live Indicator Pill */}
             {showLabel && (
-                <div className="absolute bottom-0 left-1/2 -translate-x-1/2 px-4 py-2 rounded-full bg-white shadow-[0_8px_30px_rgb(0,0,0,0.12)] border border-slate-100 z-20 flex items-center gap-3">
+                <div className="absolute bottom-4 sm:bottom-0 left-1/2 -translate-x-1/2 px-4 py-2 rounded-full bg-white shadow-[0_8px_30px_rgb(0,0,0,0.12)] border border-slate-100 z-20 flex items-center gap-3">
                     <span className="relative flex h-2.5 w-2.5">
                         <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-ctr-blue opacity-75"></span>
                         <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-ctr-blue"></span>

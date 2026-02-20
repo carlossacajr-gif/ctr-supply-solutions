@@ -60,11 +60,11 @@ export function Navbar() {
                 animate={hidden ? "hidden" : "visible"}
                 transition={{ duration: 0.35, ease: "easeInOut" }}
                 className={`fixed inset-x-0 top-0 z-40 transition-colors duration-300 will-change-transform ${isScrolled
-                        ? 'bg-white/80 backdrop-blur-xl border-b border-white/50 shadow-[0_2px_20px_rgba(0,0,0,0.04)]'
-                        : 'bg-white border-b border-slate-100 shadow-none'
+                    ? 'bg-white/80 backdrop-blur-xl border-b border-white/50 shadow-[0_2px_20px_rgba(0,0,0,0.04)]'
+                    : 'bg-white border-b border-slate-100 shadow-none'
                     }`}
             >
-                <nav className="flex items-center justify-between p-6 lg:px-8" aria-label="Global">
+                <nav className="flex items-center justify-between py-4 px-6 lg:px-8" aria-label="Global">
                     <Container className="flex w-full items-center justify-between">
                         <div className="flex lg:flex-1">
                             <Link href="/" className="-m-1.5 p-1.5 flex items-center">

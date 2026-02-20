@@ -84,7 +84,7 @@ export function ScrollytellingProcess() {
                             </div>
 
                             {/* Image */}
-                            <div className="flex-1 lg:w-1/2 h-64 lg:h-80 w-full relative lg:sticky lg:top-32 order-1 lg:order-2 mb-8 lg:mb-0">
+                            <div className="flex-1 lg:w-1/2 h-64 lg:h-80 w-full relative lg:sticky lg:top-32 order-1 lg:order-2 mb-8 lg:mb-0 pl-14 lg:pl-0">
                                 <FadeIn direction="left" delay={0.1} className="h-full w-full">
                                     <div className="relative h-full w-full rounded-2xl overflow-hidden shadow-glass-lg border border-slate-200/60">
                                         <Image
