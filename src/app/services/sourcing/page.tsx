@@ -40,8 +40,7 @@ export default function SourcingPage() {
                     alt="Global Sourcing Meeting"
                     fill
                     priority
-                    placeholder="blur"
-                    quality={85}
+                    unoptimized
                     sizes="(max-width: 1024px) 100vw, 80vw"
                     className="object-cover"
                 />

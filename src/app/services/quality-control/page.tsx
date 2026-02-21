@@ -41,8 +41,7 @@ export default function QualityControlPage() {
                     alt="Quality Control Inspection"
                     fill
                     priority
-                    placeholder="blur"
-                    quality={85}
+                    unoptimized
                     sizes="(max-width: 1024px) 100vw, 80vw"
                     className="object-cover"
                 />

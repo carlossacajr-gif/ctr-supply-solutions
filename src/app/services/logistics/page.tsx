@@ -40,8 +40,7 @@ export default function LogisticsPage() {
                     alt="Global Shipping Containers"
                     fill
                     priority
-                    placeholder="blur"
-                    quality={85}
+                    unoptimized
                     sizes="(max-width: 1024px) 100vw, 80vw"
                     className="object-cover"
                 />

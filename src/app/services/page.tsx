@@ -58,8 +58,7 @@ export default function ServicesPage() {
                         fill
                         className="object-cover opacity-10"
                         priority
-                        placeholder="blur"
-                        quality={85}
+                        unoptimized
                     />
                 </div>
 
@@ -101,7 +100,7 @@ export default function ServicesPage() {
                                                 alt={service.name}
                                                 fill
                                                 priority
-                                                placeholder="blur"
+                                                unoptimized
                                                 sizes="(max-width: 1024px) 100vw, 33vw"
                                                 className="object-cover transition-transform duration-500 group-hover:scale-105"
                                             />
