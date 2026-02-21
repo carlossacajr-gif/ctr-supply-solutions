@@ -3,8 +3,8 @@ import { Inter, Manrope } from "next/font/google";
 import "./globals.css";
 import { CustomCursor } from "@/components/ui/motion/CustomCursor";
 
-const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
-const manrope = Manrope({ subsets: ["latin"], variable: "--font-manrope" });
+const inter = Inter({ subsets: ["latin"], variable: "--font-inter", display: "swap" });
+const manrope = Manrope({ subsets: ["latin"], variable: "--font-manrope", display: "swap" });
 
 export const metadata: Metadata = {
     metadataBase: new URL('https://ctrsupplysolutions.com'),

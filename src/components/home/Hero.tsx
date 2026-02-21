@@ -13,6 +13,7 @@ export function Hero() {
                     alt="Industrial Supply Chain Background"
                     fill
                     sizes="100vw"
+                    quality={50}
                     className="object-cover object-center opacity-30"
                     priority
                     fetchPriority="high"
