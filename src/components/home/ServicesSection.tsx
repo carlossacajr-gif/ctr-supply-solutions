@@ -31,14 +31,14 @@ const services = [
 
 export function ServicesSection() {
     return (
-        <section className="py-24 bg-white sm:py-32">
+        <section className="py-24 bg-white dark:bg-slate-950 sm:py-32">
             <Container>
                 <div className="mx-auto max-w-2xl text-center">
                     <h2 className="text-base font-semibold leading-7 text-ctr-blue">Our Expertise</h2>
-                    <p className="mt-2 text-3xl font-heading font-bold tracking-tight text-ctr-slate sm:text-4xl">
+                    <p className="mt-2 text-3xl font-heading font-bold tracking-tight text-ctr-slate dark:text-white sm:text-4xl">
                         Everything you need to source with confidence
                     </p>
-                    <p className="mt-6 text-lg leading-8 text-slate-600">
+                    <p className="mt-6 text-lg leading-8 text-slate-600 dark:text-slate-400">
                         We act as your eyes and ears on the factory floor, protecting your brand from quality fade and supply chain risks.
                     </p>
                 </div>
@@ -46,11 +46,11 @@ export function ServicesSection() {
                     <dl className="grid max-w-xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-4">
                         {services.map((service) => (
                             <div key={service.name} className="flex flex-col">
-                                <dt className="flex items-center gap-x-3 text-base font-semibold leading-7 text-ctr-slate">
+                                <dt className="flex items-center gap-x-3 text-base font-semibold leading-7 text-ctr-slate dark:text-white">
                                     <service.icon className="h-5 w-5 flex-none text-ctr-blue" aria-hidden="true" />
                                     {service.name}
                                 </dt>
-                                <dd className="mt-4 flex flex-auto flex-col text-base leading-7 text-slate-600">
+                                <dd className="mt-4 flex flex-auto flex-col text-base leading-7 text-slate-600 dark:text-slate-400">
                                     <p className="flex-auto">{service.description}</p>
                                     <p className="mt-6">
                                         <Link href={service.href} className="text-sm font-semibold leading-6 text-ctr-blue hover:text-sky-600">

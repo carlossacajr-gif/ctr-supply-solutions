@@ -47,7 +47,7 @@ export function AnimatedCounter({ value, label, suffix }: AnimatedCounterProps) 
             <p className="text-4xl sm:text-5xl font-heading font-bold text-ctr-blue">
                 <span ref={ref}>0</span>{displaySuffix}
             </p>
-            <p className="text-sm font-semibold text-slate-600 mt-2 uppercase tracking-wide">
+            <p className="text-sm font-semibold text-slate-600 dark:text-slate-400 mt-2 uppercase tracking-wide">
                 {label}
             </p>
         </div>

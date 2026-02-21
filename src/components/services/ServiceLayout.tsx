@@ -19,7 +19,7 @@ interface ServiceLayoutProps {
 
 export function ServiceLayout({ title, description, children }: ServiceLayoutProps) {
     return (
-        <main className="min-h-screen bg-white">
+        <main className="min-h-screen bg-white dark:bg-slate-950">
             <Navbar />
 
             {/* Kinetic Hero */}
@@ -52,7 +52,7 @@ export function ServiceLayout({ title, description, children }: ServiceLayoutPro
             </div>
 
             {/* ─── Wave Divider: Content → CTA ─── */}
-            <SectionDivider fillClass="fill-ctr-dark" className="bg-white" />
+            <SectionDivider fillClass="fill-ctr-dark" className="bg-white dark:bg-slate-950" />
 
             {/* Elevated CTA — Glass card */}
             <section className="relative bg-gradient-to-br from-ctr-dark via-slate-900 to-ctr-slate py-16 sm:py-24 overflow-hidden">

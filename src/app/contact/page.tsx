@@ -85,24 +85,24 @@ export default function ContactPage() {
                         <FadeIn direction="left" delay={0.4}>
                             <form action="mailto:info@ctrsupplysolutions.com" method="post" encType="text/plain" className="glass-white rounded-2xl p-8 shadow-glass-lg space-y-6 relative overflow-hidden">
                                 <div className="absolute top-0 right-0 w-32 h-32 bg-ctr-blue/5 rounded-bl-full pointer-events-none" />
-                                <h3 className="text-xl font-bold text-ctr-slate mb-4 relative z-10">Send a Message</h3>
+                                <h3 className="text-xl font-bold text-ctr-slate dark:text-white mb-4 relative z-10">Send a Message</h3>
                                 <div className="grid grid-cols-2 gap-4 relative z-10">
                                     <div>
-                                        <label htmlFor="name" className="block text-sm font-medium text-slate-700 mb-1">Name</label>
-                                        <input type="text" name="name" id="name" className="block w-full rounded-xl border-slate-200/60 shadow-sm focus:border-ctr-blue focus:ring-ctr-blue sm:text-sm p-3 border bg-white/70 backdrop-blur-sm transition-all hover:border-ctr-blue/50 focus:bg-white" />
+                                        <label htmlFor="name" className="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-1">Name</label>
+                                        <input type="text" name="name" id="name" className="block w-full rounded-xl border-slate-200/60 dark:border-slate-700/60 shadow-sm focus:border-ctr-blue focus:ring-ctr-blue sm:text-sm p-3 border bg-white/70 dark:bg-slate-950/70 backdrop-blur-sm transition-all hover:border-ctr-blue/50 focus:bg-white dark:focus:bg-slate-950" />
                                     </div>
                                     <div>
-                                        <label htmlFor="company" className="block text-sm font-medium text-slate-700 mb-1">Company</label>
-                                        <input type="text" name="company" id="company" className="block w-full rounded-xl border-slate-200/60 shadow-sm focus:border-ctr-blue focus:ring-ctr-blue sm:text-sm p-3 border bg-white/70 backdrop-blur-sm transition-all hover:border-ctr-blue/50 focus:bg-white" />
+                                        <label htmlFor="company" className="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-1">Company</label>
+                                        <input type="text" name="company" id="company" className="block w-full rounded-xl border-slate-200/60 dark:border-slate-700/60 shadow-sm focus:border-ctr-blue focus:ring-ctr-blue sm:text-sm p-3 border bg-white/70 dark:bg-slate-950/70 backdrop-blur-sm transition-all hover:border-ctr-blue/50 focus:bg-white dark:focus:bg-slate-950" />
                                     </div>
                                 </div>
                                 <div className="relative z-10">
-                                    <label htmlFor="email" className="block text-sm font-medium text-slate-700 mb-1">Email</label>
-                                    <input type="email" name="email" id="email" className="block w-full rounded-xl border-slate-200/60 shadow-sm focus:border-ctr-blue focus:ring-ctr-blue sm:text-sm p-3 border bg-white/70 backdrop-blur-sm transition-all hover:border-ctr-blue/50 focus:bg-white" />
+                                    <label htmlFor="email" className="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-1">Email</label>
+                                    <input type="email" name="email" id="email" className="block w-full rounded-xl border-slate-200/60 dark:border-slate-700/60 shadow-sm focus:border-ctr-blue focus:ring-ctr-blue sm:text-sm p-3 border bg-white/70 dark:bg-slate-950/70 backdrop-blur-sm transition-all hover:border-ctr-blue/50 focus:bg-white dark:focus:bg-slate-950" />
                                 </div>
                                 <div className="relative z-10">
-                                    <label htmlFor="message" className="block text-sm font-medium text-slate-700 mb-1">Project Details</label>
-                                    <textarea name="message" id="message" rows={4} className="block w-full rounded-xl border-slate-200/60 shadow-sm focus:border-ctr-blue focus:ring-ctr-blue sm:text-sm p-3 border bg-white/70 backdrop-blur-sm transition-all hover:border-ctr-blue/50 focus:bg-white" placeholder="Tell us about your product, estimated quantity, and target price." />
+                                    <label htmlFor="message" className="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-1">Project Details</label>
+                                    <textarea name="message" id="message" rows={4} className="block w-full rounded-xl border-slate-200/60 dark:border-slate-700/60 shadow-sm focus:border-ctr-blue focus:ring-ctr-blue sm:text-sm p-3 border bg-white/70 dark:bg-slate-950/70 backdrop-blur-sm transition-all hover:border-ctr-blue/50 focus:bg-white dark:focus:bg-slate-950" placeholder="Tell us about your product, estimated quantity, and target price." />
                                 </div>
                                 <div className="relative z-10 w-full">
                                     <MagneticButton className="w-full">

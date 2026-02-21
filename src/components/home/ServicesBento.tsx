@@ -5,6 +5,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { ReactNode } from "react";
 import { ShieldCheck, Globe2, Gauge, Search, ArrowUpRight } from "lucide-react";
+import { SpotlightCard } from "../ui/motion/SpotlightCard";
 
 export const BentoGrid = ({
     className,
@@ -41,19 +42,19 @@ export const BentoGridItem = ({
     href?: string;
 }) => {
     return (
-        <div
+        <SpotlightCard
             className={cn(
-                "row-span-1 rounded-2xl group/bento hover:shadow-glass-lg transition-all duration-300 p-4 bg-white/80 backdrop-blur-sm border border-slate-200/60 hover:border-ctr-blue/20 hover:bg-white/90 justify-between flex flex-col space-y-4 relative overflow-hidden",
+                "row-span-1 rounded-2xl group/bento hover:shadow-glass-lg transition-all duration-300 p-4 bg-white/80 dark:bg-slate-950/80 backdrop-blur-sm border border-slate-200/60 hover:border-ctr-blue/20 hover:bg-white/90 dark:hover:bg-slate-950/90 justify-between flex flex-col space-y-4 relative overflow-hidden",
                 className
             )}
         >
             {header}
             <div className="group-hover/bento:translate-x-2 transition duration-200">
                 {icon}
-                <div className="font-heading font-bold text-ctr-slate mb-2 mt-2">
+                <div className="font-heading font-bold text-ctr-slate dark:text-white mb-2 mt-2">
                     {title}
                 </div>
-                <div className="font-sans font-normal text-slate-600 text-sm">
+                <div className="font-sans font-normal text-slate-600 dark:text-slate-400 text-sm">
                     {description}
                 </div>
                 {href && (
@@ -62,7 +63,7 @@ export const BentoGridItem = ({
                     </Link>
                 )}
             </div>
-        </div>
+        </SpotlightCard>
     );
 };
 

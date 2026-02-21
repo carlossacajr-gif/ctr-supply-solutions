@@ -59,8 +59,8 @@ export default function SourcingPage() {
                                         <feature.icon className="h-6 w-6 text-ctr-blue" />
                                     </div>
                                     <div>
-                                        <h3 className="text-lg font-bold text-ctr-slate mb-2">{feature.title}</h3>
-                                        <p className="text-slate-600 leading-relaxed text-sm">
+                                        <h3 className="text-lg font-bold text-ctr-slate dark:text-white mb-2">{feature.title}</h3>
+                                        <p className="text-slate-600 dark:text-slate-400 leading-relaxed text-sm">
                                             {feature.desc}
                                         </p>
                                     </div>
@@ -94,14 +94,14 @@ export default function SourcingPage() {
             </div>
 
             <FadeIn>
-                <div className="p-8 bg-slate-50 border-l-4 border-ctr-blue rounded-r-xl relative overflow-hidden">
+                <div className="p-8 bg-slate-50 dark:bg-slate-900 border-l-4 border-ctr-blue rounded-r-xl relative overflow-hidden">
                     {/* Background Pattern */}
                     <div className="absolute -right-8 -top-8 opacity-[0.03] pointer-events-none">
-                        <Handshake className="w-48 h-48 text-ctr-slate" />
+                        <Handshake className="w-48 h-48 text-ctr-slate dark:text-white" />
                     </div>
                     <div className="relative z-10">
-                        <h3 className="text-xl font-bold text-ctr-slate mb-4">No Hidden Kickbacks</h3>
-                        <p className="text-slate-700 max-w-2xl">
+                        <h3 className="text-xl font-bold text-ctr-slate dark:text-white mb-4">No Hidden Kickbacks</h3>
+                        <p className="text-slate-700 dark:text-slate-300 max-w-2xl">
                             Unlike many agents, we operate on a transparent fee structure. We don't take hidden commissions from factories,
                             which means our loyalty is 100% to you, the buyer.
                         </p>

@@ -2,6 +2,8 @@ import type { Metadata, Viewport } from "next";
 import { Inter, Manrope } from "next/font/google";
 import "./globals.css";
 import { CustomCursor } from "@/components/ui/motion/CustomCursor";
+import { SplashLoader } from "@/components/ui/motion/SplashLoader";
+import { ThemeProvider } from "@/components/theme-provider";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 const manrope = Manrope({ subsets: ["latin"], variable: "--font-manrope" });
@@ -50,12 +52,20 @@ export default function RootLayout({
     children: React.ReactNode;
 }>) {
     return (
-        <html lang="en">
-            <body className={`${inter.variable} ${manrope.variable} font-sans overflow-x-hidden w-full bg-slate-50 text-slate-900 antialiased`}>
-                <CustomCursor />
-                <main className="overflow-x-hidden w-full flex flex-col min-h-screen relative">
-                    {children}
-                </main>
+        <html lang="en" suppressHydrationWarning>
+            <body className={`${inter.variable} ${manrope.variable} font-sans overflow-x-hidden w-full bg-slate-50 dark:bg-slate-950 text-slate-900 dark:text-slate-50 antialiased transition-colors duration-300`}>
+                <ThemeProvider
+                    attribute="class"
+                    defaultTheme="light" // the user can switch to system or dark
+                    enableSystem
+                    disableTransitionOnChange={false} // Transition colors enabled
+                >
+                    <SplashLoader />
+                    <CustomCursor />
+                    <main className="overflow-x-hidden w-full flex flex-col min-h-screen relative">
+                        {children}
+                    </main>
+                </ThemeProvider>
             </body>
         </html>
     );
