@@ -1,6 +1,7 @@
 import { ServiceLayout } from '@/components/services/ServiceLayout';
 import { Ship, Plane, PackageCheck, FileText, Anchor, Container as ContainerIcon } from 'lucide-react';
 import Image from 'next/image';
+import logisticsHeroImg from '../../../../public/images/services/logistics/logistics-hero.webp';
 import { FadeIn } from '@/components/ui/motion/FadeIn';
 
 const features = [
@@ -35,9 +36,13 @@ export default function LogisticsPage() {
             {/* Hero Image Injection */}
             <div className="relative rounded-2xl overflow-hidden mb-16 aspect-video md:aspect-[21/9] shadow-2xl">
                 <Image
-                    src="/images/services/logistics/logistics-hero.webp"
+                    src={logisticsHeroImg}
                     alt="Global Shipping Containers"
                     fill
+                    priority
+                    placeholder="blur"
+                    quality={85}
+                    sizes="(max-width: 1024px) 100vw, 80vw"
                     className="object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-slate-900/60 to-transparent" />

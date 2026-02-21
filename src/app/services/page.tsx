@@ -1,4 +1,8 @@
 import NextImage from 'next/image';
+import servicesHeroImg from '../../../public/images/services/services-hero.webp';
+import cardQualityImg from '../../../public/images/services/card-quality.webp';
+import cardSourcingImg from '../../../public/images/services/card-sourcing.webp';
+import cardLogisticsImg from '../../../public/images/services/card-logistics.webp';
 import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
 import { Container } from '@/components/ui/Container';
@@ -16,21 +20,21 @@ const services = [
         description: 'On-site inspections and factory audits to ensure your products meet international standards.',
         icon: ShieldCheck,
         href: '/services/quality-control',
-        image: '/images/services/card-quality.webp',
+        image: cardQualityImg,
     },
     {
         name: 'Global Sourcing',
         description: 'We identify verified manufacturers, negotiate terms, and manage the procurement process.',
         icon: Globe2,
         href: '/services/sourcing',
-        image: '/images/services/card-sourcing.webp',
+        image: cardSourcingImg,
     },
     {
         name: 'Logistics & Shipping',
         description: 'Freight forwarding, warehousing, and customs clearance. We handle the complexity.',
         icon: Truck,
         href: '/services/logistics',
-        image: '/images/services/card-logistics.webp',
+        image: cardLogisticsImg,
     },
 ];
 
@@ -49,11 +53,13 @@ export default function ServicesPage() {
                 {/* Background image overlay */}
                 <div className="absolute inset-0 -z-10">
                     <NextImage
-                        src="/images/services/services-hero.webp"
+                        src={servicesHeroImg}
                         alt="Global Logistics and Sourcing"
                         fill
                         className="object-cover opacity-10"
                         priority
+                        placeholder="blur"
+                        quality={85}
                     />
                 </div>
 
@@ -95,6 +101,7 @@ export default function ServicesPage() {
                                                 alt={service.name}
                                                 fill
                                                 priority
+                                                placeholder="blur"
                                                 sizes="(max-width: 1024px) 100vw, 33vw"
                                                 className="object-cover transition-transform duration-500 group-hover:scale-105"
                                             />

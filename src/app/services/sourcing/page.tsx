@@ -1,6 +1,7 @@
 import { ServiceLayout } from '@/components/services/ServiceLayout';
 import { Search, Users, Scale, Truck, Handshake, Globe } from 'lucide-react';
 import Image from 'next/image';
+import sourcingHeroImg from '../../../../public/images/services/sourcing/sourcing-hero.webp';
 import { FadeIn } from '@/components/ui/motion/FadeIn';
 
 const features = [
@@ -35,9 +36,13 @@ export default function SourcingPage() {
             {/* Hero Image Injection */}
             <div className="relative rounded-2xl overflow-hidden mb-16 aspect-video md:aspect-[21/9] shadow-2xl">
                 <Image
-                    src="/images/services/sourcing/sourcing-hero.webp"
+                    src={sourcingHeroImg}
                     alt="Global Sourcing Meeting"
                     fill
+                    priority
+                    placeholder="blur"
+                    quality={85}
+                    sizes="(max-width: 1024px) 100vw, 80vw"
                     className="object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-slate-900/60 to-transparent" />
