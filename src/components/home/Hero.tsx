@@ -15,6 +15,7 @@ export function Hero() {
                     sizes="100vw"
                     className="object-cover object-center opacity-30"
                     priority
+                    fetchPriority="high"
                 />
                 <div className="absolute inset-0 bg-gradient-to-br from-slate-900/95 via-slate-900/80 to-slate-900/40" />
 

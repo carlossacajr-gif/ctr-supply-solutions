@@ -1,7 +1,9 @@
 import type { Metadata, Viewport } from "next";
 import { Inter, Manrope } from "next/font/google";
 import "./globals.css";
-import { CustomCursor } from "@/components/ui/motion/CustomCursor";
+import dynamic from 'next/dynamic';
+
+const CustomCursor = dynamic(() => import('@/components/ui/motion/CustomCursor').then(mod => mod.CustomCursor), { ssr: false });
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 const manrope = Manrope({ subsets: ["latin"], variable: "--font-manrope" });
@@ -40,7 +42,6 @@ export const viewport: Viewport = {
     themeColor: '#ffffff',
     width: 'device-width',
     initialScale: 1,
-    maximumScale: 1,
 };
 
 export default function RootLayout({

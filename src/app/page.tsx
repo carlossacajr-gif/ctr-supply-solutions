@@ -1,16 +1,17 @@
 import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
-import { ServicesBento } from '@/components/home/ServicesBento';
-import { Testimonials } from '@/components/home/Testimonials';
-import { ScrollytellingProcess } from '@/components/home/ScrollytellingProcess';
-import { ProductionTrackerDemo } from '@/components/home/ProductionTrackerDemo';
-import { CompanyVideo } from '@/components/home/CompanyVideo';
+import dynamic from 'next/dynamic';
+
+const ServicesBento = dynamic(() => import('@/components/home/ServicesBento').then(mod => mod.ServicesBento), { ssr: true });
+const Testimonials = dynamic(() => import('@/components/home/Testimonials').then(mod => mod.Testimonials), { ssr: true });
+const ScrollytellingProcess = dynamic(() => import('@/components/home/ScrollytellingProcess').then(mod => mod.ScrollytellingProcess), { ssr: true });
+const ProductionTrackerDemo = dynamic(() => import('@/components/home/ProductionTrackerDemo').then(mod => mod.ProductionTrackerDemo), { ssr: true });
+const CompanyVideo = dynamic(() => import('@/components/home/CompanyVideo').then(mod => mod.CompanyVideo), { ssr: true });
 import { Button } from '@/components/ui/Button';
 import { Container } from '@/components/ui/Container';
 import { SectionDivider } from '@/components/ui/SectionDivider';
 import Link from 'next/link';
 import { TextReveal } from '@/components/ui/motion/TextReveal';
-import dynamic from 'next/dynamic';
 import { MagneticButton } from '@/components/ui/motion/MagneticButton';
 import { AnimatedCounter } from '@/components/ui/motion/AnimatedCounter';
 import { FadeIn } from '@/components/ui/motion/FadeIn';
