@@ -1,24 +1,37 @@
 "use client";
 
 import { useEffect, useState } from 'react';
-import { motion } from 'framer-motion';
+import { motion, useMotionValue, useSpring } from 'framer-motion';
 
 export const CustomCursor = () => {
-    const [position, setPosition] = useState({ x: -100, y: -100 });
+    const cursorX = useMotionValue(-100);
+    const cursorY = useMotionValue(-100);
+
+    // Hardware accelerated spring physics
+    const cursorXSpring = useSpring(cursorX, { damping: 25, stiffness: 250, mass: 0.1 });
+    const cursorYSpring = useSpring(cursorY, { damping: 25, stiffness: 250, mass: 0.1 });
+
+    // Trailing ring spring physics
+    const ringXSpring = useSpring(cursorX, { damping: 25, stiffness: 100, mass: 0.2 });
+    const ringYSpring = useSpring(cursorY, { damping: 25, stiffness: 100, mass: 0.2 });
+
     const [isHovering, setIsHovering] = useState(false);
     const [isVisible, setIsVisible] = useState(false);
-    const hasMoved = useState(false);
 
     useEffect(() => {
-        // Only enable on devices that have a cursor
+        // Only enable on devices that have a cursor (Desktop-only feature)
         const mediaQuery = window.matchMedia("(hover: hover) and (pointer: fine)");
         if (!mediaQuery.matches) return;
 
+        let hasMoved = false;
+
         const updatePosition = (e: MouseEvent) => {
-            setPosition({ x: e.clientX, y: e.clientY });
-            // Only show cursor after first real mouse movement
-            if (!hasMoved[0]) {
-                hasMoved[1](true);
+            // Direct DOM mutation bypassing React Render Cycle!
+            cursorX.set(e.clientX);
+            cursorY.set(e.clientY);
+
+            if (!hasMoved) {
+                hasMoved = true;
                 setIsVisible(true);
             }
         };
@@ -39,39 +52,39 @@ export const CustomCursor = () => {
             window.removeEventListener('mousemove', updatePosition);
             window.removeEventListener('mouseover', handleMouseOver);
         };
-    }, []);
+    }, [cursorX, cursorY]);
 
     if (!isVisible) return null;
 
     return (
         <>
+            {/* Core Dot */}
             <motion.div
-                className="fixed top-0 left-0 w-4 h-4 rounded-full bg-ctr-blue pointer-events-none z-[9999] mix-blend-difference"
+                className="fixed top-[-8px] left-[-8px] w-4 h-4 rounded-full bg-ctr-blue pointer-events-none z-[9999] mix-blend-difference"
+                style={{
+                    x: cursorXSpring,
+                    y: cursorYSpring,
+                }}
                 animate={{
-                    x: position.x - 8,
-                    y: position.y - 8,
                     scale: isHovering ? 2.5 : 1,
                 }}
                 transition={{
-                    type: "spring",
-                    stiffness: 150,
-                    damping: 15,
-                    mass: 0.1
+                    scale: { type: "spring", stiffness: 300, damping: 20 }
                 }}
             />
+            {/* Trailing Ring */}
             <motion.div
-                className="fixed top-0 left-0 w-8 h-8 rounded-full border border-ctr-blue/50 pointer-events-none z-[9999]"
+                className="fixed top-[-16px] left-[-16px] w-8 h-8 rounded-full border border-ctr-blue/50 pointer-events-none z-[9999]"
+                style={{
+                    x: ringXSpring,
+                    y: ringYSpring,
+                }}
                 animate={{
-                    x: position.x - 16,
-                    y: position.y - 16,
                     scale: isHovering ? 1.5 : 1,
+                    opacity: isHovering ? 0 : 1
                 }}
                 transition={{
-                    type: "spring",
-                    stiffness: 100,
-                    damping: 20,
-                    mass: 0.2,
-                    delay: 0.05
+                    scale: { type: "spring", stiffness: 100, damping: 20 }
                 }}
             />
         </>

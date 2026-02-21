@@ -28,7 +28,6 @@ export default function CompanyVideo() {
                             title="CTR Supply Solutions Company Video"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                             allowFullScreen
-                            loading="lazy"
                         />
                     </div>
                 </FadeIn>

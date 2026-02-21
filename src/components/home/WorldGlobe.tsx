@@ -27,8 +27,8 @@ export function WorldGlobe({ showLabel = true }: WorldGlobeProps = {}) {
 
         const globe = createGlobe(canvasRef.current, {
             devicePixelRatio: 2,
-            width: width * 2,
-            height: width * 2,
+            width: width,
+            height: width,
             phi: 0,
             theta: 0,
             dark: 0,
@@ -54,8 +54,8 @@ export function WorldGlobe({ showLabel = true }: WorldGlobeProps = {}) {
             ],
             onRender: (state) => {
                 // Ensure internal resolution constantly matches the DOM width
-                state.width = width * 2;
-                state.height = width * 2;
+                state.width = width;
+                state.height = width;
                 state.phi = phi;
                 phi += 0.003;
             },

@@ -13,7 +13,7 @@ export function Hero() {
                     alt="Industrial Supply Chain Background"
                     fill
                     sizes="100vw"
-                    quality={50}
+                    quality={90}
                     className="object-cover object-center opacity-30"
                     priority
                     fetchPriority="high"
@@ -21,8 +21,8 @@ export function Hero() {
                 <div className="absolute inset-0 bg-gradient-to-br from-slate-900/95 via-slate-900/80 to-slate-900/40" />
 
                 {/* Organic Blob Trend #5 */}
-                <div className="absolute top-[-10%] left-[-10%] w-[40%] h-[40%] rounded-full bg-ctr-blue/20 blur-[100px] animate-pulse" />
-                <div className="absolute bottom-[-10%] right-[-10%] w-[40%] h-[40%] rounded-full bg-indigo-500/10 blur-[100px] animate-pulse" style={{ animationDelay: '2s' }} />
+                <div className="absolute top-[-10%] left-[-10%] w-[40%] h-[40%] rounded-full bg-ctr-blue/20 blur-[100px]" />
+                <div className="absolute bottom-[-10%] right-[-10%] w-[40%] h-[40%] rounded-full bg-indigo-500/10 blur-[100px]" />
             </div>
 
             <Container className="pt-24 lg:pt-32">
