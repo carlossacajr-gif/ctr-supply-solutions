@@ -6,12 +6,10 @@ import { Container } from '@/components/ui/Container';
 import { Button } from '@/components/ui/Button';
 import { SectionDivider } from '@/components/ui/SectionDivider';
 import { Mail, MessageSquare, MapPin, Send } from 'lucide-react';
-import dynamic from 'next/dynamic';
+import { WorldGlobe } from '@/components/home/WorldGlobe';
 import { TextReveal } from '@/components/ui/motion/TextReveal';
 import { FadeIn } from '@/components/ui/motion/FadeIn';
 import { MagneticButton } from '@/components/ui/motion/MagneticButton';
-
-const WorldGlobe = dynamic(() => import('@/components/home/WorldGlobe').then(mod => mod.WorldGlobe), { ssr: false });
 
 export default function ContactPage() {
     return (
