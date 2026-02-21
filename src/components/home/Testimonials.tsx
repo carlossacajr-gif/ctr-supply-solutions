@@ -51,7 +51,7 @@ const testimonials: Testimonial[] = [
     },
 ];
 
-export function Testimonials() {
+export default function Testimonials() {
     return (
         <section className="bg-slate-50 py-24 sm:py-32">
             <Container>

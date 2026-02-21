@@ -68,7 +68,7 @@ export const BentoGridItem = ({
 
 import { FadeIn } from "../ui/motion/FadeIn";
 
-export function ServicesBento() {
+export default function ServicesBento() {
     return (
         <BentoGrid className="max-w-4xl mx-auto">
             {items.map((item, i) => (

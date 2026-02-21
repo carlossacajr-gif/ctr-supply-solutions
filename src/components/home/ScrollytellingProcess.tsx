@@ -37,7 +37,7 @@ const steps = [
     },
 ];
 
-export function ScrollytellingProcess() {
+export default function ScrollytellingProcess() {
     const containerRef = useRef<HTMLDivElement>(null);
     const { scrollYProgress } = useScroll({
         target: containerRef,

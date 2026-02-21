@@ -2,17 +2,22 @@ import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
 import dynamic from 'next/dynamic';
 
-import { ServicesBento } from '@/components/home/ServicesBento';
-import { Testimonials } from '@/components/home/Testimonials';
-import { ScrollytellingProcess } from '@/components/home/ScrollytellingProcess';
-import { ProductionTrackerDemo } from '@/components/home/ProductionTrackerDemo';
-import { CompanyVideo } from '@/components/home/CompanyVideo';
+const ServicesBento = dynamic(() => import('@/components/home/ServicesBento'), { ssr: true });
+const Testimonials = dynamic(() => import('@/components/home/Testimonials'), { ssr: true });
+const ScrollytellingProcess = dynamic(() => import('@/components/home/ScrollytellingProcess'), { ssr: true });
+const ProductionTrackerDemo = dynamic(() => import('@/components/home/ProductionTrackerDemo'), { ssr: true });
+const CompanyVideo = dynamic(() => import('@/components/home/CompanyVideo'), { ssr: true });
 import { Button } from '@/components/ui/Button';
 import { Container } from '@/components/ui/Container';
 import { SectionDivider } from '@/components/ui/SectionDivider';
 import Link from 'next/link';
 import { TextReveal } from '@/components/ui/motion/TextReveal';
-import { WorldGlobe } from '@/components/home/WorldGlobe';
+
+const WorldGlobe = dynamic(() => import('@/components/home/WorldGlobe'), {
+    ssr: false,
+    loading: () => <div className="w-[300px] h-[300px] sm:w-[500px] sm:h-[500px] mx-auto rounded-full bg-slate-200 animate-pulse" />
+});
+
 import { MagneticButton } from '@/components/ui/motion/MagneticButton';
 import { AnimatedCounter } from '@/components/ui/motion/AnimatedCounter';
 import { FadeIn } from '@/components/ui/motion/FadeIn';

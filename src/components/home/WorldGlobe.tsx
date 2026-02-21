@@ -101,3 +101,4 @@ export function WorldGlobe({ showLabel = true }: WorldGlobeProps = {}) {
         </div>
     );
 }
+export default WorldGlobe;

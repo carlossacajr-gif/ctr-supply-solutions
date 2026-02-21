@@ -14,7 +14,7 @@ const timeline = [
     { id: 5, status: "Shipped", date: "Nov 12", icon: Truck },
 ];
 
-export function ProductionTrackerDemo() {
+export default function ProductionTrackerDemo() {
     const [currentStep, setCurrentStep] = useState(0);
     const [isPlaying, setIsPlaying] = useState(false);
 
