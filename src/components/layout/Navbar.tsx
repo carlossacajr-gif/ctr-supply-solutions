@@ -19,6 +19,7 @@ const navigation = [
 
 export function Navbar() {
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+    const [hidden, setHidden] = useState(false);
     const [isScrolled, setIsScrolled] = useState(false);
     const { scrollY } = useScroll();
 
@@ -41,14 +42,23 @@ export function Navbar() {
         } else {
             setIsScrolled(false);
         }
+
+        if (latest > previous && latest > 150) {
+            setHidden(true);
+        } else if (latest < previous) {
+            setHidden(false);
+        }
     });
 
     return (
         <>
             <motion.header
-                initial={{ y: "-100%" }}
-                animate={{ y: 0 }}
-                transition={{ duration: 0.5, ease: "easeOut" }}
+                variants={{
+                    visible: { y: 0 },
+                    hidden: { y: "-100%" },
+                }}
+                animate={hidden ? "hidden" : "visible"}
+                transition={{ duration: 0.35, ease: "easeInOut" }}
                 className={`fixed inset-x-0 top-0 z-50 transition-colors duration-300 will-change-transform ${isScrolled
                     ? 'bg-white/80 backdrop-blur-xl border-b border-white/50 shadow-[0_2px_20px_rgba(0,0,0,0.04)]'
                     : 'bg-white border-b border-slate-100 shadow-none'
