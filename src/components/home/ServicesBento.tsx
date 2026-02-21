@@ -68,7 +68,7 @@ export const BentoGridItem = ({
 
 import { FadeIn } from "../ui/motion/FadeIn";
 
-export default function ServicesBento() {
+export function ServicesBento() {
     return (
         <BentoGrid className="max-w-4xl mx-auto">
             {items.map((item, i) => (
@@ -101,7 +101,6 @@ const items = [
                     src="/images/home/bento-quality.webp"
                     alt="Quality Control"
                     fill
-                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                     className="object-cover transition-transform duration-500 group-hover/bento:scale-110"
                 />
                 <div className="absolute inset-0 bg-slate-900/10 group-hover/bento:bg-slate-900/0 transition-colors" />
@@ -119,7 +118,6 @@ const items = [
                     src="/images/home/bento-sourcing.webp"
                     alt="Global Sourcing"
                     fill
-                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                     className="object-cover object-top transition-transform duration-500 group-hover/bento:scale-110"
                 />
             </div>
@@ -136,7 +134,6 @@ const items = [
                     src="/images/home/bento-testing.webp"
                     alt="Component Testing"
                     fill
-                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                     className="object-cover transition-transform duration-500 group-hover/bento:scale-110"
                 />
             </div>
@@ -154,7 +151,6 @@ const items = [
                     src="/images/home/bento-logistics.webp"
                     alt="Logistics"
                     fill
-                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                     className="object-cover object-bottom transition-transform duration-500 group-hover/bento:scale-110"
                 />
             </div>

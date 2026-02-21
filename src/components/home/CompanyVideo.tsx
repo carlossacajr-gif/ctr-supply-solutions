@@ -2,7 +2,7 @@ import { Container } from '@/components/ui/Container';
 import { Play } from 'lucide-react';
 import { FadeIn } from '@/components/ui/motion/FadeIn';
 
-export default function CompanyVideo() {
+export function CompanyVideo() {
     return (
         <section className="relative py-20 sm:py-24 bg-ctr-dark overflow-hidden">
             {/* Ambient Background Glow */}

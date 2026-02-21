@@ -1,19 +1,16 @@
 import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
-
-import ServicesBento from '@/components/home/ServicesBento';
-import Testimonials from '@/components/home/Testimonials';
-import ScrollytellingProcess from '@/components/home/ScrollytellingProcess';
-import ProductionTrackerDemo from '@/components/home/ProductionTrackerDemo';
-import CompanyVideo from '@/components/home/CompanyVideo';
+import { ServicesBento } from '@/components/home/ServicesBento';
+import { Testimonials } from '@/components/home/Testimonials';
+import { ScrollytellingProcess } from '@/components/home/ScrollytellingProcess';
+import { ProductionTrackerDemo } from '@/components/home/ProductionTrackerDemo';
+import { CompanyVideo } from '@/components/home/CompanyVideo';
 import { Button } from '@/components/ui/Button';
 import { Container } from '@/components/ui/Container';
 import { SectionDivider } from '@/components/ui/SectionDivider';
 import Link from 'next/link';
 import { TextReveal } from '@/components/ui/motion/TextReveal';
-
-import WorldGlobe from '@/components/home/WorldGlobe';
-
+import { WorldGlobe } from '@/components/home/WorldGlobe';
 import { MagneticButton } from '@/components/ui/motion/MagneticButton';
 import { AnimatedCounter } from '@/components/ui/motion/AnimatedCounter';
 import { FadeIn } from '@/components/ui/motion/FadeIn';
