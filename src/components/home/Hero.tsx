@@ -12,6 +12,7 @@ export function Hero() {
                     src="/images/home/hero.webp"
                     alt="Industrial Supply Chain Background"
                     fill
+                    sizes="100vw"
                     className="object-cover object-center opacity-30"
                     priority
                 />

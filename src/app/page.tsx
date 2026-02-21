@@ -10,10 +10,16 @@ import { Container } from '@/components/ui/Container';
 import { SectionDivider } from '@/components/ui/SectionDivider';
 import Link from 'next/link';
 import { TextReveal } from '@/components/ui/motion/TextReveal';
-import { WorldGlobe } from '@/components/home/WorldGlobe';
+import dynamic from 'next/dynamic';
 import { MagneticButton } from '@/components/ui/motion/MagneticButton';
 import { AnimatedCounter } from '@/components/ui/motion/AnimatedCounter';
 import { FadeIn } from '@/components/ui/motion/FadeIn';
+
+// Dynamically import heavy WebGL component
+const WorldGlobe = dynamic(() => import('@/components/home/WorldGlobe').then(mod => mod.WorldGlobe), {
+    ssr: false,
+    loading: () => <div className="w-[300px] h-[300px] sm:w-[500px] sm:h-[500px] mx-auto rounded-full bg-slate-200 animate-pulse" />
+});
 
 const stats = [
     { value: 500, suffix: '+', label: 'Products Sourced' },
