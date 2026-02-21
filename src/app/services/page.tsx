@@ -50,16 +50,16 @@ export default function ServicesPage() {
                     <div className="absolute top-[-20%] left-[-15%] w-[50%] h-[50%] rounded-full bg-ctr-blue/15 blur-[120px] animate-pulse-glow" />
                     <div className="absolute bottom-[-20%] right-[-15%] w-[40%] h-[40%] rounded-full bg-ctr-indigo/10 blur-[120px] animate-pulse-glow" style={{ animationDelay: '2s' }} />
                 </div>
-                {/* Background image overlay */}
                 <div className="absolute inset-0 -z-10">
-                    <NextImage
-                        src={servicesHeroImg}
-                        alt="Global Logistics and Sourcing"
-                        fill
-                        className="object-cover opacity-10"
-                        priority
-                        unoptimized
-                    />
+                    <FadeIn delay={0.1} className="w-full h-full relative">
+                        <NextImage
+                            src={servicesHeroImg}
+                            alt="Global Logistics and Sourcing"
+                            fill
+                            className="object-cover opacity-10"
+                            priority
+                        />
+                    </FadeIn>
                 </div>
 
                 <Container>
@@ -100,7 +100,6 @@ export default function ServicesPage() {
                                                 alt={service.name}
                                                 fill
                                                 priority
-                                                unoptimized
                                                 sizes="(max-width: 1024px) 100vw, 33vw"
                                                 className="object-cover transition-transform duration-500 group-hover:scale-105"
                                             />

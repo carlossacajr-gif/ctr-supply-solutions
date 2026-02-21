@@ -34,23 +34,23 @@ export default function LogisticsPage() {
             description="Seamless freight forwarding. From the factory floor to your warehouse door, we handle the movement."
         >
             {/* Hero Image Injection */}
-            <div className="relative rounded-2xl overflow-hidden mb-16 aspect-video md:aspect-[21/9] shadow-2xl">
-                <Image
-                    src={logisticsHeroImg}
-                    alt="Global Shipping Containers"
-                    fill
-                    priority
-                    unoptimized
-                    sizes="(max-width: 1024px) 100vw, 80vw"
-                    className="object-cover"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-slate-900/60 to-transparent" />
-                <div className="absolute bottom-0 left-0 p-8">
-                    <p className="text-white font-mono text-sm bg-black/50 inline-block px-2 py-1 rounded mb-2">
-                        STATUS: IN TRANSIT via CMA GGM
-                    </p>
+            <FadeIn delay={0.1}>
+                <div className="relative rounded-2xl overflow-hidden mb-16 aspect-video md:aspect-[21/9] shadow-2xl">
+                    <Image
+                        src={logisticsHeroImg}
+                        alt="Global Shipping Containers"
+                        fill
+                        priority
+                        className="object-cover"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-slate-900/60 to-transparent" />
+                    <div className="absolute bottom-0 left-0 p-8">
+                        <p className="text-white font-mono text-sm bg-black/50 inline-block px-2 py-1 rounded mb-2">
+                            STATUS: IN TRANSIT via CMA GGM
+                        </p>
+                    </div>
                 </div>
-            </div>
+            </FadeIn>
 
             {/* Split Layout: Features + Action Image */}
             <div className="flex flex-col lg:flex-row gap-12 items-center mb-24">
