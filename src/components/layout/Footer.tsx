@@ -108,7 +108,7 @@ export function Footer() {
                     </div>
                 </div>
                 <div className="mt-16 border-t border-white/10 pt-8 sm:mt-20 lg:mt-24">
-                    <p className="text-xs leading-5 text-slate-500 dark:text-slate-400">
+                    <p className="text-xs leading-5 text-slate-500">
                         &copy; {new Date().getFullYear()} CTR Supply Solutions. All rights reserved.
                     </p>
                 </div>

@@ -91,11 +91,11 @@ export function CommandPalette() {
                                             value={query}
                                             onChange={(e) => setQuery(e.target.value)}
                                             placeholder="Example: I need 2,000 units of Bluetooth 5.0 headphones with custom packaging, target price $12..."
-                                            className="w-full h-32 bg-slate-800/50 border border-slate-600 rounded-xl p-4 text-white placeholder:text-slate-500 dark:text-slate-400 focus:outline-none focus:ring-2 focus:ring-ctr-blue resize-none"
+                                            className="w-full h-32 bg-slate-800/50 border border-slate-600 rounded-xl p-4 text-white placeholder:text-slate-500 focus:outline-none focus:ring-2 focus:ring-ctr-blue resize-none"
                                             autoFocus
                                         />
                                         <div className="flex justify-between items-center mt-4">
-                                            <div className="flex gap-2 text-xs text-slate-500 dark:text-slate-400">
+                                            <div className="flex gap-2 text-xs text-slate-500">
                                                 <span className="bg-slate-800 px-2 py-1 rounded">⌘ K to close</span>
                                             </div>
                                             <Button

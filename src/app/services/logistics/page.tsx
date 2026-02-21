@@ -59,8 +59,8 @@ export default function LogisticsPage() {
                                         <feature.icon className="h-6 w-6 text-ctr-blue" />
                                     </div>
                                     <div>
-                                        <h3 className="text-lg font-bold text-ctr-slate dark:text-white mb-2">{feature.title}</h3>
-                                        <p className="text-slate-600 dark:text-slate-400 leading-relaxed text-sm">
+                                        <h3 className="text-lg font-bold text-ctr-slate mb-2">{feature.title}</h3>
+                                        <p className="text-slate-600 leading-relaxed text-sm">
                                             {feature.desc}
                                         </p>
                                     </div>
@@ -94,14 +94,14 @@ export default function LogisticsPage() {
             </div>
 
             <FadeIn>
-                <div className="p-8 bg-slate-50 dark:bg-slate-900 border-l-4 border-ctr-blue rounded-r-xl relative overflow-hidden">
+                <div className="p-8 bg-slate-50 border-l-4 border-ctr-blue rounded-r-xl relative overflow-hidden">
                     {/* Background Pattern */}
                     <div className="absolute right-0 top-0 opacity-10">
                         <Anchor className="w-64 h-64 text-ctr-blue" />
                     </div>
                     <div className="relative z-10">
-                        <h3 className="text-xl font-bold text-ctr-slate dark:text-white mb-4">DDP Services Available</h3>
-                        <p className="text-slate-700 dark:text-slate-300 max-w-2xl">
+                        <h3 className="text-xl font-bold text-ctr-slate mb-4">DDP Services Available</h3>
+                        <p className="text-slate-700 max-w-2xl">
                             For many destinations, we offer DDP (Delivered Duty Paid) shipping.
                             This means the price you pay includes shipping, customs, and taxes—no surprise fees upon arrival.
                         </p>

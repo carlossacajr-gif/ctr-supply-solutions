@@ -87,15 +87,15 @@ export function ProductionTrackerDemo() {
                                         className="relative flex items-center gap-6"
                                     >
                                         <div className={`z-10 flex h-12 w-12 items-center justify-center rounded-full border-2 transition-colors duration-500
-                                            ${isActive ? 'border-ctr-blue bg-ctr-blue text-white' : 'border-slate-700 bg-slate-900 text-slate-600 dark:text-slate-400'}
+                                            ${isActive ? 'border-ctr-blue bg-ctr-blue text-white' : 'border-slate-700 bg-slate-900 text-slate-600'}
                                         `}>
                                             <step.icon className="h-5 w-5" />
                                         </div>
                                         <div className="flex-1">
-                                            <p className={`font-bold transition-colors duration-500 ${isActive ? 'text-white' : 'text-slate-500 dark:text-slate-400'}`}>
+                                            <p className={`font-bold transition-colors duration-500 ${isActive ? 'text-white' : 'text-slate-500'}`}>
                                                 {step.status}
                                             </p>
-                                            <p className="text-xs text-slate-500 dark:text-slate-400">{step.date}</p>
+                                            <p className="text-xs text-slate-500">{step.date}</p>
                                         </div>
                                         {isCurrent && (
                                             <motion.div

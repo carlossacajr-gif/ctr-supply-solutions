@@ -13,7 +13,7 @@ import Link from 'next/link';
 
 export default function AboutPage() {
     return (
-        <main className="min-h-screen bg-white dark:bg-slate-950">
+        <main className="min-h-screen bg-white">
             <Navbar />
 
             {/* ══════ HERO ══════ */}
@@ -44,7 +44,7 @@ export default function AboutPage() {
             {/* ══════ CONTENT SECTION ══════
                  Stats + Mission all sit on the same white background
                  Blobs provide the colour richness for glassmorphism. */}
-            <div className="relative bg-white dark:bg-slate-950">
+            <div className="relative bg-white">
                 {/* Extra blobs for visual richness */}
                 <div className="absolute top-[2%] right-0 w-[45%] h-[30%] rounded-full bg-sky-200/50 blur-[140px] pointer-events-none" />
                 <div className="absolute top-[20%] left-0 w-[35%] h-[25%] rounded-full bg-indigo-200/40 blur-[120px] pointer-events-none" />
@@ -71,11 +71,11 @@ export default function AboutPage() {
                             <div>
                                 <FadeIn direction="right">
                                     <p className="text-base font-semibold leading-7 text-ctr-blue">Our Mission</p>
-                                    <h2 className="mt-2 text-3xl font-heading font-bold tracking-tight text-ctr-slate dark:text-white">
+                                    <h2 className="mt-2 text-3xl font-heading font-bold tracking-tight text-ctr-slate">
                                         Eliminate the risks of manufacturing in China.
                                     </h2>
                                 </FadeIn>
-                                <div className="mt-6 space-y-6 text-slate-600 dark:text-slate-400 text-lg">
+                                <div className="mt-6 space-y-6 text-slate-600 text-lg">
                                     <FadeIn delay={0.2}>
                                         <p>
                                             Manufacturing in China offers incredible opportunities, but also significant risks.
@@ -90,14 +90,14 @@ export default function AboutPage() {
                                         </p>
                                     </FadeIn>
                                     <FadeIn delay={0.4}>
-                                        <h3 className="text-xl font-bold text-ctr-slate dark:text-white pt-4">Sustainability & Ethics</h3>
+                                        <h3 className="text-xl font-bold text-ctr-slate pt-4">Sustainability & Ethics</h3>
                                         <p>
                                             We are committed to sustainable practices. From sourcing eco-friendly materials to minimizing waste in packaging, we help you build a greener supply chain.
                                         </p>
                                     </FadeIn>
                                     <FadeIn delay={0.5}>
-                                        <h3 className="text-xl font-bold text-ctr-slate dark:text-white pt-4">Leadership</h3>
-                                        <div className="flex flex-col sm:flex-row items-center sm:items-start text-center sm:text-left gap-4 mt-6 pt-6 border-t border-slate-200 dark:border-slate-700">
+                                        <h3 className="text-xl font-bold text-ctr-slate pt-4">Leadership</h3>
+                                        <div className="flex flex-col sm:flex-row items-center sm:items-start text-center sm:text-left gap-4 mt-6 pt-6 border-t border-slate-200">
                                             <div className="relative h-24 w-24 sm:h-32 sm:w-32 lg:h-36 lg:w-36 flex-shrink-0 overflow-hidden rounded-full border-4 border-white shadow-lg">
                                                 <NextImage src="/images/about/team-crystal.webp" alt="Crystal" fill className="object-cover" />
                                             </div>
@@ -112,7 +112,7 @@ export default function AboutPage() {
                             {/* Visual Side */}
                             <div className="relative">
                                 <FadeIn direction="left" delay={0.2}>
-                                    <div className="aspect-w-4 aspect-h-3 rounded-2xl overflow-hidden shadow-glass-lg relative h-[400px] border border-slate-200/60 dark:border-slate-700/60">
+                                    <div className="aspect-w-4 aspect-h-3 rounded-2xl overflow-hidden shadow-glass-lg relative h-[400px] border border-slate-200/60">
                                         <NextImage
                                             src="/images/about/office.webp"
                                             alt="CTR Supply Solutions Shenzhen Office"
@@ -128,8 +128,8 @@ export default function AboutPage() {
                                             <MapPin className="text-ctr-blue h-6 w-6" />
                                         </div>
                                         <div>
-                                            <p className="font-bold text-ctr-slate dark:text-white">HQ: Shenzhen, China</p>
-                                            <p className="text-sm text-slate-500 dark:text-slate-400">Futian District</p>
+                                            <p className="font-bold text-ctr-slate">HQ: Shenzhen, China</p>
+                                            <p className="text-sm text-slate-500">Futian District</p>
                                         </div>
                                     </div>
                                 </div>
@@ -140,7 +140,7 @@ export default function AboutPage() {
             </div>
 
             {/* ─── Wave Divider: Content → CTA ─── */}
-            <SectionDivider fillClass="fill-ctr-dark" className="bg-white dark:bg-slate-950" />
+            <SectionDivider fillClass="fill-ctr-dark" className="bg-white" />
 
             {/* ══════ FINAL CTA ══════ */}
             <section className="relative bg-gradient-to-br from-ctr-dark via-slate-900 to-ctr-slate py-24 sm:py-32 overflow-hidden">
@@ -164,7 +164,7 @@ export default function AboutPage() {
                                         </MagneticButton>
                                     </Link>
                                     <Link href="/services">
-                                        <Button size="lg" variant="outline" className="border-white/20 text-white hover:bg-white/10 dark:hover:bg-slate-950/10">
+                                        <Button size="lg" variant="outline" className="border-white/20 text-white hover:bg-white/10">
                                             Explore Services
                                         </Button>
                                     </Link>

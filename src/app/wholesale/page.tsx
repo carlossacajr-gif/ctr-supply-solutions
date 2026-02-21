@@ -20,7 +20,7 @@ const categories = [
 
 export default function WholesalePage() {
     return (
-        <main className="min-h-screen bg-white dark:bg-slate-950">
+        <main className="min-h-screen bg-white">
             <Navbar />
 
             {/* Hero — Elevated with gradient blobs */}
@@ -66,7 +66,7 @@ export default function WholesalePage() {
                     <FadeIn>
                         <div className="mx-auto max-w-2xl text-center mb-16">
                             <h2 className="text-base font-semibold leading-7 text-ctr-blue">Catalog</h2>
-                            <p className="mt-2 text-3xl font-heading font-bold tracking-tight text-ctr-slate dark:text-white sm:text-4xl">
+                            <p className="mt-2 text-3xl font-heading font-bold tracking-tight text-ctr-slate sm:text-4xl">
                                 What we supply
                             </p>
                         </div>
@@ -79,9 +79,9 @@ export default function WholesalePage() {
                                         <div className="h-10 w-10 rounded-xl bg-ctr-blue/10 flex items-center justify-center group-hover:bg-ctr-blue/20 transition-colors">
                                             <category.icon className="h-5 w-5 text-ctr-blue" />
                                         </div>
-                                        <h3 className="text-lg font-bold text-ctr-slate dark:text-white">{category.name}</h3>
+                                        <h3 className="text-lg font-bold text-ctr-slate">{category.name}</h3>
                                     </div>
-                                    <p className="text-slate-500 dark:text-slate-400 text-sm leading-relaxed">{category.items}</p>
+                                    <p className="text-slate-500 text-sm leading-relaxed">{category.items}</p>
                                 </div>
                             </FadeIn>
                         ))}

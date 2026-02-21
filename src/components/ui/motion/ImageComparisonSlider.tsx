@@ -75,15 +75,15 @@ export function ImageComparisonSlider({
 
             {/* Hardware-accelerated Drag Handle */}
             <motion.div
-                className="absolute top-0 bottom-0 w-[2px] bg-white dark:bg-slate-950 cursor-ew-resize z-20 flex items-center justify-center -ml-[1px] shadow-[0_0_10px_rgba(0,0,0,0.5)]"
+                className="absolute top-0 bottom-0 w-[2px] bg-white cursor-ew-resize z-20 flex items-center justify-center -ml-[1px] shadow-[0_0_10px_rgba(0,0,0,0.5)]"
                 style={{ x }}
                 drag="x"
                 dragConstraints={{ left: 0, right: containerWidth }}
                 dragElastic={0}
                 dragMomentum={false}
             >
-                <div className="w-10 h-10 rounded-full bg-white dark:bg-slate-950 shadow-[0_0_20px_rgba(0,0,0,0.4)] flex items-center justify-center ring-1 ring-slate-200 dark:ring-slate-700 transition-transform group-hover:scale-110">
-                    <GripVertical className="h-5 w-5 text-ctr-slate dark:text-white" />
+                <div className="w-10 h-10 rounded-full bg-white shadow-[0_0_20px_rgba(0,0,0,0.4)] flex items-center justify-center ring-1 ring-slate-200 transition-transform group-hover:scale-110">
+                    <GripVertical className="h-5 w-5 text-ctr-slate" />
                 </div>
             </motion.div>
         </div>

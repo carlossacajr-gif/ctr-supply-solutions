@@ -24,7 +24,7 @@ const stats = [
 
 export default function Home() {
     return (
-        <main className="min-h-screen bg-white dark:bg-slate-950">
+        <main className="min-h-screen bg-white">
             <Navbar />
 
             {/* ═══════════════ HERO — Hook ═══════════════ */}
@@ -86,7 +86,7 @@ export default function Home() {
             <SectionDivider fillClass="fill-slate-50" className="bg-ctr-dark" />
 
             {/* ═══════════════ SERVICES — Explain What ═══════════════ */}
-            <section className="relative py-16 sm:py-24 bg-white dark:bg-slate-950 overflow-hidden">
+            <section className="relative py-16 sm:py-24 bg-white overflow-hidden">
                 {/* Vivid gradient mesh so glass cards have color to blur through */}
                 <div className="absolute top-[5%] left-[-8%] w-[45%] h-[60%] rounded-full bg-sky-200/80 blur-[120px]" />
                 <div className="absolute bottom-[5%] right-[-8%] w-[40%] h-[55%] rounded-full bg-indigo-200/60 blur-[120px]" />
@@ -95,7 +95,7 @@ export default function Home() {
                     <div className="mx-auto max-w-2xl text-center mb-16">
                         <FadeIn>
                             <h2 className="text-base font-semibold leading-7 text-ctr-blue">Our Expertise</h2>
-                            <p className="mt-2 text-3xl font-heading font-bold tracking-tight text-ctr-slate dark:text-white sm:text-4xl">
+                            <p className="mt-2 text-3xl font-heading font-bold tracking-tight text-ctr-slate sm:text-4xl">
                                 Everything you need to source with confidence
                             </p>
                         </FadeIn>
@@ -105,34 +105,34 @@ export default function Home() {
             </section>
 
             {/* ─── Wave Divider: Services → Process ─── */}
-            <SectionDivider fillClass="fill-slate-50" className="bg-white dark:bg-slate-950" />
+            <SectionDivider fillClass="fill-slate-50" className="bg-white" />
 
             {/* ═══════════════ PROCESS — Explain How ═══════════════ */}
             <ScrollytellingProcess />
 
             {/* ─── Wave Divider: Process → Tracker ─── */}
-            <SectionDivider fillClass="fill-slate-100" className="bg-slate-50 dark:bg-slate-900" />
+            <SectionDivider fillClass="fill-slate-100" className="bg-slate-50" />
 
             {/* ═══════════════ TRACKER — Prove Capability ═══════════════ */}
             <ProductionTrackerDemo />
 
             {/* ─── Wave Divider: Tracker → Testimonials ─── */}
-            <SectionDivider fillClass="fill-slate-50" className="bg-slate-100 dark:bg-slate-800" />
+            <SectionDivider fillClass="fill-slate-50" className="bg-slate-100" />
 
             {/* ═══════════════ TESTIMONIALS — Social Proof ═══════════════ */}
             <Testimonials />
 
             {/* ─── Wave Divider: Testimonials → Globe ─── */}
-            <SectionDivider fillClass="fill-slate-100" className="bg-slate-50 dark:bg-slate-900" />
+            <SectionDivider fillClass="fill-slate-100" className="bg-slate-50" />
 
             {/* ═══════════════ GLOBE — Global Reach ═══════════════ */}
-            <section className="py-24 bg-slate-100 dark:bg-slate-800 relative">
+            <section className="py-24 bg-slate-100 relative">
                 <Container className="relative z-20 text-center mb-12">
                     <FadeIn>
-                        <h2 className="text-3xl font-heading font-bold tracking-tight text-ctr-slate dark:text-white sm:text-4xl mb-4">
+                        <h2 className="text-3xl font-heading font-bold tracking-tight text-ctr-slate sm:text-4xl mb-4">
                             From Shenzhen to the World
                         </h2>
-                        <p className="text-slate-500 dark:text-slate-400 max-w-xl mx-auto">
+                        <p className="text-slate-500 max-w-xl mx-auto">
                             Our logistics network covers 50+ countries. Customs, duties, and door-to-door — handled.
                         </p>
                     </FadeIn>
@@ -141,7 +141,7 @@ export default function Home() {
             </section>
 
             {/* ─── Wave Divider: Globe → CTA ─── */}
-            <SectionDivider fillClass="fill-ctr-dark" className="bg-slate-100 dark:bg-slate-800" />
+            <SectionDivider fillClass="fill-ctr-dark" className="bg-slate-100" />
 
             {/* ═══════════════ FINAL CTA — Convert ═══════════════ */}
             <section className="relative bg-gradient-to-br from-ctr-dark via-slate-900 to-ctr-slate py-24 sm:py-32 overflow-hidden">
@@ -167,7 +167,7 @@ export default function Home() {
                                         </MagneticButton>
                                     </Link>
                                     <Link href="/services">
-                                        <Button size="lg" variant="outline" className="border-white/20 text-white hover:bg-white/10 dark:hover:bg-slate-950/10">
+                                        <Button size="lg" variant="outline" className="border-white/20 text-white hover:bg-white/10">
                                             Explore Services
                                         </Button>
                                     </Link>
