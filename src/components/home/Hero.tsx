@@ -10,7 +10,7 @@ export function Hero() {
             <div className="absolute inset-0 -z-10 h-full w-full">
                 <Image
                     src="/images/home/hero.webp"
-                    alt="Industrial Supply Chain Background"
+                    alt="CTR Supply Solutions high-tech industrial manufacturing and supply chain hub"
                     fill
                     className="object-cover object-center opacity-30"
                     priority

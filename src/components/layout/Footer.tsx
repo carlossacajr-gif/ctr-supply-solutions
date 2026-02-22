@@ -45,7 +45,7 @@ export function Footer() {
                         <Link href="/" className="inline-block group">
                             <Image
                                 src="/images/brand/logo-white.svg"
-                                alt="CTR Supply Solutions"
+                                alt="CTR Supply Solutions - Your On-Site Sourcing Partner in China"
                                 width={160}
                                 height={48}
                                 className="h-10 w-auto group-hover:scale-105 transition-transform origin-left"

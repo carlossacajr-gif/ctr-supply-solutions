@@ -33,12 +33,62 @@ export default function LogisticsPage() {
             title="Supply Chain Logistics"
             description="Seamless freight forwarding. From the factory floor to your warehouse door, we handle the movement."
         >
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{
+                    __html: JSON.stringify({
+                        "@context": "https://schema.org",
+                        "@type": "Service",
+                        "name": "Supply Chain Logistics Services",
+                        "provider": {
+                            "@type": "LocalBusiness",
+                            "name": "CTR Supply Solutions"
+                        },
+                        "areaServed": "Worldwide",
+                        "description": "Comprehensive freight forwarding and logistics solutions from China. Sea freight, air freight, and warehousing.",
+                        "hasOfferCatalog": {
+                            "@type": "OfferCatalog",
+                            "name": "Logistics Services",
+                            "itemListElement": [
+                                {
+                                    "@type": "Offer",
+                                    "itemOffered": {
+                                        "@type": "Service",
+                                        "name": "Sea Freight (FCL/LCL)"
+                                    }
+                                },
+                                {
+                                    "@type": "Offer",
+                                    "itemOffered": {
+                                        "@type": "Service",
+                                        "name": "Air Freight & Express"
+                                    }
+                                },
+                                {
+                                    "@type": "Offer",
+                                    "itemOffered": {
+                                        "@type": "Service",
+                                        "name": "Warehousing & Kitting"
+                                    }
+                                },
+                                {
+                                    "@type": "Offer",
+                                    "itemOffered": {
+                                        "@type": "Service",
+                                        "name": "Customs Clearance"
+                                    }
+                                }
+                            ]
+                        }
+                    })
+                }}
+            />
             {/* Hero Image Injection */}
             <FadeIn delay={0.1}>
                 <div className="relative rounded-2xl overflow-hidden mb-16 aspect-video md:aspect-[21/9] shadow-2xl">
                     <Image
                         src={logisticsHeroImg}
-                        alt="Global Shipping Containers"
+                        alt="Stack of global shipping containers at a high-volume port representing CTR logistics expertise"
                         fill
                         priority
                         className="object-cover"
@@ -79,7 +129,7 @@ export default function LogisticsPage() {
                         <div className="relative h-[600px] rounded-2xl overflow-hidden shadow-2xl">
                             <Image
                                 src="/images/services/logistics/logistics-detail.webp"
-                                alt="Modern Logistics Warehouse"
+                                alt="Highly organized modern logistics warehouse in Shenzhen managing international freight"
                                 fill
                                 className="object-cover hover:scale-105 transition-transform duration-700"
                             />

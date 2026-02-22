@@ -33,12 +33,62 @@ export default function SourcingPage() {
             title="Global Sourcing"
             description="Direct access to verified manufacturers. We find the factory, negotiate the price, and manage the relationship."
         >
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{
+                    __html: JSON.stringify({
+                        "@context": "https://schema.org",
+                        "@type": "Service",
+                        "name": "Global Sourcing Services",
+                        "provider": {
+                            "@type": "LocalBusiness",
+                            "name": "CTR Supply Solutions"
+                        },
+                        "areaServed": "Worldwide",
+                        "description": "Direct access to verified manufacturers in China. We handle supplier identification, price negotiation, and sample consolidation.",
+                        "hasOfferCatalog": {
+                            "@type": "OfferCatalog",
+                            "name": "Sourcing Services",
+                            "itemListElement": [
+                                {
+                                    "@type": "Offer",
+                                    "itemOffered": {
+                                        "@type": "Service",
+                                        "name": "Supplier Identification"
+                                    }
+                                },
+                                {
+                                    "@type": "Offer",
+                                    "itemOffered": {
+                                        "@type": "Service",
+                                        "name": "Price Negotiation"
+                                    }
+                                },
+                                {
+                                    "@type": "Offer",
+                                    "itemOffered": {
+                                        "@type": "Service",
+                                        "name": "Sample Consolidation"
+                                    }
+                                },
+                                {
+                                    "@type": "Offer",
+                                    "itemOffered": {
+                                        "@type": "Service",
+                                        "name": "Contract Management"
+                                    }
+                                }
+                            ]
+                        }
+                    })
+                }}
+            />
             {/* Hero Image Injection */}
             <FadeIn delay={0.1}>
                 <div className="relative rounded-2xl overflow-hidden mb-16 aspect-video md:aspect-[21/9] shadow-2xl">
                     <Image
                         src={sourcingHeroImg}
-                        alt="Global Sourcing Meeting"
+                        alt="Professional B2B sourcing meeting between CTR experts and factory management in China"
                         fill
                         priority
                         className="object-cover"
@@ -79,7 +129,7 @@ export default function SourcingPage() {
                         <div className="relative h-[600px] rounded-2xl overflow-hidden shadow-2xl">
                             <Image
                                 src="/images/services/sourcing/sourcing-detail.webp"
-                                alt="Factory Negotiation"
+                                alt="Expert price negotiation session at a reputable manufacturing facility in Shenzhen"
                                 fill
                                 className="object-cover hover:scale-105 transition-transform duration-700"
                             />

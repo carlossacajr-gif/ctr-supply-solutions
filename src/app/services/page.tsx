@@ -60,7 +60,7 @@ export default function ServicesPage() {
                     <FadeIn delay={0.1} className="w-full h-full relative">
                         <NextImage
                             src={servicesHeroImg}
-                            alt="Global Logistics and Sourcing"
+                            alt="Comprehensive Global Logistics and Sourcing solutions from Shenzhen Guangdong"
                             fill
                             className="object-cover opacity-10"
                             priority

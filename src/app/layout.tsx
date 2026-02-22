@@ -81,6 +81,38 @@ export default function RootLayout({
 }>) {
     return (
         <html lang="en">
+            <head>
+                <script
+                    type="application/ld+json"
+                    dangerouslySetInnerHTML={{
+                        __html: JSON.stringify({
+                            "@context": "https://schema.org",
+                            "@type": ["Organization", "LocalBusiness"],
+                            "name": "CTR Supply Solutions",
+                            "url": "https://ctrsupplysolutions.com",
+                            "logo": "https://ctrsupplysolutions.com/images/brand/logo.png",
+                            "image": "https://ctrsupplysolutions.com/opengraph-image.jpg",
+                            "description": "Professional sourcing, quality control, and logistics management in Shenzhen, China. From factory floor to warehouse door.",
+                            "address": {
+                                "@type": "PostalAddress",
+                                "addressLocality": "Shenzhen",
+                                "addressRegion": "Guangdong",
+                                "addressCountry": "CN"
+                            },
+                            "contactPoint": {
+                                "@type": "ContactPoint",
+                                "telephone": "+86-136-3864-5191",
+                                "contactType": "customer service",
+                                "areaServed": "Worldwide",
+                                "availableLanguage": ["English", "Spanish", "Chinese"]
+                            },
+                            "sameAs": [
+                                "https://www.linkedin.com/company/ctr-supply-solutions"
+                            ]
+                        })
+                    }}
+                />
+            </head>
             <body className={`${inter.variable} ${manrope.variable} font-sans overflow-x-hidden w-full bg-slate-50 text-slate-900 antialiased`}>
                 <CustomCursor />
                 <main className="overflow-x-hidden w-full flex flex-col min-h-screen relative">

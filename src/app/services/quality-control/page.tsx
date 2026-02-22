@@ -34,12 +34,62 @@ export default function QualityControlPage() {
             title="Quality Control Services"
             description="Stop quality fade before it starts. Our inspectors are onsite in Shenzhen factories to ensure your product meets spec."
         >
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{
+                    __html: JSON.stringify({
+                        "@context": "https://schema.org",
+                        "@type": "Service",
+                        "name": "Quality Control & Inspection Services",
+                        "provider": {
+                            "@type": "LocalBusiness",
+                            "name": "CTR Supply Solutions"
+                        },
+                        "areaServed": "Worldwide",
+                        "description": "On-site factory inspections, Pre-shipment Inspection (PSI), DUPRO, and Factory Audits in Shenzhen and across China.",
+                        "hasOfferCatalog": {
+                            "@type": "OfferCatalog",
+                            "name": "Quality Control Services",
+                            "itemListElement": [
+                                {
+                                    "@type": "Offer",
+                                    "itemOffered": {
+                                        "@type": "Service",
+                                        "name": "Pre-shipment Inspection (PSI)"
+                                    }
+                                },
+                                {
+                                    "@type": "Offer",
+                                    "itemOffered": {
+                                        "@type": "Service",
+                                        "name": "During Production Inspection (DUPRO)"
+                                    }
+                                },
+                                {
+                                    "@type": "Offer",
+                                    "itemOffered": {
+                                        "@type": "Service",
+                                        "name": "Container Loading Check (CLC)"
+                                    }
+                                },
+                                {
+                                    "@type": "Offer",
+                                    "itemOffered": {
+                                        "@type": "Service",
+                                        "name": "Factory Audit & Verification"
+                                    }
+                                }
+                            ]
+                        }
+                    })
+                }}
+            />
             {/* Hero Image Injection */}
             <FadeIn delay={0.1}>
                 <div className="relative rounded-2xl overflow-hidden mb-16 aspect-video md:aspect-[21/9] shadow-2xl">
                     <Image
                         src={qcHeroImg}
-                        alt="Quality Control Inspection"
+                        alt="Quality Control engineer in Shenzhen performing a detailed technical inspection on electronics"
                         fill
                         priority
                         className="object-cover"
@@ -80,7 +130,7 @@ export default function QualityControlPage() {
                         <div className="relative h-[600px] rounded-2xl overflow-hidden shadow-2xl">
                             <Image
                                 src="/images/services/quality-control/qc-detail.webp"
-                                alt="Quality Inspector in Action"
+                                alt="CTR Quality Inspector onsite at a partner factory verifying production standards"
                                 fill
                                 className="object-cover hover:scale-105 transition-transform duration-700"
                             />

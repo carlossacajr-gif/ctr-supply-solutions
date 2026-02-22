@@ -11,10 +11,11 @@ import { Button } from '../ui/Button';
 import { motion, useScroll, useMotionValueEvent, AnimatePresence } from 'framer-motion';
 
 const navigation = [
-    { name: 'Solutions', href: '/services' },
+    { name: 'Services', href: '/services' },
     { name: 'Wholesale', href: '/wholesale' },
-    { name: 'How it Works', href: '/#how-it-works' },
+    { name: 'Resources', href: '/resources' },
     { name: 'About', href: '/about' },
+    { name: 'Contact', href: '/contact' },
 ];
 
 export function Navbar() {
@@ -70,7 +71,7 @@ export function Navbar() {
                             <Link href="/" className="-m-1.5 p-1.5 flex items-center">
                                 <Image
                                     src="/images/brand/logo.svg"
-                                    alt="CTR Supply Solutions"
+                                    alt="CTR Supply Solutions - China Sourcing & Quality Control Experts"
                                     width={160}
                                     height={48}
                                     className="h-10 w-auto"

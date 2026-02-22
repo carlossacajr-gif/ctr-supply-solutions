@@ -100,7 +100,7 @@ const items = [
             <div className="relative flex flex-1 w-full h-full min-h-[14rem] md:min-h-[8rem] rounded-xl overflow-hidden">
                 <Image
                     src="/images/home/bento-quality.webp"
-                    alt="Quality Control"
+                    alt="Professional Quality Control inspector verifying electronics components in a Shenzhen factory"
                     fill
                     className="object-cover transition-transform duration-500 group-hover/bento:scale-110"
                 />
@@ -117,7 +117,7 @@ const items = [
             <div className="relative flex flex-1 w-full h-full min-h-[14rem] md:min-h-[8rem] rounded-xl overflow-hidden">
                 <Image
                     src="/images/home/bento-sourcing.webp"
-                    alt="Global Sourcing"
+                    alt="China sourcing expert negotiating with a manufacturer in a high-tech facility"
                     fill
                     className="object-cover object-top transition-transform duration-500 group-hover/bento:scale-110"
                 />
@@ -133,7 +133,7 @@ const items = [
             <div className="relative flex flex-1 w-full h-full min-h-[14rem] md:min-h-[8rem] rounded-xl overflow-hidden">
                 <Image
                     src="/images/home/bento-testing.webp"
-                    alt="Component Testing"
+                    alt="Precision component testing using advanced laboratory equipment"
                     fill
                     className="object-cover transition-transform duration-500 group-hover/bento:scale-110"
                 />
@@ -150,7 +150,7 @@ const items = [
             <div className="relative flex flex-1 w-full h-full min-h-[14rem] md:min-h-[8rem] rounded-xl overflow-hidden">
                 <Image
                     src="/images/home/bento-logistics.webp"
-                    alt="Logistics"
+                    alt="Global shipping logistics container ship moving freight from China to the world"
                     fill
                     className="object-cover object-bottom transition-transform duration-500 group-hover/bento:scale-110"
                 />
