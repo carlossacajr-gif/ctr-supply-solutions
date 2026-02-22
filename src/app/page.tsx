@@ -14,6 +14,7 @@ import { WorldGlobe } from '@/components/home/WorldGlobe';
 import { MagneticButton } from '@/components/ui/motion/MagneticButton';
 import { AnimatedCounter } from '@/components/ui/motion/AnimatedCounter';
 import { FadeIn } from '@/components/ui/motion/FadeIn';
+import { TrustBar } from '@/components/sections/TrustBar';
 
 const stats = [
     { value: 500, suffix: '+', label: 'Products Sourced' },
@@ -81,6 +82,8 @@ export default function Home() {
 
             {/* ═══════════════ VIDEO — Company Profile ═══════════════ */}
             <CompanyVideo />
+
+            <TrustBar />
 
             {/* ─── Wave Divider: Hero/Video → Services ─── */}
             <SectionDivider fillClass="fill-slate-50" className="bg-ctr-dark" />

@@ -10,6 +10,11 @@ const footerNavigation = {
         { name: 'Logistics', href: '/services/logistics' },
         { name: 'Wholesale', href: '/wholesale' },
     ],
+    industries: [
+        { name: 'Electronics & PCB', href: '/industries/electronics' },
+        { name: 'CNC Machining', href: '/industries/cnc-machining' },
+        { name: 'Repair Parts', href: '/industries/wholesale' },
+    ],
     company: [
         { name: 'About Us', href: '/about' },
         { name: 'How We Work', href: '/#how-it-works' },
@@ -71,66 +76,76 @@ export function Footer() {
                             </div>
                         </div>
                     </div>
-                    <div className="mt-16 grid grid-cols-2 gap-8 xl:col-span-2 xl:mt-0">
-                        <div className="md:grid md:grid-cols-2 md:gap-8">
-                            <div>
-                                <h3 className="text-xs font-semibold leading-6 text-slate-400 uppercase tracking-widest">Solutions</h3>
-                                <ul role="list" className="mt-6 space-y-4">
-                                    {footerNavigation.solutions.map((item) => (
-                                        <li key={item.name}>
-                                            <Link href={item.href} className="text-sm leading-6 text-slate-300 hover:text-white transition-colors duration-200">
-                                                {item.name}
-                                            </Link>
-                                        </li>
-                                    ))}
-                                </ul>
-                            </div>
-                            <div className="mt-10 md:mt-0">
-                                <h3 className="text-xs font-semibold leading-6 text-slate-400 uppercase tracking-widest">Company</h3>
-                                <ul role="list" className="mt-6 space-y-4">
-                                    {footerNavigation.company.map((item) => (
-                                        <li key={item.name}>
-                                            <Link href={item.href} className="text-sm leading-6 text-slate-300 hover:text-white transition-colors duration-200">
-                                                {item.name}
-                                            </Link>
-                                        </li>
-                                    ))}
-                                </ul>
-                            </div>
+                    <div className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-8 xl:col-span-2 xl:mt-0">
+                        <div>
+                            <h3 className="text-xs font-semibold leading-6 text-slate-400 uppercase tracking-widest">Solutions</h3>
+                            <ul role="list" className="mt-6 space-y-4">
+                                {footerNavigation.solutions.map((item) => (
+                                    <li key={item.name}>
+                                        <Link href={item.href} className="text-sm leading-6 text-slate-300 hover:text-white transition-colors duration-200">
+                                            {item.name}
+                                        </Link>
+                                    </li>
+                                ))}
+                            </ul>
                         </div>
-                        <div className="md:grid md:grid-cols-2 md:gap-8">
-                            <div>
-                                <h3 className="text-xs font-semibold leading-6 text-slate-400 uppercase tracking-widest">Resources</h3>
-                                <ul role="list" className="mt-6 space-y-4">
-                                    {footerNavigation.resources.map((item) => (
-                                        <li key={item.name}>
-                                            <Link href={item.href} className="text-sm leading-6 text-slate-300 hover:text-white transition-colors duration-200">
-                                                {item.name}
-                                            </Link>
-                                        </li>
-                                    ))}
-                                </ul>
-                            </div>
-                            <div className="mt-10 md:mt-0">
-                                <h3 className="text-xs font-semibold leading-6 text-slate-400 uppercase tracking-widest">Connect</h3>
-                                <ul role="list" className="mt-6 space-y-4">
-                                    {footerNavigation.connect.map((item) => (
-                                        <li key={item.name}>
-                                            <a href={item.href} target="_blank" rel="noopener noreferrer" className="text-sm leading-6 text-slate-300 hover:text-white transition-colors duration-200 inline-flex items-center gap-1">
-                                                {item.name}
-                                                <ArrowUpRight className="h-3 w-3" />
-                                            </a>
-                                        </li>
-                                    ))}
-                                </ul>
-                            </div>
+                        <div>
+                            <h3 className="text-xs font-semibold leading-6 text-slate-400 uppercase tracking-widest">Industries</h3>
+                            <ul role="list" className="mt-6 space-y-4">
+                                {footerNavigation.industries.map((item) => (
+                                    <li key={item.name}>
+                                        <Link href={item.href} className="text-sm leading-6 text-slate-300 hover:text-white transition-colors duration-200">
+                                            {item.name}
+                                        </Link>
+                                    </li>
+                                ))}
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 className="text-xs font-semibold leading-6 text-slate-400 uppercase tracking-widest">Company</h3>
+                            <ul role="list" className="mt-6 space-y-4">
+                                {footerNavigation.company.map((item) => (
+                                    <li key={item.name}>
+                                        <Link href={item.href} className="text-sm leading-6 text-slate-300 hover:text-white transition-colors duration-200">
+                                            {item.name}
+                                        </Link>
+                                    </li>
+                                ))}
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 className="text-xs font-semibold leading-6 text-slate-400 uppercase tracking-widest">Resources</h3>
+                            <ul role="list" className="mt-6 space-y-4">
+                                {footerNavigation.resources.map((item) => (
+                                    <li key={item.name}>
+                                        <Link href={item.href} className="text-sm leading-6 text-slate-300 hover:text-white transition-colors duration-200">
+                                            {item.name}
+                                        </Link>
+                                    </li>
+                                ))}
+                            </ul>
                         </div>
                     </div>
                 </div>
-                <div className="mt-16 border-t border-white/10 pt-8 sm:mt-20 lg:mt-24">
-                    <p className="text-xs leading-5 text-slate-500">
-                        &copy; {new Date().getFullYear()} CTR Supply Solutions. All rights reserved.
-                    </p>
+                <div className="mt-16 xl:grid xl:grid-cols-3 xl:gap-8 items-center border-t border-white/10 pt-8">
+                    <div className="col-span-1">
+                        <h3 className="text-xs font-semibold leading-6 text-slate-400 uppercase tracking-widest mb-6">Connect</h3>
+                        <ul role="list" className="flex flex-wrap gap-x-8 gap-y-4">
+                            {footerNavigation.connect.map((item) => (
+                                <li key={item.name}>
+                                    <a href={item.href} target="_blank" rel="noopener noreferrer" className="text-sm leading-6 text-slate-300 hover:text-white transition-colors duration-200 inline-flex items-center gap-1">
+                                        {item.name}
+                                        <ArrowUpRight className="h-3 w-3" />
+                                    </a>
+                                </li>
+                            ))}
+                        </ul>
+                    </div>
+                    <div className="col-span-2 mt-8 xl:mt-0 xl:text-right">
+                        <p className="text-xs leading-5 text-slate-500">
+                            &copy; {new Date().getFullYear()} CTR Supply Solutions. All rights reserved.
+                        </p>
+                    </div>
                 </div>
             </Container>
         </footer>
