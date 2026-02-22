@@ -1,126 +1,126 @@
 {
     "Index": {
-        "title": "Ihre Lieferkette, Kugelsicher.",
-        "subtitle": "Von der Beschaffung bis zur Lieferung — wir verifizieren jedes Glied, damit Sie sich nie Sorgen machen müssen.",
-        "getQuote": "Angebot anfordern",
-        "ourServices": "Unsere Dienstleistungen",
+        "title": "Beschaffung perfektioniert. Qualität gesichert.",
+        "subtitle": "Ihr Team vor Ort in Shenzhen. Wir bauen die Lieferkette. Sie skalieren das Geschäft.",
+        "getQuote": "Projekt starten",
+        "ourServices": "Unsere Leistungen",
         "stats": {
-            "s1": "Beschaffte Produkte",
-            "s2": "Erreichte Länder",
+            "s1": "Produkte beschafft",
+            "s2": "Länder beliefert",
             "s3": "Fehlerquote",
             "s4": "Jahre Erfahrung"
         },
         "expertise": {
-            "badge": "Unsere Expertise",
-            "title": "Alles was Sie brauchen, um sicher zu beschaffen"
+            "badge": "Kernkompetenzen",
+            "title": "Alles, was Sie brauchen. Nichts, was Sie nicht brauchen."
         },
         "globe": {
-            "title": "Von Shenzhen in die Welt",
-            "desc": "Unser Logistiknetzwerk erstreckt sich über mehr als 50 Länder. Zoll, Steuern und Tür-zu-Tür-Lieferung – wir kümmern uns drum."
+            "title": "Aus Shenzhen. Für die Welt.",
+            "desc": "Unser Logistiknetz umfasst über 50 Länder. Zoll, Steuern, Tür zu Tür. Erledigt."
         }
     },
     "Navbar": {
         "solutions": "Lösungen",
         "wholesale": "Großhandel",
         "resources": "Ressourcen",
-        "about": "Über uns",
+        "about": "Über Uns",
         "contact": "Kontakt",
         "getStarted": "Loslegen"
     },
     "ServicesBento": {
         "learnMore": "Mehr erfahren",
         "qc": {
-            "title": "Qualitätskontrolle",
-            "desc": "Inspektionen vor dem Versand und Fabrikaudits, um Null-Fehler zu gewährleisten."
+            "title": "Qualitätskontrolle.",
+            "desc": "Werksaudits. Vorversandinspektion. Null Fehler."
         },
         "sourcing": {
-            "title": "Globale Beschaffung",
-            "desc": "Direkter Zugang zu verifizierten Herstellern in Shenzhen."
+            "title": "Globale Beschaffung.",
+            "desc": "Direkter Zugang. Verifizierte Hersteller. Unschlagbare Preise."
         },
         "testing": {
-            "title": "Komponententests",
-            "desc": "Labortests für Elektronik und Rohstoffe."
+            "title": "Bauteilprüfung.",
+            "desc": "Laboranalysen für Elektronik und Rohmaterialien."
         },
         "logistics": {
-            "title": "Lieferkettenlogistik",
-            "desc": "Nahtlose Spedition, Lagerung und Zollabwicklung von der Fabrik bis zum Endziel."
+            "title": "Supply-Chain-Logistik.",
+            "desc": "Frachtspedition. Zollabwicklung. Vom Werk direkt zu Ihnen."
         }
     },
     "Testimonials": {
-        "badge": "Erfahrungsberichte",
-        "title": "Von Branchenführern vertraut",
+        "badge": "Referenzen",
+        "title": "Das Vertrauen führender Unternehmen.",
         "t1": {
-            "role": "Kunde",
-            "content": "Wenn Sie nach einem Partner suchen, der tiefgreifendes Branchenwissen mit einem starken Verständnis der chinesischen Kultur verbindet, ist CTR Supply Solutions die beste Wahl. Ihre Expertise macht sie zu einem unschätzbaren Verbündeten."
+            "role": "Firmenkunde",
+            "content": "Tiefgreifendes Branchenwissen. Echte kulturelle Kompetenz. CTR ist ein unverzichtbarer Partner."
         },
         "t2": {
-            "role": "Branchenveteran (+14 Jahre)",
-            "content": "Die Arbeit mit CTR Supply Solutions war eine herausragende Erfahrung. Wirksame Professionalität, Fachwissen und ein kundenorientierter Ansatz, der die Erwartungen übertrifft."
+            "role": "Branchenexperte",
+            "content": "Beispiellose Professionalität. Sie erfüllen keine Erwartungen — sie definieren sie neu."
         },
         "t3": {
-            "role": "Langjähriger Partner (5 Jahre)",
-            "content": "Ich bin immer wieder von ihrer Professionalität beeindruckt. Die starke Führung von Crystal bei der Leitung des Teams ist außergewöhnlich, mit einem großen Fokus auf wichtige Prozessdetails und Kundenzufriedenheit."
+            "role": "Partner",
+            "content": "Herausragende Führung. Die Detailgenauigkeit ist schlicht beeindruckend."
         },
         "t4": {
-            "role": "Kunde",
-            "content": "Wir sind unglaublich dankbar für die Flexibilität und Geduld, die das Projektteam von CTR gezeigt hat. Die Fähigkeit, sich an unsere logistischen Anforderungen anzupassen, insbesondere in schwierigen Situationen, hat einen großen Unterschied gemacht."
+            "role": "Firmenkunde",
+            "content": "Bemerkenswert anpassungsfähig. Ihre Flexibilität hat unsere Zeitpläne mehrfach gerettet."
         },
         "t5": {
-            "role": "Kunde",
-            "content": "Das Team von CTR ist wirklich außergewöhnlich. Es ist zielgerichtet, präzise und methodisch. Es ist eine Freude, mit ihnen zusammenzuarbeiten, da ihr tiefes Verständnis des chinesischen Marktes erstklassig ist."
+            "role": "Firmenkunde",
+            "content": "Präzise. Methodisch. Brillant. Sie verbinden chinesische Fertigung mit westlichem Business reibungslos."
         },
         "t6": {
-            "role": "Kunde",
-            "content": "Wir schätzen die Flexibilität und Geduld des Managementteams von CTR sehr. Ihre Fähigkeit, sich anzupassen und Probleme schnell zu lösen, gibt uns immense operative Sicherheit."
+            "role": "Firmenkunde",
+            "content": "Ein echter Partner. Ihre Geduld bei komplexen Anforderungen macht den Unterschied."
         }
     },
     "TrustBar": {
-        "title": "Vertrauenswürdiger Partner von globalen Marken und Reparaturketten"
+        "title": "Vertrauenspartner globaler Marken und Serviceketten."
     },
     "Process": {
-        "badge": "Prozess",
-        "title": "Wie wir arbeiten",
+        "badge": "Methodik",
+        "title": "Unser Prozess.",
         "s1": {
-            "title": "Senden Sie Ihre Spezifikationen",
-            "desc": "Teilen Sie uns Ihre Produktanforderungen, Ihren Zielpreis und Ihre Qualitätsstandards mit. Wir prüfen alles innerhalb von 48 Stunden."
+            "title": "Spezifikationen übermitteln.",
+            "desc": "Teilen Sie Anforderungen, Zielpreis und Qualitätsstandards mit. Bewertung innerhalb von 48 Stunden."
         },
         "s2": {
-            "title": "Wir überprüfen & beschaffen",
-            "desc": "Unser Team vor Ort identifiziert verifizierte Hersteller. Wir besuchen Fabriken, um deren Fähigkeiten zu überprüfen."
+            "title": "Verifizierung & Sourcing.",
+            "desc": "Unser Team vor Ort prüft die tatsächlichen Kapazitäten. Wir finden das richtige Werk, nicht das erstbeste."
         },
         "s3": {
-            "title": "Muster & Tests",
-            "desc": "Wir beschaffen Muster und führen unabhängige Tests in unserem Labor in Shenzhen durch. Sie erhalten vor der Massenproduktion einen Videobericht."
+            "title": "Muster & Tests.",
+            "desc": "Prototypen beschaffen. Unabhängige Tests mit Videobericht. Alles vor der Serienproduktion."
         },
         "s4": {
-            "title": "Produktion & Qualitätskontrolle",
-            "desc": "Kontinuierliche Überwachung während der Massenproduktion. Wir führen eine abschließende Inspektion vor dem Versand durch, um Fehlerfreiheit zu gewährleisten."
+            "title": "Produktion & Inspektion.",
+            "desc": "Kontinuierliche Überwachung. Einwandfreie Ausführung. Endinspektion für garantierte Fehlerfreiheit."
         }
     },
     "Tracker": {
-        "title": "Transparenz ist kein Modewort. Es ist unser Standard.",
-        "desc": "Die meisten Beschaffungsagenten tauchen nach der Anzahlung unter. Wir bieten eine detaillierte Meilensteinverfolgung und schaffen Klarheit bei jedem Schritt – von der Rohstoffprüfung bis zum endgültigen Versand.",
-        "btn_load": "Zeitplan wird geladen...",
-        "btn_flow": "Prozessablauf anzeigen",
-        "tracking_label": "SENDUNGSNUMMER",
+        "title": "Volle Transparenz. Keine Überraschungen.",
+        "desc": "Weil 'wir kümmern uns darum' keine Strategie ist. Wir bieten lückenloses Tracking vom Rohstoff bis zur Auslieferung.",
+        "btn_load": "Timeline wird geladen...",
+        "btn_flow": "Prozess ansehen",
+        "tracking_label": "TRACKING",
         "active_label": "AKTIV",
-        "delivered_status": "Geliefert",
-        "checking_status": "Wird geprüft...",
+        "delivered_status": "Zugestellt",
+        "checking_status": "Prüfung läuft...",
         "steps": {
             "s1": {
-                "status": "Bestellung erhalten",
+                "status": "Auftrag eingegangen",
                 "date": "24. Okt"
             },
             "s2": {
-                "status": "Rohstoffprüfung",
+                "status": "Materialprüfung",
                 "date": "26. Okt"
             },
             "s3": {
-                "status": "Produktionslinie",
+                "status": "In Produktion",
                 "date": "02. Nov"
             },
             "s4": {
-                "status": "Abschließende QC (PSI)",
+                "status": "Endkontrolle (PSI)",
                 "date": "10. Nov"
             },
             "s5": {
@@ -130,279 +130,290 @@
         }
     },
     "Video": {
-        "title": "Einblicke in unsere Abläufe",
-        "desc": "Werfen Sie einen Blick in unsere Betriebe in Shenzhen und sehen Sie, wie wir globale Lieferketten sichern."
+        "title": "Hinter den Kulissen.",
+        "desc": "Erfahren Sie, wie wir Supply Chains globaler Marken absichern — direkt aus dem Herzen von Shenzhen."
     },
     "Hero": {
-        "tagline_start": "Ihr Team vor Ort in Shenzhen.",
-        "tagline_link": "Mehr dazu",
-        "title": "End-to-End Supply-Chain-Lösungen",
-        "desc": "Wir finden nicht nur Lieferanten. Wir prüfen, auditieren und testen sie, um sicherzustellen, dass Ihre Lieferkette niemals abreißt. Von der Compliance im Werk bis zum endgültigen Komponententest.",
+        "tagline_start": "Ihr Team in Shenzhen.",
+        "tagline_link": "Mehr erfahren",
+        "title": "Lieferketten. Unverwüstlich.",
+        "desc": "Wir suchen nicht nur Lieferanten. Wir auditieren, verifizieren, testen. Von der Fabrik bis zum Endprodukt — Ihre Operation ist abgesichert.",
         "btn_primary": "Projekt starten",
-        "btn_secondary": "Dienstleistungen erkunden"
+        "btn_secondary": "Leistungen entdecken"
     },
     "Services": {
-        "badge": "Unsere Expertise",
-        "title": "Alles, was Sie für eine sichere Beschaffung benötigen",
-        "desc": "Wir sind Ihre Augen und Ohren in der Fabrik und schützen Ihre Marke vor Qualitätsverlusten und Lieferkettenrisiken.",
+        "badge": "Leistungen",
+        "title": "Importieren mit absoluter Sicherheit.",
+        "desc": "Ihre Augen und Ohren in der Fabrik. Wir schützen Ihre Marke vor Qualitätsrisiken.",
         "s1": {
             "name": "Qualitätskontrolle",
-            "desc": "Inspektionen vor dem Versand und Fabrikaudits für null Fehlertoleranz."
+            "desc": "Werksaudits. Vorversandinspektion. Null Fehler."
         },
         "s2": {
             "name": "Globale Beschaffung",
-            "desc": "Direkter Zugang zu verifizierten Herstellern in Shenzhen und darüber hinaus."
+            "desc": "Direkter Zugang. Verifizierte Hersteller. Grenzenlose Skalierung."
         },
         "s3": {
-            "name": "Komponententests",
-            "desc": "Labortests für Elektronik und Rohstoffe."
+            "name": "Bauteilprüfung",
+            "desc": "Laboranalysen für Elektronik und Rohmaterialien."
         },
         "s4": {
-            "name": "Lieferkettenaudit",
-            "desc": "Umfassende Prüfung der Fähigkeiten und der Ethik von Lieferanten."
+            "name": "Lieferantenaudit",
+            "desc": "Tiefenanalyse technischer Kapazitäten und ethischer Konformität."
         },
-        "link": "Mehr erfahren"
+        "link": "Details erfahren"
     },
     "Globe": {
-        "live_label": "Live-Logistiknetzwerk"
+        "live_label": "Globales Logistiknetz aktiv"
     },
     "HowItWorks": {
-        "badge": "Prozess",
-        "title": "Wie wir arbeiten",
+        "badge": "Der Prozess",
+        "title": "Unser Prozess.",
         "steps": {
             "s1": {
-                "name": "Senden Sie Ihre Spezifikationen",
-                "desc": "Teilen Sie uns Ihre Produktanforderungen, Ihren Zielpreis und Ihre Qualitätsstandards mit."
+                "name": "Spezifikationen",
+                "desc": "Technische Anforderungen. Zielpreise. Kompromisslose Qualität."
             },
             "s2": {
-                "name": "Wir überprüfen & beschaffen",
-                "desc": "Unser Team identifiziert die am besten qualifizierten Fabriken und führt erste Audits durch."
+                "name": "Sourcing",
+                "desc": "Identifizierung realer Fabriken und technischer Kapazitäten."
             },
             "s3": {
-                "name": "Muster & Tests",
-                "desc": "Wir beschaffen Muster und führen unabhängige Funktionstests durch."
+                "name": "Tests & Muster",
+                "desc": "Unabhängige Labortests an Originalmustern."
             },
             "s4": {
-                "name": "Produktion & Qualitätskontrolle",
-                "desc": "Kontinuierliche Überwachung während der Massenproduktion mit abschließender Inspektion vor dem Versand."
+                "name": "Produktion",
+                "desc": "Permanente Überwachung und Vorversandinspektion."
             }
         }
     },
     "About": {
         "metadata": {
-            "title": "Über Uns | 15+ Jahre in Shenzhen",
-            "desc": "Unser Team aus Ingenieuren und Supply-Chain-Veteranen mit Sitz in Shenzhen seit 2009 setzt Ihre Fertigungsstrategie in China mit Präzision um."
+            "title": "Über Uns | CTR Supply Solutions",
+            "desc": "Seit über 15 Jahren in Shenzhen. Wir setzen Ihre China-Fertigungsstrategie mit chirurgischer Präzision um."
         },
         "hero": {
-            "title": "Ihr Team vor Ort",
-            "desc": "Wir schließen die Lücke zwischen globalen Marken und der chinesischen Produktion. Nicht nur ein Beschaffungsagent, sondern ein kompletter Supply-Chain-Partner."
+            "title": "Ihr Team an vorderster Front.",
+            "desc": "Wir verbinden globale Marken mit Chinas bester Fertigung. Kein Agent. Ein strategischer Partner."
         },
         "stats": {
             "s1": "Jahre Erfahrung",
-            "s2": "Fabriken geprüft",
-            "s3": "Länder bedient",
-            "s4": "Fehler toleriert"
+            "s2": "Auditierte Werke",
+            "s3": "Belieferte Länder",
+            "s4": "Fehlertoleranz"
         },
         "mission": {
-            "badge": "Unsere Mission",
-            "title": "Beseitigen Sie die Risiken der chinesischen Produktion.",
-            "p1": "Die asiatische Fabrik bietet unglaubliche Möglichkeiten, aber auch erhebliche Risiken. Qualitätseinbußen, Kommunikationsabbrüche oder Frachtverzögerungen können Ihre Margen zerstören.",
-            "p2_start": "Um dieses Dilemma zu lösen, wurden CTR Supply Solutions gegründet. Das Unternehmen befindet sich in",
+            "badge": "Mission",
+            "title": "Fertigung in China. Ohne das Risiko.",
+            "p1": "China bietet unvergleichliche Produktionskapazitäten. Doch die Risiken? Qualitätsverlust. Verzögerungen. Kommunikationslücken. Sie können Ihre Margen zerstören.",
+            "p2_start": "Dafür gibt es CTR. Ansässig in",
             "p2_strong": "Shenzhen",
-            "p2_end": ", dem weltweiten Mekka der Leiterplatten, und wir teilen dieselbe Sprache, verinnerlichen die Kultur und inspizieren die Fabriken persönlich.",
-            "sus_title": "Nachhaltigkeit und Arbeitsethik",
-            "sus_desc": "Wir halten die Umweltvorschriften in allen Geschäftsphasen ein. Von der Beschaffung kohlenstoffarmer Materialien bis zur Vermeidung von Kunststoffkomponenten bei Industrieverpackungen.",
-            "lead_title": "Die Führung",
-            "lead_desc": "Unter der Leitung von Crystal vereint unser Expertenteam mehr als 15 Jahre Logistikerfahrung, um das Niveau der Anforderungen und das Engagement jedes Vertriebspartners sicherzustellen. Wir steuern nicht nur die Ordnung, wir knüpfen Verbindungen."
+            "p2_end": "—der Hardware-Hauptstadt der Welt. Wir sprechen die Sprache. Wir kennen die Kultur. Und wir pflegen direkte Beziehungen zu den Herstellern.",
+            "sus_title": "Nachhaltigkeit.",
+            "sus_desc": "Umweltfreundliche Materialien. Weniger Verschwendung. Wir bauen eine grüne, intelligente Supply Chain.",
+            "lead_title": "Führung & Autorität.",
+            "lead_desc": "Über 15 Jahre Erfahrung. Standards ohne Kompromisse. Wir verwalten keine Bestellungen — wir bauen Geschäftsbeziehungen."
         },
         "hq": {
-            "title": "Hauptsitz: Shenzhen, China",
-            "district": "Futian-Bezirk"
+            "title": "Zentrale: Shenzhen, China",
+            "district": "Longgang-Distrikt"
+        },
+        "contact_info": {
+            "title": "Kontakt aufnehmen.",
+            "offices_label": "Unsere Büros",
+            "sz_office": "Büro Shenzhen",
+            "sz_address": "Liuwei Business Center, No. 6, Longjing Community, Yangmei Community, Bantian Street, Longgang District, Shenzhen",
+            "hk_office": "Büro Hongkong",
+            "hk_address": "Rm C20, Blk C, 3/F, East Sun Ind Centre, 16 Shing Yip Street, Kwun Tong, Hong Kong",
+            "email_label": "E-Mail",
+            "whatsapp_label": "WhatsApp",
+            "wechat_label": "WeChat"
         },
         "cta": {
-            "title": "Integrieren und konsolidieren Sie Ihr Team",
-            "desc": "Lassen Sie uns operative Komplexitäten in Asien managen, während Sie sich auf das Geschäftswachstum konzentrieren.",
-            "btn_primary": "Jetzt Angebot anfordern",
-            "btn_secondary": "Dienstleistungen erkunden"
+            "title": "Gemeinsam aufbauen.",
+            "desc": "Wir managen die Fertigungskomplexität. Sie konzentrieren sich auf maximales Wachstum.",
+            "btn_primary": "Angebot anfordern",
+            "btn_secondary": "Leistungen ansehen"
         }
     },
     "Contact": {
-        "title": "Projekt starten",
-        "desc": "Überspringen Sie das generische Kontaktformular. Nutzen Sie unseren ingenieurspezifischen Projektqualifikator, um einen direkten strategischen Beschaffungsplan von unserem Team vor Ort zu erhalten.",
-        "channels": "Direkte Kanäle",
+        "title": "Starten Sie Ihr Projekt.",
+        "desc": "Schluss mit generischen Formularen. Nutzen Sie unser technisches Bewertungssystem und erhalten Sie eine Roadmap direkt von unseren Ingenieuren in Shenzhen.",
+        "channels": "Direktkanäle",
         "hq_label": "Hauptsitz",
-        "hq_city": "Futian-Bezirk, Shenzhen, China"
+        "hq_city": "Longgang-Distrikt, Shenzhen"
     },
     "TechnicalInquiry": {
         "industries": {
             "electronics": "Elektronik",
             "cnc": "CNC-Bearbeitung",
-            "wholesale": "Groß-/Einzelhandel",
-            "other": "Sonstige Herstellung"
+            "wholesale": "Großhandel/Einzelhandel",
+            "other": "Sonstige Fertigung"
         },
         "step1": {
-            "title": "Wählen Sie Ihre Branche",
-            "desc": "Dies hilft uns, Ihrem Projekt das richtige Ingenieurteam zuzuweisen.",
+            "title": "Branche auswählen.",
+            "desc": "So leiten wir Sie an das spezialisierte Ingenieurteam weiter.",
             "btn_continue": "Weiter"
         },
         "step2": {
             "btn_back": "Zurück",
-            "title": "Projektvolumen & -skalierung",
-            "desc": "Skalieren Sie einen Prototyp oder verwalten Sie eine Massenproduktion mit hohem Volumen?",
-            "volume_pilot": "Pilot-/Verifizierungscharge (100 - 500 Einheiten)",
-            "volume_scale": "Massenproduktionsmaßstab (500 - 5.000 Einheiten)",
-            "volume_enterprise": "Unternehmen/Hohes Volumen (5.000+ Einheiten)",
-            "btn_specs": "Technische Daten"
+            "title": "Volumen & Skalierung.",
+            "desc": "Prototyping oder Serienfertigung?",
+            "volume_pilot": "Pilotcharge (100 - 500 St.)",
+            "volume_scale": "Serienfertigung (500 - 5.000 St.)",
+            "volume_enterprise": "Enterprise-Level (5.000+ St.)",
+            "btn_specs": "Technische Spezifikationen"
         },
         "step3": {
-            "title": "Technische Anforderungen",
-            "desc": "Listen Sie spezifische Toleranzen, Zertifizierungen (CE, UL, RoHS) oder Materialstandards auf.",
-            "placeholder": "z.B. ±0,02 mm Toleranzen bei Aluminium 6061-Komponenten, UL-Zertifizierung erforderlich, DDP-Versand in die USA.",
-            "upload_title": "Baupläne / RFQ hochladen",
-            "upload_desc": "Legen Sie Ihre .PDF-, .STEP- oder .XLSX-Dateien hier ab (Max 50MB)",
-            "btn_final": "Letzter Kontakt"
+            "title": "Technische Spezifikationen.",
+            "desc": "Toleranzen. Zertifizierungen. Materialien. Teilen Sie uns alles mit.",
+            "placeholder": "Z.B. ±0,02 mm, Aluminium 6061, UL-zertifiziert, DDP-Lieferung nach Deutschland.",
+            "upload_title": "Dateien hochladen",
+            "upload_desc": ".PDF-, .STEP- oder .XLSX-Dateien hier ablegen (Max 50MB)",
+            "btn_final": "Abschließende Konfiguration"
         },
         "step4": {
-            "title": "Berufliche Details",
-            "desc": "Schließen Sie Ihre Anfrage ab, um einen maßgeschneiderten strategischen Beschaffungsplan zu erhalten.",
+            "title": "Geschäftsdaten.",
+            "desc": "Fast geschafft. Geben Sie Ihre Kontaktdaten ein, um einen Beschaffungsplan zu generieren.",
             "labels": {
                 "first_name": "Vorname",
                 "last_name": "Nachname",
-                "company": "Firmenwebsite",
+                "company": "Unternehmenswebsite",
                 "email": "Geschäftliche E-Mail"
             },
             "placeholders": {
                 "first_name": "Max",
-                "last_name": "Mustermann",
-                "company": "www.beispiel.de",
-                "email": "max@beispiel.de"
+                "last_name": "Müller",
+                "company": "www.unternehmen.de",
+                "email": "max@unternehmen.de"
             },
-            "btn_submitting": "Anforderungen werden verarbeitet...",
-            "btn_submit": "Technische Anfrage absenden",
-            "agreement": "Mit dem Absenden stimmen Sie unserer Datenschutzrichtlinie und den NDA-Standards zu."
+            "btn_submitting": "Wird verarbeitet...",
+            "btn_submit": "Technische Anfrage senden",
+            "agreement": "Mit dem Absenden akzeptieren Sie unsere strenge NDA-Vereinbarung."
         },
         "success": {
-            "title": "Anfrage erhalten",
+            "title": "Anfrage erhalten.",
             "desc_start": "Vielen Dank, ",
-            "desc_mid": ". Unser technischer Leiter für ",
-            "desc_end": " wird Ihre Spezifikationen prüfen und Sie innerhalb von 24 Stunden kontaktieren, um ein ausführliches Gespräch zu vereinbaren.",
-            "guarantee_title": "Vertraulichkeitsgarantie",
-            "guarantee_desc": "Alle über dieses Formular gesendeten Baupläne und Daten sind durch unser Master-NDA geschützt. Wir geben niemals proprietäre Designs an unqualifizierte Anbieter weiter."
+            "desc_mid": ". Unser leitender Ingenieur für ",
+            "desc_end": " wird sich innerhalb von 24 Stunden bei Ihnen melden.",
+            "guarantee_title": "Vertraulichkeit garantiert.",
+            "guarantee_desc": "Ihre Designs sind durch ein strenges NDA geschützt. Wir teilen niemals proprietäre Entwürfe."
         },
-        "error_alert": "Technischer Fehler beim Absenden der Anfrage. Bitte versuchen Sie es per direkter E-Mail: info@ctrsupplysolutions.com"
+        "error_alert": "Verbindungsfehler. Kontaktieren Sie uns direkt unter info@ctrsupplysolutions.com"
     },
     "ServicesPage": {
         "metadata": {
-            "title": "Supply-Chain-Services",
-            "desc": "Von der Fabrikhalle bis zum Lagertor. Entdecken Sie unsere umfassenden Dienstleistungen, einschließlich Qualitätskontrolle, Global Sourcing und Logistik."
+            "title": "Leistungen | Qualität, Beschaffung, Logistik",
+            "desc": "Von der Fabrik bis zum Lager. Absolute Kontrolle über Ihre B2B-Lieferkette."
         },
         "hero": {
-            "title": "Umfassende Supply-Chain-Services",
-            "desc": "Von der Suche nach der Fabrik bis zur Lieferung des Containers. Wir sind Ihr End-to-End-Partner in China."
+            "title": "Vollständige Kontrolle. Von A bis Z.",
+            "desc": "Von der Planung bis zur Containeröffnung. Ihr zuverlässiger Partner in China."
         },
         "services": {
             "s1": {
                 "name": "Qualitätskontrolle",
-                "desc": "Inspektionen vor Ort und Werksaudits, um sicherzustellen, dass Ihre Produkte internationalen Standards entsprechen."
+                "desc": "Inspektionen vor Ort. Null Fehler."
             },
             "s2": {
-                "name": "Global Sourcing",
-                "desc": "Wir identifizieren verifizierte Hersteller, verhandeln Konditionen und steuern den Beschaffungsprozess."
+                "name": "Globale Beschaffung",
+                "desc": "Verifizierte Fabriken. Harte Verhandlungen."
             },
             "s3": {
-                "name": "Logistikmanagement",
-                "desc": "Tür-zu-Tür-Versand, Zollabfertigung und Lagerlösungen, zugeschnitten auf Ihren Zeitplan."
+                "name": "Zolllogistik",
+                "desc": "Tür zu Tür. Reibungslose Zollabwicklung."
             }
         },
-        "btn_learn": "Mehr erfahren",
+        "btn_learn": "Details erfahren",
         "cta": {
             "title": "Benötigen Sie eine maßgeschneiderte Lösung?",
-            "desc": "Erzählen Sie uns von Ihrem Produkt. Wir erstellen innerhalb von 48 Stunden einen Beschaffungs- und Qualitätskontrollplan.",
-            "btn_primary": "Ein Angebot einholen",
-            "btn_secondary": "Großhandel durchsuchen"
+            "desc": "Beschreiben Sie Ihr Produkt. Wir erstellen den Plan innerhalb von 48 Stunden.",
+            "btn_primary": "Angebot anfordern",
+            "btn_secondary": "Großhandelskatalog"
         }
     },
     "WholesalePage": {
         "metadata": {
-            "title": "Elektronik & Ersatzteile im Großhandel",
-            "desc": "Preise direkt ab Werk für mobile Bildschirme, Laptop-Teile, generalüberholte Geräte und Reparaturwerkzeuge. Sichern Sie Ihre B2B-Lieferkette direkt aus Shenzhen."
+            "title": "Elektronik-Großhandel | Direkt ab Werk",
+            "desc": "Werkspreise für Displays, Laptopteile und Reparaturwerkzeuge. Direkt aus Shenzhen."
         },
         "hero": {
-            "title": "Großhandelskomponenten",
-            "desc": "Hochwertige Reparaturteile und Werkzeuge für professionelle Servicezentren. MOQ gilt.",
+            "title": "Hardware im Großhandel. Ohne Umwege.",
+            "desc": "Premium-Ersatzteile und Werkzeuge für professionelle Servicezentren.",
             "btn_quote": "Preisliste anfordern"
         },
         "catalog": {
             "label": "Katalog",
-            "title": "Was wir liefern"
+            "title": "Unser Angebot."
         },
         "categories": {
             "screens": {
-                "name": "Mobile Bildschirme",
-                "items": "iPhone, Samsung, Huawei, Xiaomi"
+                "name": "Mobile Displays",
+                "items": "Apple, Samsung, Huawei, Xiaomi. OEM und Premium-Aftermarket."
             },
             "laptop": {
-                "name": "Laptop-Teile",
-                "items": "MacBook-Bildschirme, Batterien, Tastaturen"
+                "name": "Laptop-Komponenten",
+                "items": "Retina-Displays, Akkus, Tastaturen."
             },
             "refurbished": {
-                "name": "Generalüberholte Geräte",
-                "items": "iPhones, iPads, MacBooks (Klasse A/B)"
+                "name": "Refurbished-Geräte",
+                "items": "iPhones Grad A/B, iPads und MacBooks."
             },
             "smart": {
                 "name": "Smart Home & IoT",
-                "items": "Sensoren, Hubs, Überwachungskameras"
+                "items": "Sensoren. Zentrale Hubs. IP-Sicherheitskameras."
             },
             "tools": {
                 "name": "Reparaturwerkzeuge",
-                "items": "Spitzen, Lötstationen, Mikroskope"
+                "items": "Lötstationen. Hochpräzisionsmikroskope."
             },
             "parts": {
-                "name": "Kleinteile",
-                "items": "Flexkabel, Kameras, Gehäuse, ICs"
+                "name": "Mikrokomponenten",
+                "items": "Flexkabel, Kameras, Logik-ICs, Gehäuse."
             }
         },
         "cta": {
-            "title": "Benötigen Sie ein bestimmtes Teil?",
-            "desc": "Wir beziehen direkt von OEMs und hochwertigen Aftermarket-Fabriken. Sagen Sie uns, was Sie brauchen.",
+            "title": "Suchen Sie ein spezielles Bauteil?",
+            "desc": "Wir beschaffen direkt von hochwertigen OEM-Fabriken. Sagen Sie uns, was Sie brauchen.",
             "btn_submit": "Anfrage senden"
         }
     },
     "Footer": {
         "cta": {
             "title": "Bereit zum Skalieren?",
-            "btn_start": "Starten Sie Ihr Projekt"
+            "btn_start": "Projekt starten"
         },
         "brand": {
-            "desc": "Ihr Partner vor Ort in Shenzhen. Wir gewährleisten Qualität, Stabilität und ethische Beschaffung für globale Unternehmen.",
-            "location": "Shenzhen, China"
+            "desc": "Ihre Operativen in Shenzhen. Qualität gepanzert. Globale Reichweite. Margen intakt.",
+            "location": "Shenzhen, China."
         },
         "nav": {
             "solutions": {
                 "label": "Lösungen",
-                "quality": "Qualitätskontrolle",
-                "sourcing": "Beschaffung",
-                "logistics": "Logistik",
-                "wholesale": "Großhandel"
+                "quality": "Qualität/QC",
+                "sourcing": "Globale Beschaffung",
+                "logistics": "Zolllogistik",
+                "wholesale": "Elektronik-Großhandel"
             },
             "industries": {
                 "label": "Branchen",
                 "pcb": "Elektronik & PCB",
-                "cnc": "CNC-Bearbeitung",
-                "repair": "Ersatzteile"
+                "cnc": "CNC-Fertigung",
+                "repair": "Einzelhandel & Reparatur"
             },
             "company": {
                 "label": "Unternehmen",
                 "about": "Über Uns",
-                "work": "Wie wir arbeiten",
+                "work": "Unsere Methodik",
                 "contact": "Kontakt"
             },
             "resources": {
-                "label": "Ressourcen",
-                "guides": "Technische Anleitungen",
-                "audit": "CNC-Fabrik-Audit",
-                "native": "Lokale Beschaffung",
-                "incoterms": "Incoterms-Leitfaden"
+                "label": "Ressourcen & Leitfäden",
+                "guides": "B2B-Leitfäden",
+                "audit": "Werksaudits",
+                "native": "Natives Sourcing",
+                "incoterms": "Incoterms-Guide"
             }
         },
         "connect": {
@@ -413,32 +424,32 @@
     "ResourcesData": {
         "articles": {
             "attention-china-sourcing-risks": {
-                "title": "Die Versteckten Risiken bei der Beschaffung in China Ohne Lokalen Partner",
-                "excerpt": "Von 10 Lieferanten auf Alibaba sind oft nur 1 oder 2 echte Hersteller. Erfahren Sie, wie Sie falsche Fabriken erkennen und Ihre Lieferkette schützen.",
+                "title": "Die tödlichen Risiken der Blindbeschaffung.",
+                "excerpt": "Ein Klick auf Alibaba ist keine Supply-Chain-Strategie. Schützen Sie Ihre Marke vor Scheinfabriken.",
                 "category": "Risikomanagement",
-                "author": "CTR Sourcing-Team",
-                "content": "<p class=\"text-xl text-slate-600 leading-relaxed mb-8 font-medium\">Sie haben den perfekten Lieferanten auf Alibaba gefunden. Ihr Profil rühmt sich einer riesigen Fabrik, ISO-Zertifizierungen und eines eleganten Unternehmensvideos. Der angebotene Preis entspricht genau dem Budget Ihres Einkaufsteams. Es scheint fast zu schön, um wahr zu sein.</p><p class=\"text-xl text-slate-800 leading-relaxed mb-8 font-bold\">Und das ist es leider auch meistens.</p><h2 class=\"text-3xl font-bold text-ctr-slate mt-12 mb-6\">Die Illusion des Digitalen Herstellers</h2><p class=\"mb-6\">Kürzlich bat ein Kunde unser Team in Shenzhen vor Ort, eine Auswahlliste von 10 vielversprechenden „Herstellern“ zu überprüfen, die sie online für eine massive Bestellung von Unterhaltungselektronik gefunden hatten. Der Kunde hatte bereits Wochen damit verbracht, mit diesen Unternehmen zu kommunizieren, die hochgeladenen Patentzertifikate zu überprüfen und sich Videos ihrer Produktionslinien anzusehen.</p><p class=\"mb-6\">Was entdeckte unser Audit-Team, als es physisch zu diesen Standorten reiste?</p><ul class=\"list-disc pl-6 mb-8 mt-4 space-y-2 text-slate-700\"><li>Zwei der konkurrierenden „Unternehmen“ waren in Wirklichkeit Handelsagenturen, die aus exakt derselben kleinen Fabrik heraus operierten.</li><li>Sieben der Unternehmen besaßen überhaupt keine Produktionsanlagen; sie waren Mittelsmänner, die Archivmaterial anderer Fabriken auf ihren Alibaba-Seiten verwendeten.</li><li><strong>Nur ein einziges Unternehmen</strong> von den zehn entsprach tatsächlich seinem Online-Profil und besaß die 9 aktiven Produktionslinien, die es vorgab zu haben.</li></ul><h2 class=\"text-3xl font-bold text-ctr-slate mt-12 mb-6\">Die Kosten des Blindflugs</h2><p class=\"mb-6\">Für ausländische Käufer, die die chinesischen Unternehmensstrukturen oder das lokale Ökosystem nicht verstehen, ist die Navigation durch den B2B-Markt ein Minenfeld. Sich ausschließlich auf digitale Kommunikation und Online-Überprüfungen zu verlassen, setzt Ihr Unternehmen ernsthaften Risiken aus:</p><div class=\"p-8 rounded-2xl bg-red-50 border border-red-100 my-10\"><h4 class=\"font-bold text-red-600 mb-4 uppercase tracking-widest text-sm\">Risiko 1: Der Verschwindende Lieferant</h4><p class=\"text-slate-700\">Handelsunternehmen, die sich als Hersteller ausgeben, verfügen oft nicht über eigenes Kapital. Wenn ein massiver Qualitätsfehler auftritt oder die Rohstoffpreise in die Höhe schnellen, können sie einfach ihr Alibaba-Konto löschen und verschwinden, sodass Sie keinerlei rechtliche Handhabe haben.</p></div><div class=\"p-8 rounded-2xl bg-orange-50 border border-orange-100 my-10\"><h4 class=\"font-bold text-orange-600 mb-4 uppercase tracking-widest text-sm\">Risiko 2: Die Lockvogel-Taktik (Bait & Switch)</h4><p class=\"text-slate-700\">Agenturen senden Ihnen oft ein einwandfreies, in einer High-End-Fabrik produziertes „Gold-Muster“, vergeben dann aber Ihren eigentlichen Massenproduktionsauftrag an eine günstigere, ungeprüfte Anlage weiter, um ihre eigene Gewinnspanne zu maximieren.</p></div><h2 class=\"text-3xl font-bold text-ctr-slate mt-12 mb-6\">Die Lösung: Präsenz Vor Ort</h2><p class=\"mb-6\">Wenn Sie eine kugelsichere Lieferkette wünschen, können Sie nicht von einem anderen Kontinent aus operieren und sich ausschließlich auf E-Mails und Videoanrufe verlassen. Sie benötigen professionelle Supply-Chain-Management-Unternehmen wie CTR Supply Solutions, die die Anlage physisch besuchen, Fabrikaudits durchführen, ihre Qualitätskontrollsysteme überprüfen, die Produktionskapazität verifizieren und relevante Konformitätszertifikate bestätigen.</p><p class=\"font-bold text-ctr-blue mt-8 text-lg\">Setzen Sie Ihre Produktionscharge nicht auf ein Online-Profil. Lassen Sie unsere Ingenieure in Shenzhen die Fabrikhallen für Sie überprüfen.</p>"
+                "author": "Fertigungsdivision",
+                "content": "<p class=\"text-xl text-slate-600 leading-relaxed mb-8 font-medium\">Sie haben den perfekten Lieferanten online gefunden. Riesige Fabrik. ISO-Zertifizierung. Professionelles Video. Der Preis passt exakt in Ihr Budget. Es klingt zu gut, um wahr zu sein.</p><p class=\"text-xl text-slate-800 leading-relaxed mb-8 font-bold\">Und leider ist es das meistens auch.</p><h2 class=\"text-3xl font-bold text-ctr-slate mt-12 mb-6\">Die Digitale Illusion.</h2><p class=\"mb-6\">Ein Kunde bat kürzlich unser Team in Shenzhen, 10 angebliche \"Hersteller\" für eine große Bestellung von Unterhaltungselektronik zu verifizieren.</p><p class=\"mb-6\">Was hat unser Team vor Ort herausgefunden?</p><ul class=\"list-disc pl-6 mb-8 mt-4 space-y-2 text-slate-700\"><li>Zwei waren Handelsagenturen in einem gemeinsamen Büroraum.</li><li>Sieben verwendeten Stockvideos. Sie besaßen keinerlei Produktionsausrüstung.</li><li><strong>Nur eine einzige</strong> entsprach dem Online-Profil.</li></ul><h2 class=\"text-3xl font-bold text-ctr-slate mt-12 mb-6\">Im Blindflug operieren.</h2><p class=\"mb-6\">Den chinesischen B2B-Markt von einem anderen Kontinent aus zu navigieren ist ein Minenfeld. Sich ausschließlich auf digitale Kommunikation zu verlassen, setzt Ihr Unternehmen schwerwiegenden Risiken aus:</p><div class=\"p-8 rounded-2xl bg-red-50 border border-red-100 my-10\"><h4 class=\"font-bold text-red-600 mb-4 uppercase tracking-widest text-sm\">Risiko 1: Der Phantomlieferant</h4><p class=\"text-slate-700\">Tritt ein massiver Defekt auf, löschen kapitallose Agenturen ihren Alibaba-Account und verschwinden spurlos.</p></div><div class=\"p-8 rounded-2xl bg-orange-50 border border-orange-100 my-10\"><h4 class=\"font-bold text-orange-600 mb-4 uppercase tracking-widest text-sm\">Risiko 2: Der Köder</h4><p class=\"text-slate-700\">Sie erhalten ein einwandfreies Goldmuster. Die Serienproduktion wird dann an einen Billiganbieter weitervergeben, um den Gewinn zu maximieren.</p></div><h2 class=\"text-3xl font-bold text-ctr-slate mt-12 mb-6\">Die Lösung: Vertrauen ist gut. Kontrolle ist besser.</h2><p class=\"mb-6\">Für eine kugelsichere Lieferkette brauchen Sie lokale Fachleute, die das Werk persönlich inspizieren und alles verifizieren.</p><p class=\"font-bold text-ctr-blue mt-8 text-lg\">Setzen Sie Ihre Produktion nicht auf eine schöne Website. Lassen Sie unsere Ingenieure die Fakten auf dem Fabrikboden prüfen.</p>"
             },
             "interest-pre-shipment-inspections": {
-                "title": "Wie Qualitätskontrollen vor dem Versand Ihre Gewinnmargen Retten",
-                "excerpt": "Der Kauf zu FOB-Bedingungen ohne Inspektionen vor dem Versand ist ein großes Wagnis. Erfahren Sie, warum Überprüfungen vor Ort in China der einzige Weg sind, um die Produktqualität bei der Ankunft zu garantieren.",
-                "category": "Qualitätskontrolle",
-                "author": "CTR Engineering-Team",
-                "content": "<p class=\"text-xl text-slate-600 leading-relaxed mb-8 font-medium\">Die Qualität Ihrer Produkte ist der grundlegende Eckpfeiler Ihres Geschäftserfolgs. Zwar vertrauen zahllose Einkaufsleiter auf einen fatalen Fehler: Sie vertrauen darauf, dass die Fabrik ihre eigenen Produkte testet.</p><h2 class=\"text-3xl font-bold text-ctr-slate mt-12 mb-6\">Die „FOB-Falle“</h2><p class=\"mb-6\">Nehmen wir die Geschichte von Vincent, einem Distributor, der eine riesige Charge von High-Tech-Lernprodukten importierte. Der Lieferant schickte ihm ein Video von den Produkten, die die Qualitätssicherung am Fließband bestanden. Zufrieden zahlte Vincent den Restbetrag gemäß den „Free On Board“ (FOB)-Bedingungen und der Container wurde verschifft.</p><p class=\"mb-6\">Als sie in Europa ankamen, waren fast 30 % defekt. Als Vincent den Lieferanten kontaktierte, war deren Antwort unverblümt und weisend:</p><blockquote class=\"border-l-4 border-ctr-blue pl-6 py-2 my-8 italic text-slate-600 bg-slate-50 rounded-r-lg\">„Sie haben niemanden von Ihrem Team in unsere Fabrik geschickt, um die Produkte zu testen. Wir haben vor dem Versand ein Testvideo gesendet und Sie haben es bestätigt. Da unser Preis FOB angegeben ist, übernehmen wir nach dem Versand keine Verantwortung für Qualitätsprobleme.“</blockquote><h2 class=\"text-3xl font-bold text-ctr-slate mt-12 mb-6\">Die Gefahr des „Quality Fade“ (Qualitätsverlust)</h2><p class=\"mb-6\">Qualitätsunterschiede nach der Genehmigung eines Prototyps sind in der internationalen Beschaffung unglaublich häufig. Eine Fabrik kann auf dem ersten Musterbauteil erstklassige Komponenten verwenden, um Ihren Vertrag zu gewinnen, es aber später stillschweigend durch billige Materialien in der Massenproduktion ersetzen, um ihre Margen zu erweitern. Dies ist in der Branche als „Quality Fade“ bekannt.</p><div class=\"grid grid-cols-1 md:grid-cols-2 gap-8 my-10\"><div class=\"p-8 rounded-2xl bg-white border border-slate-200 shadow-sm\"><h4 class=\"font-bold text-ctr-slate mb-4 flex items-center gap-2\"><span class=\"w-8 h-8 rounded-full bg-red-100 text-red-600 flex items-center justify-center font-bold\">✕</span> Was Fehlschlägt</h4><ul class=\"space-y-3 text-slate-600 text-sm\"><li>Das Verlassen auf Inspektionsvideos, die von der Fabrik selbst bereitgestellt werden.</li><li>Das blinde Vertrauen in ungetestete Konformitätszertifikate (CE/RoHS).</li><li>Die Annahme, dass FOB-Bedingungen eine Haftung nach dem Versand einschließen.</li></ul></div><div class=\"p-8 rounded-2xl bg-white border border-slate-200 shadow-sm\"><h4 class=\"font-bold text-ctr-slate mb-4 flex items-center gap-2\"><span class=\"w-8 h-8 rounded-full bg-green-100 text-green-600 flex items-center justify-center font-bold\">✓</span> Die CTR-Methode</h4><ul class=\"space-y-3 text-slate-600 text-sm\"><li>Unsere Ingenieure führen AQL-Inspektionen direkt an der Montagelinie durch.</li><li>Wir nutzen unser unabhängiges Labor in Shenzhen für funktionale Belastungstests.</li><li>Wir setzen Qualitäts-Compliance als absolute Bedingung durch, <em>bevor</em> eine endgültige Auszahlung an den Hersteller genehmigt wird.</li></ul></div></div><h2 class=\"text-3xl font-bold text-ctr-slate mt-12 mb-6\">Schützen Sie Ihr Inventar</h2><p class=\"mb-6\">Stellen Sie sich vor, Sie erhalten Rohmaterialien, die gefälschte Zertifizierungen aufweisen – das bedeutet, dass die Teile, die in Ihrem Lager liegen, wegen festgestellter Verstöße überhaupt nicht legal in der EU verkauft werden können. Ein zuverlässiger Beschaffungspartner hält diese Katastrophe auf.</p><p class=\"mb-6\">CTR Supply Solutions bietet strenge Stichprobenprüfungen und umfassende Qualitätsprüfungen vor dem Versand an, um sicherzustellen, dass vor der Lieferung absolut keine Qualitätsprobleme unentdeckt bleiben.</p>"
+                "title": "Qualität kontrollieren. Oder Margen vernichten.",
+                "excerpt": "FOB ohne Inspektion kaufen ist geschäftlicher Selbstmord. Die einzige Verteidigung: verifizierte Tests vor dem Versand.",
+                "category": "Qualitätshoheit",
+                "author": "QC-Ingenieurteam",
+                "content": "<p class=\"text-xl text-slate-600 leading-relaxed mb-8 font-medium\">Qualität ist das Fundament. Dennoch lassen unzählige Einkaufsmanager die Fabrik ihre eigenen Produkte prüfen.</p><h2 class=\"text-3xl font-bold text-ctr-slate mt-12 mb-6\">Die FOB-Falle.</h2><p class=\"mb-6\">Vincent importierte Elektronik-Lerngeräte. Der Lieferant schickte ein Testvideo. Vincent zahlte unter FOB-Bedingungen. Der Container ging auf See.</p><p class=\"mb-6\">In Europa wiesen 30% der Platinen schwere Defekte auf. Die Antwort des Lieferanten?</p><blockquote class=\"border-l-4 border-ctr-blue pl-6 py-2 my-8 italic text-slate-600 bg-slate-50 rounded-r-lg\">\"Sie haben das Video bestätigt. Der Preis war FOB. Ab Schiffsladekante liegt das Risiko bei Ihnen.\"</blockquote><h2 class=\"text-3xl font-bold text-ctr-slate mt-12 mb-6\">Das Quality-Fade-Problem.</h2><p class=\"mb-6\">Fabriken verwenden für Prototypen Premiummaterial, um den Auftrag zu gewinnen. In der Serienproduktion werden Materialien dann durch minderwertige Alternativen ersetzt. Das nennt man \"Quality Fade\".</p><div class=\"grid grid-cols-1 md:grid-cols-2 gap-8 my-10\"><div class=\"p-8 rounded-2xl bg-white border border-slate-200 shadow-sm\"><h4 class=\"font-bold text-ctr-slate mb-4 flex items-center gap-2\"><span class=\"w-8 h-8 rounded-full bg-red-100 text-red-600 flex items-center justify-center font-bold\">✕</span> Was schiefgeht.</h4><ul class=\"space-y-3 text-slate-600 text-sm\"><li>Werksvideos blind vertrauen.</li><li>Nicht verifizierte Zertifikate akzeptieren.</li><li>Glauben, FOB schützt Sie.</li></ul></div><div class=\"p-8 rounded-2xl bg-white border border-slate-200 shadow-sm\"><h4 class=\"font-bold text-ctr-slate mb-4 flex items-center gap-2\"><span class=\"w-8 h-8 rounded-full bg-green-100 text-green-600 flex items-center justify-center font-bold\">✓</span> Das CTR-Protokoll.</h4><ul class=\"space-y-3 text-slate-600 text-sm\"><li>Unsere Ingenieure führen strenge AQL-Inspektionen durch.</li><li>Unabhängige Labortests für Belastungsproben.</li><li>Zahlung wird zurückgehalten bis alles einwandfrei ist.</li></ul></div></div><h2 class=\"text-3xl font-bold text-ctr-slate mt-12 mb-6\">Schützen Sie Ihren Bestand.</h2><p class=\"mb-6\">Lassen Sie keine defekte Ware den Ozean überqueren. Testen Sie alles in Shenzhen, bevor Sie den Versand bezahlen.</p>"
             },
             "desire-scaling-direct-pricing": {
-                "title": "Vom Chaos zur Kontrolle: Skalierung mit Einem Professionellen Supply-Chain-Partner",
-                "excerpt": "Wie ein E-Commerce-Unternehmen 50 % bei den Beschaffungskosten einsparte und durch den Wechsel zu direkten Verhandlungen im Werk 25.000 US-Dollar pro Jahr zu seinem Gewinn hinzufügte.",
-                "category": "Beschaffungsstrategie",
-                "author": "CTR Logistikmanagement-Team",
-                "content": "<p class=\"text-xl text-slate-600 leading-relaxed mb-8 font-medium\">Die Skalierung eines E-Commerce-Betriebs oder eines Einzelhandelsvertriebsnetzes ist unglaublich schwierig, wenn Mittelsmänner Ihre Gewinnmargen verringern. Tom, ein erfolgreicher Verkäufer auf Plattformen wie bol.com, erkannte, dass seine Agenturprovisionen sein Wachstum ausbremsen.</p><h2 class=\"text-3xl font-bold text-ctr-slate mt-12 mb-6\">Das Agentur-Monopol</h2><p class=\"mb-6\">Tom kaufte bisher große Mengen an Unterhaltungselektronik über eine westlich orientierte Sourcing-Agentur ein. Die Operation fühlte sich reibungslos an, aber die Preise waren künstlich überhöht. Im Wissen, dass der Weg „Direkt ab Werk“ der einzige ist, um effizient zu skalieren, reiste Tom nach China. Er stellte schnell fest, dass es für einen Außenstehenden fast unmöglich war, direkt mit den Fabriken zu verhandeln – es fehlte ihm an kulturellen Kenntnissen, an lokalisiertem Verhandlungsspielraum und an der Infrastruktur zur Verwaltung der Logistik.</p><p class=\"mb-6\">Genau dann kontaktierte er das Team von CTR Supply Solutions in Shenzhen.</p><h2 class=\"text-3xl font-bold text-ctr-slate mt-12 mb-6\">Der Native Vorteil</h2><p class=\"mb-6\">Tom bat CTR, sein aktuelles Lieferantennetzwerk zu bewerten und die Rohfertigungskosten seiner Kernprodukte zu untersuchen. Da unser Team auf eine über 15-jährige Integration in chinesischen Fabriken zurückblicken kann, umgehen wir die „Ausländerzuschläge“ und verhandeln stattdessen mit den nationalen Basispreisen.</p><ul class=\"list-disc pl-6 mb-8 mt-4 space-y-2 text-slate-700\"><li><strong>Identifizierte legitime OEMs:</strong> Wir fanden neue Direkthersteller, die Toms frühere Zwischenhändler komplett umgingen.</li><li><strong>Kosten Reduziert:</strong> Die neuen Lieferanten boten deutlich niedrigere Preise als Tom zuvor zahlte, <strong>was seine Einkaufskosten im buchstäblichen Sinne um die Hälfte senkte.</strong></li><li><strong>Qualität Verbessert:</strong> Die neuen Fabriken nutzten überlegene Qualitätskontrollsysteme, was zu besseren Rückmeldungen von Endkunden und höheren Bewertungsraten auf bol.com führte.</li></ul><div class=\"p-10 rounded-3xl bg-gradient-to-br from-ctr-dark to-slate-900 text-white my-12 text-center shadow-2xl\"><h3 class=\"text-4xl font-heading font-bold mb-4\">Das Ergebnis?</h3><p class=\"text-2xl text-slate-300\">Tom konnte in seiner Jahresbilanz <span class=\"text-ctr-blue font-bold\">25.000 USD</span> in reinem Profit verbuchen und verzeichnete dabei zudem eine radikale Qualitätsverbesserung beim Endprodukt.</p></div><h2 class=\"text-3xl font-bold text-ctr-slate mt-12 mb-6\">Kosten Kontrollieren, Einnahmen Skalieren</h2><p class=\"mb-6\">Nach diesem Erfolg verlagerte Tom den überwiegenden Teil seiner Pipeline auf die neuen, von CTR verwalteten Lieferanten. Bei seinem alten Lieferanten behielt er nur noch einen kleinen Teil als Backup bei – der Großteil seiner Abläufe ist jedoch nun intensiv optimiert.</p><p class=\"mb-6\">Die Lehre daraus ist eindeutig: Wenn Sie mit Herstellern in China kooperieren möchten, müssen Sie mit einem professionellen Supply-Chain-Dienstleister zusammenarbeiten. Ein muttersprachliches Team wie CTR überwacht die Finanzen, sichert die Qualität und erspart Ihnen schlussendlich teure Fixkosten.</p>"
+                "title": "Direktpreise. Exponentielles Wachstum.",
+                "excerpt": "Wie ein E-Commerce-Unternehmen 50% der Beschaffungskosten einsparte und $25.000 Nettogewinn einbrachte.",
+                "category": "Finanzstrategie",
+                "author": "Supply-Chain-Vorstand",
+                "content": "<p class=\"text-xl text-slate-600 leading-relaxed mb-8 font-medium\">Skalierung ist unmöglich, wenn Zwischenhändler Ihre Margen auffressen. Tom, ein erfahrener Verkäufer, erkannte: Er arbeitete, um Provisionen zu zahlen.</p><h2 class=\"text-3xl font-bold text-ctr-slate mt-12 mb-6\">Das Monopol der Mittelsmänner.</h2><p class=\"mb-6\">Tom beschaffte in hohen Stückzahlen über westliche Agenturen. Die Preise waren aufgebläht. Er flog nach China, konnte aber ohne Mandarin und ohne lokale Verhandlungskultur keine ernsthaften Geschäfte abschließen.</p><p class=\"mb-6\">Dann fand er CTR.</p><h2 class=\"text-3xl font-bold text-ctr-slate mt-12 mb-6\">Der Vorteil des lokalen Spielers.</h2><p class=\"mb-6\">Wir operieren mit rein lokalen Konditionen. Wir eliminieren den \"Ausländer-Aufschlag\".</p><ul class=\"list-disc pl-6 mb-8 mt-4 space-y-2 text-slate-700\"><li><strong>Radikale Kostensenkung:</strong> Beschaffungskosten um 50% reduziert.</li><li><strong>Direkte Verbindung:</strong> Wir fanden die echten Hersteller hinter den Trading Companies.</li><li><strong>Höhere Qualität:</strong> Bessere Produkte und null Reklamationen auf Amazon.</li></ul><div class=\"p-10 rounded-3xl bg-gradient-to-br from-ctr-dark to-slate-900 text-white my-12 text-center shadow-2xl\"><h3 class=\"text-4xl font-heading font-bold mb-4\">Das messbare Ergebnis.</h3><p class=\"text-2xl text-slate-300\">Tom gewann <span class=\"text-ctr-blue font-bold\">$25.000 USD reinen Nettogewinn</span> zurück — frei von Zwischenhändlergebühren und bereit für die reine Expansion.</p></div><h2 class=\"text-3xl font-bold text-ctr-slate mt-12 mb-6\">Kosten kontrollieren. Markt beherrschen.</h2><p class=\"mb-6\">Wenn Sie in großem Volumen importieren möchten, nutzen Sie CTRs lokales Expertennetzwerk. Lokales Wissen bedeutet globale Kontrolle.</p>"
             },
             "action-partnering-with-ctr": {
-                "title": "Ihre Schritt-für-Schritt-Anleitung Zum Onboarding Mit CTR Supply Solutions",
-                "excerpt": "Sind Sie bereit, Ihre Lieferkette absolut abzusichern? Lesen Sie genau, wie unsere Ingenieure vor Ort Ihre Spezifikationen prüfen und marktreife Endprodukte abliefern.",
-                "category": "Unternehmens-Ökosystem Guide",
-                "author": "Crystal | Leiterin Operatives Geschäft (HQ)",
-                "content": "<p class=\"text-xl text-slate-600 leading-relaxed mb-8 font-medium\">Sie haben eine Schwachstelle in Ihrer Lieferkette ausgemacht. Möglicherweise sind Ihre aktuellen Lieferanten zu kostenintensiv, es treten immer wieder Fehler auf, oder Sie sind dabei ein brandneues Produkt auf dem Markt einzuführen. Es ist die klare Mission von CTR, Auslandsbeschaffungen ohne reibungsverluste zu ermöglichen.</p><p class=\"mb-10 text-lg text-slate-700\">Hier ist der genaue Ablaufplan, um mit unserem professionellem Team aus Shenzhen innerhalb einer Woche nahtlos zu starten.</p><div class=\"flex gap-6 mb-12\"><div class=\"flex-none\"><div class=\"w-12 h-12 rounded-full bg-ctr-blue text-white flex items-center justify-center font-bold text-xl\">1</div></div><div><h3 class=\"text-2xl font-bold text-ctr-slate mb-3\">Reichen Sie Ihre Technischen Eckdaten Ein</h3><p class=\"text-slate-600 leading-relaxed\">Lassen Sie die klassischen allgemeinen Formulare beiseite. Nutzen Sie direkt unseren „Tech-Hub“ und führen Sie zielgenau und absolut unmissverständlich aus, worin Ihre Fertigungsansprüche bestehen. Senden Sie Details zu den Produktschemata (Bsp..: Daten in .STEP / PDF Formaten). Beschreiben sie ihr anvisiertes Beschaffungs-Zielbudget sowie eventuell benötige Compliance-Labels (CE, UL, RoHS).</p><p class=\"text-sm text-slate-500 mt-2 italic\">Vertraulichkeit Garantiert: Sowohl jedwedes Konzept sowie auch übergebene Dokumentdaten werden fortan in Gänze auf Basis strengster Auflagen geschützt und unterliegen unserer strikten Geheimhaltungsvereinbarung (Master NDA).</p></div></div><div class=\"flex gap-6 mb-12\"><div class=\"flex-none\"><div class=\"w-12 h-12 rounded-full bg-ctr-blue text-white flex items-center justify-center font-bold text-xl\">2</div></div><div><h3 class=\"text-2xl font-bold text-ctr-slate mb-3\">Technisches Review (Binnen 48-Stunden)</h3><p class=\"text-slate-600 leading-relaxed\">Unsere leitenden Engineering-Experten überprüfen Ihre Spezifikationen mit höchster Exaktheit. Binnen 48 Stunden garantieren wir zwingend eine Rückmeldung: Demzufolge wissen sie, ob die gesetzten wirtschaftlichen Rahmenziele gemeinsam in unserem OEM-Netz bewältigt werden können. Sollte dem nicht so sein, können direkt Alternativen via Videoanruf angesetzt werden, in dem andere Materialien evaluiert oder Herstellungsverfahren analysiert werden können um somit zum passenden Resultat zu verhelfen.</p></div></div><div class=\"flex gap-6 mb-12\"><div class=\"flex-none\"><div class=\"w-12 h-12 rounded-full bg-ctr-blue text-white flex items-center justify-center font-bold text-xl\">3</div></div><div><h3 class=\"text-2xl font-bold text-ctr-slate mb-3\">Erstbemusterung Sowie Produktion Pilotlauf </h3><p class=\"text-slate-600 leading-relaxed\">Noch ehe Sie Tausende von Geldern budgetieren, lassen sich vorerst Musterexemplare bei geprüften Topp-Produktionsbetrieben fertigen. Im heimischen Laborteil in Shenzhen unterliegen genau diese Erstmuster sodann absolut autonomen Funktionstests, durch uns, unabhängig vom Hersteller. Um letztliche Produktfreigaben zu erteilen bekommen Sie eine aufschlussreiche Videoberichterstattung geliefert und das Physische Testobjekt direkt ausgehändigt.</p></div></div><div class=\"flex gap-6 mb-12\"><div class=\"flex-none\"><div class=\"w-12 h-12 rounded-full bg-ctr-blue text-white flex items-center justify-center font-bold text-xl\">4</div></div><div><h3 class=\"text-2xl font-bold text-ctr-slate mb-3\">Massenproduktion Und Komplettlogistik (Supply-Chain)</h3><p class=\"text-slate-600 leading-relaxed\">Ab dem Moment Ihres Unterschrifts-Auftrages des Piloten, startet augenblicklich das groß-angelegte Herstellen in Maßen. Die Kontrolle obliegt CTR permanent. Vor Beendigung der Schiffsbeladung kümmern wir uns um final-randomisierte Kontrollen, wodurch fehlerfreie Qualität sicher gestellt ist. Alle Prozesse bis über die letztmöglichen Zollformalitäten auf Hoher See, übernimmt unsere Logistikleitung absolut verlässlich – Im Standardverfahren (DDP/Geliefert-Verzollt).</p></div></div><div class=\"mt-16 p-8 bg-slate-50 border-l-4 border-ctr-blue rounded-r-xl\"><h3 class=\"text-2xl font-bold text-ctr-slate mb-4\">Zögern Sie Nicht; Beschleunigen Sie Ihre Unternehmens-Performance</h3><p class=\"text-slate-600 mb-6\">Ist Ihr Team bereit für spontane Pilot-Muster-Erstellung, suchen Sie nach umfangreichem Werk-Inspektions Support, oder brauchen Sie eine durchgetaktete Großbestellung? Das CTR-Team ist ab sofort parat.</p><a href=\"/de/contact\" class=\"inline-block px-8 py-4 bg-ctr-blue text-white font-bold rounded-lg hover:bg-sky-600 transition-colors shadow-lg\">Übermitteln Sie Ihre Produktspezifikationen</a></div>"
+                "title": "Start in unter 7 Tagen.",
+                "excerpt": "Entdecken Sie den exakten Prozess, mit dem unsere Ingenieure Supply Chains im Weltmaßstab aufbauen.",
+                "category": "Interne Leitfäden",
+                "author": "Betriebsdivision",
+                "content": "<p class=\"text-xl text-slate-600 leading-relaxed mb-8 font-medium\">Jede Verzögerung schwächt das Unternehmen. Ob aggressive Kostenreduktion oder Produktneueinführung — unser Ziel ist die Beseitigung jeder Reibung zwischen Idee und Ausführung.</p><p class=\"mb-10 text-lg text-slate-700\">So beginnt die Zusammenarbeit mit Profis.</p><div class=\"flex gap-6 mb-12\"><div class=\"flex-none\"><div class=\"w-12 h-12 rounded-full bg-ctr-blue text-white flex items-center justify-center font-bold text-xl\">1</div></div><div><h3 class=\"text-2xl font-bold text-ctr-slate mb-3\">Spezifikationen einreichen.</h3><p class=\"text-slate-600 leading-relaxed\">Nutzen Sie unser technisches Portal. Laden Sie STEP-Dateien, Zertifizierungsanforderungen und Budgetgrenzen hoch. Alles geschützt durch unser Unternehmens-NDA.</p></div></div><div class=\"flex gap-6 mb-12\"><div class=\"flex-none\"><div class=\"w-12 h-12 rounded-full bg-ctr-blue text-white flex items-center justify-center font-bold text-xl\">2</div></div><div><h3 class=\"text-2xl font-bold text-ctr-slate mb-3\">Engineering-Review in 48 Stunden.</h3><p class=\"text-slate-600 leading-relaxed\">Ohne Umschweife. Unser Senior-Ingenieurteam gibt innerhalb von 48 Stunden eine klare Machbarkeitsaussage oder schlägt Material- und Prozessalternativen vor.</p></div></div><div class=\"flex gap-6 mb-12\"><div class=\"flex-none\"><div class=\"w-12 h-12 rounded-full bg-ctr-blue text-white flex items-center justify-center font-bold text-xl\">3</div></div><div><h3 class=\"text-2xl font-bold text-ctr-slate mb-3\">Prototypen & Laborberichte.</h3><p class=\"text-slate-600 leading-relaxed\">Reale Muster, getestet in unabhängigen Laboren in Shenzhen. Per FedEx zu Ihnen — für eine greifbare Freigabe vor jeder Investition.</p></div></div><div class=\"flex gap-6 mb-12\"><div class=\"flex-none\"><div class=\"w-12 h-12 rounded-full bg-ctr-blue text-white flex items-center justify-center font-bold text-xl\">4</div></div><div><h3 class=\"text-2xl font-bold text-ctr-slate mb-3\">Serienproduktion & Globale Lieferung.</h3><p class=\"text-slate-600 leading-relaxed\">Permanente Fertigungsüberwachung. Vorversandinspektion ist Pflicht. Vollständige Zollabwicklung mit DDP-Lieferung direkt in Ihr Lager.</p></div></div><div class=\"mt-16 p-8 bg-slate-50 border-l-4 border-ctr-blue rounded-r-xl\"><h3 class=\"text-2xl font-bold text-ctr-slate mb-4\">Drücken Sie den Startknopf.</h3><p class=\"text-slate-600 mb-6\">Sie sind dafür geschaffen, Geschäfte zu skalieren — nicht, sich in internationaler Logistik-Bürokratie zu verlieren.</p><a href=\"/de/contact\" class=\"inline-block px-8 py-4 bg-ctr-blue text-white font-bold rounded-lg hover:bg-sky-600 transition-colors shadow-lg\">Projekt starten</a></div>"
             }
         }
     }

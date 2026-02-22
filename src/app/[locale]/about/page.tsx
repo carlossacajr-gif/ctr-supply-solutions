@@ -9,7 +9,7 @@ import { TextReveal } from '@/components/ui/motion/TextReveal';
 import { AnimatedCounter } from '@/components/ui/motion/AnimatedCounter';
 import { FadeIn } from '@/components/ui/motion/FadeIn';
 import { MagneticButton } from '@/components/ui/motion/MagneticButton';
-import { MapPin } from 'lucide-react';
+import { MapPin, Mail, MessageCircle, Phone } from 'lucide-react';
 import { Link } from '@/navigation';
 import { setRequestLocale } from 'next-intl/server';
 import { useTranslations } from 'next-intl';
@@ -145,6 +145,87 @@ export default function AboutPage({ params: { locale } }: { params: { locale: st
                     </Container>
                 </div>
             </div>
+
+            {/* ══════ CONTACT INFO ══════ */}
+            <section className="relative py-16 sm:py-24 bg-white overflow-hidden">
+                <div className="absolute top-[10%] right-[-5%] w-[35%] h-[30%] rounded-full bg-indigo-100/40 blur-[120px] pointer-events-none" />
+                <div className="absolute bottom-[10%] left-[-5%] w-[30%] h-[25%] rounded-full bg-sky-100/30 blur-[100px] pointer-events-none" />
+                <Container>
+                    <FadeIn>
+                        <h2 className="text-3xl font-heading font-bold tracking-tight text-ctr-slate sm:text-4xl text-center mb-16">
+                            {t('contact_info.title')}
+                        </h2>
+                    </FadeIn>
+
+                    <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 max-w-5xl mx-auto">
+                        {/* Offices Column */}
+                        <div className="lg:col-span-2">
+                            <FadeIn delay={0.1}>
+                                <p className="text-xs font-semibold text-slate-400 uppercase tracking-widest mb-6">{t('contact_info.offices_label')}</p>
+                            </FadeIn>
+                            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                                <FadeIn delay={0.2}>
+                                    <div className="glass-white rounded-2xl p-6 border border-slate-200/60 shadow-glass h-full">
+                                        <div className="flex items-center gap-3 mb-4">
+                                            <div className="h-10 w-10 rounded-xl bg-ctr-blue/10 flex items-center justify-center">
+                                                <MapPin className="h-5 w-5 text-ctr-blue" />
+                                            </div>
+                                            <h3 className="font-bold text-ctr-slate">{t('contact_info.sz_office')}</h3>
+                                        </div>
+                                        <p className="text-sm text-slate-500 leading-relaxed">{t('contact_info.sz_address')}</p>
+                                    </div>
+                                </FadeIn>
+                                <FadeIn delay={0.3}>
+                                    <div className="glass-white rounded-2xl p-6 border border-slate-200/60 shadow-glass h-full">
+                                        <div className="flex items-center gap-3 mb-4">
+                                            <div className="h-10 w-10 rounded-xl bg-purple-500/10 flex items-center justify-center">
+                                                <MapPin className="h-5 w-5 text-purple-500" />
+                                            </div>
+                                            <h3 className="font-bold text-ctr-slate">{t('contact_info.hk_office')}</h3>
+                                        </div>
+                                        <p className="text-sm text-slate-500 leading-relaxed">{t('contact_info.hk_address')}</p>
+                                    </div>
+                                </FadeIn>
+                            </div>
+                        </div>
+
+                        {/* Channels Column */}
+                        <div>
+                            <FadeIn delay={0.4}>
+                                <div className="glass-white rounded-2xl p-6 border border-slate-200/60 shadow-glass h-full space-y-5">
+                                    <a href="mailto:info@ctrsupplysolutions.com" className="flex items-center gap-4 group">
+                                        <div className="h-10 w-10 rounded-xl bg-sky-500/10 flex items-center justify-center group-hover:scale-110 transition-transform">
+                                            <Mail className="h-5 w-5 text-sky-500" />
+                                        </div>
+                                        <div>
+                                            <p className="text-xs text-slate-400 font-medium uppercase tracking-wide">{t('contact_info.email_label')}</p>
+                                            <p className="text-sm font-semibold text-ctr-slate group-hover:text-ctr-blue transition-colors">info@ctrsupplysolutions.com</p>
+                                        </div>
+                                    </a>
+                                    <a href="https://api.whatsapp.com/send/?phone=8613638645191&text&type=phone_number&app_absent=0" target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 group">
+                                        <div className="h-10 w-10 rounded-xl bg-green-500/10 flex items-center justify-center group-hover:scale-110 transition-transform">
+                                            <Phone className="h-5 w-5 text-green-500" />
+                                        </div>
+                                        <div>
+                                            <p className="text-xs text-slate-400 font-medium uppercase tracking-wide">{t('contact_info.whatsapp_label')}</p>
+                                            <p className="text-sm font-semibold text-ctr-slate group-hover:text-green-600 transition-colors">+86 136 3864 5191</p>
+                                        </div>
+                                    </a>
+                                    <div className="flex items-center gap-4">
+                                        <div className="h-10 w-10 rounded-xl bg-emerald-500/10 flex items-center justify-center">
+                                            <MessageCircle className="h-5 w-5 text-emerald-500" />
+                                        </div>
+                                        <div>
+                                            <p className="text-xs text-slate-400 font-medium uppercase tracking-wide">{t('contact_info.wechat_label')}</p>
+                                            <p className="text-sm font-semibold text-ctr-slate">+86 136 3864 5191</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </FadeIn>
+                        </div>
+                    </div>
+                </Container>
+            </section>
 
             {/* ─── Wave Divider: Content → CTA ─── */}
             <SectionDivider fillClass="fill-ctr-dark" className="bg-white" />
