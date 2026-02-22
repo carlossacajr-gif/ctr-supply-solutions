@@ -1,3 +1,4 @@
+import { Metadata } from 'next';
 import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
 import { Container } from '@/components/ui/Container';
@@ -17,6 +18,11 @@ const categories = [
     { name: 'Repair Tools', items: 'Tips, Soldering Stations, Microscopes', icon: Wrench },
     { name: 'Small Parts', items: 'Flex Cables, Cameras, Housings, ICs', icon: Cpu },
 ];
+
+export const metadata: Metadata = {
+    title: 'Wholesale Electronics & Parts',
+    description: 'Factory-direct pricing on mobile screens, laptop parts, refurbished devices, and repair tools. Secure your B2B supply chain straight from Shenzhen.',
+};
 
 export default function WholesalePage() {
     return (

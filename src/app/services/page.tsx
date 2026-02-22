@@ -1,3 +1,4 @@
+import { Metadata } from 'next';
 import NextImage from 'next/image';
 import servicesHeroImg from '../../../public/images/services/services-hero.webp';
 import cardQualityImg from '../../../public/images/services/card-quality.webp';
@@ -37,6 +38,11 @@ const services = [
         image: cardLogisticsImg,
     },
 ];
+
+export const metadata: Metadata = {
+    title: 'Supply Chain Services',
+    description: 'From factory floor to warehouse door. Explore our comprehensive services including Quality Control, Global Sourcing, and Logistics.',
+};
 
 export default function ServicesPage() {
     return (

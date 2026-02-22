@@ -1,4 +1,5 @@
 import NextImage from 'next/image';
+import { Metadata } from 'next';
 import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
 import { Container } from '@/components/ui/Container';
@@ -10,6 +11,11 @@ import { FadeIn } from '@/components/ui/motion/FadeIn';
 import { MagneticButton } from '@/components/ui/motion/MagneticButton';
 import { MapPin } from 'lucide-react';
 import Link from 'next/link';
+
+export const metadata: Metadata = {
+    title: 'About Us | 15+ Years in Shenzhen',
+    description: 'Based in Shenzhen since 2009, our team of engineers and supply chain veterans execute your China manufacturing strategy with precision.',
+};
 
 export default function AboutPage() {
     return (
