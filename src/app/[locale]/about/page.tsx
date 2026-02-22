@@ -12,6 +12,7 @@ import { MagneticButton } from '@/components/ui/motion/MagneticButton';
 import { MapPin } from 'lucide-react';
 import { Link } from '@/navigation';
 import { setRequestLocale } from 'next-intl/server';
+import { useTranslations } from 'next-intl';
 
 export const metadata: Metadata = {
     title: 'About Us | 15+ Years in Shenzhen',
@@ -20,6 +21,8 @@ export const metadata: Metadata = {
 
 export default function AboutPage({ params: { locale } }: { params: { locale: string } }) {
     setRequestLocale(locale);
+    const t = useTranslations('About');
+
     return (
         <main className="min-h-screen bg-white">
             <Navbar />
@@ -33,13 +36,12 @@ export default function AboutPage({ params: { locale } }: { params: { locale: st
                 <Container>
                     <div className="mx-auto max-w-2xl lg:mx-0">
                         <TextReveal
-                            text="Your Team on the Ground"
+                            text={t('hero.title')}
                             className="text-4xl font-heading font-bold tracking-tight text-white sm:text-6xl"
                         />
                         <FadeIn delay={0.2}>
                             <p className="mt-6 text-lg leading-8 text-slate-300">
-                                We bridge the gap between global brands and Chinese manufacturing.
-                                Not just a sourcing agent, but a complete supply chain partner.
+                                {t('hero.desc')}
                             </p>
                         </FadeIn>
                     </div>
@@ -63,10 +65,10 @@ export default function AboutPage({ params: { locale } }: { params: { locale: st
                     <Container>
                         <FadeIn delay={0.4} direction="up">
                             <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-                                <AnimatedCounter value={15} label="Years Experience" />
-                                <AnimatedCounter value={500} label="Factories Audited" />
-                                <AnimatedCounter value={50} label="Countries Served" />
-                                <AnimatedCounter value={0} label="Defects Tolerated" />
+                                <AnimatedCounter value={15} label={t('stats.s1')} />
+                                <AnimatedCounter value={500} label={t('stats.s2')} />
+                                <AnimatedCounter value={50} label={t('stats.s3')} />
+                                <AnimatedCounter value={0} label={t('stats.s4')} />
                             </div>
                         </FadeIn>
                     </Container>
@@ -78,39 +80,36 @@ export default function AboutPage({ params: { locale } }: { params: { locale: st
                         <div className="grid grid-cols-1 gap-x-16 gap-y-16 lg:grid-cols-2 lg:items-center">
                             <div>
                                 <FadeIn direction="right">
-                                    <p className="text-base font-semibold leading-7 text-ctr-blue">Our Mission</p>
+                                    <p className="text-base font-semibold leading-7 text-ctr-blue">{t('mission.badge')}</p>
                                     <h2 className="mt-2 text-3xl font-heading font-bold tracking-tight text-ctr-slate">
-                                        Eliminate the risks of manufacturing in China.
+                                        {t('mission.title')}
                                     </h2>
                                 </FadeIn>
                                 <div className="mt-6 space-y-6 text-slate-600 text-lg">
                                     <FadeIn delay={0.2}>
                                         <p>
-                                            Manufacturing in China offers incredible opportunities, but also significant risks.
-                                            Quality fade, communication breakdowns, and shipping delays can destroy margins.
+                                            {t('mission.p1')}
                                         </p>
                                     </FadeIn>
                                     <FadeIn delay={0.3}>
                                         <p>
-                                            CTR Supply Solutions was founded to solve this. Located in <strong>Shenzhen</strong>,
-                                            the electronics capital of the world, we speak the language, understand the culture,
-                                            and know the factories personally.
+                                            {t('mission.p2_start')} <strong>{t('mission.p2_strong')}</strong>{t('mission.p2_end')}
                                         </p>
                                     </FadeIn>
                                     <FadeIn delay={0.4}>
-                                        <h3 className="text-xl font-bold text-ctr-slate pt-4">Sustainability & Ethics</h3>
+                                        <h3 className="text-xl font-bold text-ctr-slate pt-4">{t('mission.sus_title')}</h3>
                                         <p>
-                                            We are committed to sustainable practices. From sourcing eco-friendly materials to minimizing waste in packaging, we help you build a greener supply chain.
+                                            {t('mission.sus_desc')}
                                         </p>
                                     </FadeIn>
                                     <FadeIn delay={0.5}>
-                                        <h3 className="text-xl font-bold text-ctr-slate pt-4">Leadership</h3>
+                                        <h3 className="text-xl font-bold text-ctr-slate pt-4">{t('mission.lead_title')}</h3>
                                         <div className="flex flex-col sm:flex-row items-center sm:items-start text-center sm:text-left gap-4 mt-6 pt-6 border-t border-slate-200">
                                             <div className="relative h-24 w-24 sm:h-32 sm:w-32 lg:h-36 lg:w-36 flex-shrink-0 overflow-hidden rounded-full border-4 border-white shadow-lg">
                                                 <NextImage src="/images/about/team-crystal.webp" alt="Crystal" fill className="object-cover" />
                                             </div>
                                             <p className="mt-1 sm:mt-0">
-                                                Led by Crystal, our team combines 15+ years of supply chain expertise with a deep commitment to process detail and customer satisfaction. We don&apos;t just manage orders; we manage relationships.
+                                                {t('mission.lead_desc')}
                                             </p>
                                         </div>
                                     </FadeIn>
@@ -136,8 +135,8 @@ export default function AboutPage({ params: { locale } }: { params: { locale: st
                                             <MapPin className="text-ctr-blue h-6 w-6" />
                                         </div>
                                         <div>
-                                            <p className="font-bold text-ctr-slate">HQ: Shenzhen, China</p>
-                                            <p className="text-sm text-slate-500">Futian District</p>
+                                            <p className="font-bold text-ctr-slate">{t('hq.title')}</p>
+                                            <p className="text-sm text-slate-500">{t('hq.district')}</p>
                                         </div>
                                     </div>
                                 </div>
@@ -158,22 +157,22 @@ export default function AboutPage({ params: { locale } }: { params: { locale: st
                         <div className="mx-auto max-w-2xl text-center">
                             <div className="glass rounded-3xl p-10 sm:p-14">
                                 <h2 className="text-3xl font-heading font-bold tracking-tight text-white sm:text-5xl">
-                                    Work with our team
+                                    {t('cta.title')}
                                 </h2>
                                 <p className="mx-auto mt-6 max-w-lg text-lg leading-8 text-slate-300">
-                                    Let us handle the complexity of Chinese manufacturing while you focus on growth.
+                                    {t('cta.desc')}
                                 </p>
                                 <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
                                     <Link href="/contact">
                                         <MagneticButton>
                                             <Button size="lg" variant="primary">
-                                                Get a Quote
+                                                {t('cta.btn_primary')}
                                             </Button>
                                         </MagneticButton>
                                     </Link>
                                     <Link href="/services">
                                         <Button size="lg" variant="outline" className="border-white/20 text-white hover:bg-white/10">
-                                            Explore Services
+                                            {t('cta.btn_secondary')}
                                         </Button>
                                     </Link>
                                 </div>

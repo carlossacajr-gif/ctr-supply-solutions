@@ -3,7 +3,21 @@
         "title": "Su cadena de suministro, a prueba de balas.",
         "subtitle": "Desde el abastecimiento hasta la entrega: verificamos cada eslabón para que nunca tenga que preocuparse.",
         "getQuote": "Obtener cotización",
-        "ourServices": "Nuestros servicios"
+        "ourServices": "Nuestros servicios",
+        "stats": {
+            "s1": "Productos Gestionados",
+            "s2": "Países Alcanzados",
+            "s3": "Tasa de Defectos",
+            "s4": "Años de Experiencia"
+        },
+        "expertise": {
+            "badge": "Nuestra Especialidad",
+            "title": "Todo lo que necesita para abastecerse con confianza"
+        },
+        "globe": {
+            "title": "Desde Shenzhen hacia el Mundo",
+            "desc": "Nuestra red logística cubre más de 50 países. Aduanas, aranceles y servicio puerta a puerta: resuelto."
+        }
     },
     "Navbar": {
         "solutions": "Soluciones",
@@ -12,5 +26,388 @@
         "about": "Nosotros",
         "contact": "Contacto",
         "getStarted": "Empezar"
+    },
+    "ServicesBento": {
+        "learnMore": "Ver más detalles",
+        "qc": {
+            "title": "Control de Calidad",
+            "desc": "Inspecciones previas al envío y auditorías de fábrica para garantizar cero defectos."
+        },
+        "sourcing": {
+            "title": "Abastecimiento Global",
+            "desc": "Acceso directo a fabricantes verificados en fábricas de Shenzhen."
+        },
+        "testing": {
+            "title": "Pruebas de Componentes",
+            "desc": "Análisis de laboratorio para productos electrónicos y materias primas."
+        },
+        "logistics": {
+            "title": "Logística de Cadena de Suministro",
+            "desc": "Transporte de carga marítima, almacenamiento y despacho de aduanas directo desde la fábrica."
+        }
+    },
+    "Testimonials": {
+        "badge": "Testimonios",
+        "title": "Elegidos por líderes de la industria",
+        "t1": {
+            "role": "Cliente",
+            "content": "Si busca un socio que combine un profundo conocimiento de la industria con una gran comprensión de la cultura china, CTR Supply Solutions es la mejor opción. Su experiencia los convierte en un aliado invaluable."
+        },
+        "t2": {
+            "role": "Veterano de la Industria (+14 Años)",
+            "content": "Trabajar con CTR Supply Solutions ha sido una experiencia sobresaliente. Su equipo demuestra constantemente altos niveles de profesionalismo, experiencia y un enfoque centrado en el cliente que supera las expectativas."
+        },
+        "t3": {
+            "role": "Socio a Largo Plazo (5 Años)",
+            "content": "A diario me impresiona su gran profesionalidad. El liderazgo mostrado por Crystal al guiar al equipo es excepcional, con un fuerte enfoque en los detalles clave del proceso y la enorme satisfacción del cliente."
+        },
+        "t4": {
+            "role": "Cliente",
+            "content": "Estamos increíblemente agradecidos por la flexibilidad y paciencia que el Equipo de CTR ha demostrado. Su capacidad para adaptarse a nuestros requisitos, especialmente durante situaciones logísticas desafiantes, ha marcado una diferencia significativa."
+        },
+        "t5": {
+            "role": "Cliente",
+            "content": "El equipo de CTR es verdaderamente excepcional. Son muy trabajadores, precisos y metódicos. Es un placer colaborar con ellos, ya que su profundo conocimiento del mercado chino se complementa con su capacidad para adaptarse a las prácticas comerciales occidentales."
+        },
+        "t6": {
+            "role": "Cliente",
+            "content": "Estamos sumamente agradecidos por la flexibilidad y paciencia del equipo directivo de CTR. Su habilidad para adaptarse y resolver problemas nos da una inmensa tranquilidad operativa."
+        }
+    },
+    "TrustBar": {
+        "title": "Con la confianza de marcas globales y cadenas de reparación técnica"
+    },
+    "Process": {
+        "badge": "Proceso",
+        "title": "Cómo trabajamos",
+        "s1": {
+            "title": "Envíe su Especificación",
+            "desc": "Comparta los requisitos de su producto, el precio objetivo y los estándares de calidad. Revisamos todo en 48 horas."
+        },
+        "s2": {
+            "title": "Verificamos y Suministramos",
+            "desc": "Nuestro equipo en el terreno identifica a fabricantes verificados. Visitamos cada fábrica para auditar sus capacidades."
+        },
+        "s3": {
+            "title": "Muestras y Pruebas",
+            "desc": "Obtenemos muestras y realizamos pruebas independientes en nuestro laboratorio de Shenzhen. Usted recibe un informe en vídeo antes de la producción en masa."
+        },
+        "s4": {
+            "title": "Producción y Control de Calidad",
+            "desc": "Monitoreo continuo durante la producción en masa. Realizamos una inspección final previa al envío (QC) para garantizar cero defectos."
+        }
+    },
+    "Tracker": {
+        "title": "La transparencia no es una palabra de moda. Es nuestro estándar.",
+        "desc": "La mayoría de los agentes desaparecen después del depósito. Nosotros proporcionamos un seguimiento detallado de cada hito, brindando claridad en cada paso, desde la comprobación de materias primas hasta el envío final.",
+        "btn_load": "Cargando Línea de Tiempo...",
+        "btn_flow": "Ver Flujo del Proceso",
+        "tracking_label": "NÚMERO DE SEGUIMIENTO",
+        "active_label": "ACTIVO",
+        "delivered_status": "Entregado",
+        "checking_status": "Comprobando...",
+        "steps": {
+            "s1": {
+                "status": "Pedido Recibido",
+                "date": "24 Oct"
+            },
+            "s2": {
+                "status": "Chequeo de Materia Prima",
+                "date": "26 Oct"
+            },
+            "s3": {
+                "status": "Línea de Producción",
+                "date": "02 Nov"
+            },
+            "s4": {
+                "status": "CC Final (PSI)",
+                "date": "10 Nov"
+            },
+            "s5": {
+                "status": "Enviado",
+                "date": "12 Nov"
+            }
+        }
+    },
+    "Video": {
+        "title": "Dentro de Nuestras Operaciones",
+        "desc": "Eche un vistazo al interior de nuestras operaciones en Shenzhen y vea cómo aseguramos las cadenas de suministro para marcas globales."
+    },
+    "Hero": {
+        "tagline_start": "Su equipo sobre el terreno en Shenzhen.",
+        "tagline_link": "Leer más",
+        "title": "Soluciones Integrales para Cadenas de Suministro",
+        "desc": "No solo encontramos proveedores. Verificamos, auditamos y probamos para asegurar que su cadena nunca falle. Desde la conformidad en fábrica hasta el testeo final de cada componente.",
+        "btn_primary": "Inicie su Proyecto",
+        "btn_secondary": "Explorar Servicios"
+    },
+    "Services": {
+        "badge": "Nuestra Experiencia",
+        "title": "Todo lo que necesita para suministrar con confianza",
+        "desc": "Actuamos como sus ojos y oídos en la fábrica, protegiendo a su marca de la pérdida de calidad y los riesgos de la cadena de suministro.",
+        "s1": {
+            "name": "Control de Calidad",
+            "desc": "Inspecciones previas al envío y auditorías de fábrica para garantizar cero defectos."
+        },
+        "s2": {
+            "name": "Suministro Global",
+            "desc": "Acceso directo a fabricantes verificados en Shenzhen y más allá."
+        },
+        "s3": {
+            "name": "Testeo de Componentes",
+            "desc": "Pruebas de calidad de laboratorio para electrónica y materias primas."
+        },
+        "s4": {
+            "name": "Auditoría de Cadena de Suministro",
+            "desc": "Verificación exhaustiva de las capacidades y ética de los proveedores."
+        },
+        "link": "Más información"
+    },
+    "Globe": {
+        "live_label": "Red Logística en Vivo"
+    },
+    "HowItWorks": {
+        "badge": "Proceso",
+        "title": "Cómo trabajamos",
+        "steps": {
+            "s1": {
+                "name": "Envíe sus Especificaciones",
+                "desc": "Comparta los requisitos de su producto, el precio objetivo y los estándares de calidad."
+            },
+            "s2": {
+                "name": "Nosotros Verificamos y Suministramos",
+                "desc": "Nuestro equipo identifica las fábricas mejor cualificadas y realiza auditorías iniciales."
+            },
+            "s3": {
+                "name": "Muestreo y Pruebas",
+                "desc": "Adquirimos muestras y realizamos pruebas funcionales independientes."
+            },
+            "s4": {
+                "name": "Producción y Control de Calidad",
+                "desc": "Supervisión continua durante la producción en serie junto a una inspección final antes del envío."
+            }
+        }
+    },
+    "About": {
+        "metadata": {
+            "title": "Sobre Nosotros | 15+ Años en Shenzhen",
+            "desc": "Establecidos en Shenzhen desde 2009, nuestro equipo de ingenieros y veteranos en cadenas de proveedores ejecutará su estrategia en China a la perfección."
+        },
+        "hero": {
+            "title": "Su Equipo Sobre el Terreno",
+            "desc": "Reducimos la brecha entre las marcas globales y la manufactura en China. No somos un simple agente localizador de negocios. Somos el socio logístico que estaba buscando."
+        },
+        "stats": {
+            "s1": "Años de Experiencia",
+            "s2": "Auditorías Locales",
+            "s3": "Paises Suministrados",
+            "s4": "Defectos Tolerados"
+        },
+        "mission": {
+            "badge": "Nuestra Misión",
+            "title": "Eliminamos el riesgo de ensamblar sus productos en China.",
+            "p1": "La fábrica asiática ofrece oportunidades increíbles, pero también riesgos considerables. Variaciones de calidad, fallos de comunicación o retrasos en el flete pueden destruir sus márgenes.",
+            "p2_start": "Para resolver este dilema se fundó CTR Supply Solutions. Ubicados en",
+            "p2_strong": "Shenzhen",
+            "p2_end": ", la meca mundial de los circuitos impresos, compartimos el mismo idioma, interiorizamos la cultura e inspeccionamos las fábricas personalmente.",
+            "sus_title": "Sustentabilidad y Ética de Trabajo",
+            "sus_desc": "Cumplimos regulaciones ambientales en todas las etapas empresariales. Desde conseguir materiales de bajo impacto de carbono hasta evitar componentes plásticos durante el embalaje industrial.",
+            "lead_title": "Liderazgo",
+            "lead_desc": "Bajo la dirección de Crystal, nuestro equipo de profesionales combina más de 15 años logísticos para salvaguardar el nivel de los requerimientos y el compromiso de cada distribuidor comercial. Nosotros controlamos el orden; formamos nexos."
+        },
+        "hq": {
+            "title": "Sede Central: Shenzhen, China",
+            "district": "Distrito de Futian"
+        },
+        "cta": {
+            "title": "Integre y consolide su equipo",
+            "desc": "Déjenos gestionar las complejidades operativas en China mientras usted se concentra en expandir el negocio.",
+            "btn_primary": "Cotízelo Ahora",
+            "btn_secondary": "Explorar Servicios"
+        }
+    },
+    "Contact": {
+        "title": "Inicie su Proyecto",
+        "desc": "Evite los formularios de contacto genéricos. Utilice nuestro evaluador de proyectos para ingeniería y obtenga rápidamente un plan logístico de nuestro equipo.",
+        "channels": "Canales Directos",
+        "hq_label": "Sede Central",
+        "hq_city": "Distrito de Futian, Shenzhen, China"
+    },
+    "TechnicalInquiry": {
+        "industries": {
+            "electronics": "Electrónica",
+            "cnc": "Mecanizado CNC",
+            "wholesale": "Venta al por mayor/Menor",
+            "other": "Otros Manufacturados"
+        },
+        "step1": {
+            "title": "Seleccione su Industria",
+            "desc": "Esto nos ayuda a asignar el equipo de ingeniería adecuado a su proyecto.",
+            "btn_continue": "Continuar"
+        },
+        "step2": {
+            "btn_back": "Volver",
+            "title": "Volumen y Escala del Proyecto",
+            "desc": "¿Está escalando un prototipo o gestionando producción en masa en alto volumen?",
+            "volume_pilot": "Lote Piloto/Verificación (100 - 500 uds)",
+            "volume_scale": "Escala de Producción en Masa (500 - 5,000 uds)",
+            "volume_enterprise": "Empresa/Alto Volumen (5,000+ uds)",
+            "btn_specs": "Especificaciones Técnicas"
+        },
+        "step3": {
+            "title": "Requisitos Técnicos",
+            "desc": "Enumere las tolerancias específicas, certificaciones (CE, UL, RoHS) o estándares de materiales.",
+            "placeholder": "ej. tolerancias de ±0.02mm en componentes de aluminio 6061, se requiere certificación UL, envío DDP a EE.UU.",
+            "upload_title": "Subir Planos / RFQ",
+            "upload_desc": "Suelte sus archivos .PDF, .STEP, o .XLSX aquí (Max 50MB)",
+            "btn_final": "Contacto Final"
+        },
+        "step4": {
+            "title": "Detalles Profesionales",
+            "desc": "Complete su solicitud para recibir un plan de suministro estratégico personalizado.",
+            "labels": {
+                "first_name": "Nombre",
+                "last_name": "Apellido",
+                "company": "Sitio Web de la Empresa",
+                "email": "Correo Electrónico de Trabajo"
+            },
+            "placeholders": {
+                "first_name": "Juan",
+                "last_name": "Doe",
+                "company": "www.ejemplo.com",
+                "email": "juan@ejemplo.com"
+            },
+            "btn_submitting": "Procesando Requisitos...",
+            "btn_submit": "Enviar Consulta Técnica",
+            "agreement": "Al enviar, usted acepta nuestra política de privacidad y normas de NDA."
+        },
+        "success": {
+            "title": "Consulta Recibida",
+            "desc_start": "Gracias, ",
+            "desc_mid": ". Nuestro líder de ingeniería de ",
+            "desc_end": " revisará sus especificaciones y le contactará en un plazo de 24 horas para programar una llamada en profundidad.",
+            "guarantee_title": "Garantía de Confidencialidad",
+            "guarantee_desc": "Todos los planos y datos enviados a través de este formulario están protegidos por nuestro NDA maestro. Nunca compartimos diseños propietarios con proveedores no calificados."
+        },
+        "error_alert": "Error técnico al enviar la solicitud. Por favor, pruebe con correo directo: info@ctrsupplysolutions.com"
+    },
+    "ServicesPage": {
+        "metadata": {
+            "title": "Servicios de la Cadena de Suministro",
+            "desc": "Desde el almacén hasta la fábrica. Explore nuestros servicios completos, incluyendo Control de Calidad, Abastecimiento Global y Logística."
+        },
+        "hero": {
+            "title": "Soluciones Totales de Logística Comercial",
+            "desc": "Desde encontrar la fábrica hasta entregar el contenedor. Somos su socio integral en China."
+        },
+        "services": {
+            "s1": {
+                "name": "Control de Calidad",
+                "desc": "Inspecciones in situ y auditorías de fábrica para garantizar que sus productos cumplan con los estándares internacionales."
+            },
+            "s2": {
+                "name": "Suministro Global",
+                "desc": "Identificamos fabricantes verificados, establecemos acuerdos de fabricación y gestionamos el proceso de adquisición."
+            },
+            "s3": {
+                "name": "Asesoramiento Logístico",
+                "desc": "Envío puerta a puerta, despacho de aduanas y soluciones de almacenamiento para agilizar su ciclo comercial."
+            }
+        },
+        "btn_learn": "Conoce más",
+        "cta": {
+            "title": "¿Necesita encontrar una solución a la medida?",
+            "desc": "Comuníquenos su producto. Nuestro equipo implementará un plan de abastecimiento y Control de Calidad en 48 horas.",
+            "btn_primary": "Cotízelo Ahora",
+            "btn_secondary": "Catálogo Estándar"
+        }
+    },
+    "WholesalePage": {
+        "metadata": {
+            "title": "Componentes y Electrónica al por Mayor",
+            "desc": "Precios directos de fábrica en pantallas móviles, repuestos para portátiles, dispositivos reacondicionados y herramientas de reparación. Asegure su cadena de suministro B2B directamente desde Shenzhen."
+        },
+        "hero": {
+            "title": "Catálogo al por Mayor",
+            "desc": "Piezas y herramientas de reparación de alta calidad para centros de servicio profesionales. Aplica cantidad mínima de pedido.",
+            "btn_quote": "Solicitar Lista de Precios"
+        },
+        "catalog": {
+            "label": "Catálogo",
+            "title": "Nuestros Productos"
+        },
+        "categories": {
+            "screens": {
+                "name": "Pantallas Móviles",
+                "items": "iPhone, Samsung, Huawei, Xiaomi"
+            },
+            "laptop": {
+                "name": "Repuestos Portátiles",
+                "items": "Pantallas de MacBook, Baterías, Teclados"
+            },
+            "refurbished": {
+                "name": "Dispositivos Reacondicionados",
+                "items": "iPhones, iPads, MacBooks (Grado A/B)"
+            },
+            "smart": {
+                "name": "Hogar Inteligente e IoT",
+                "items": "Sensores, Concentradores, Cámaras de Seguridad"
+            },
+            "tools": {
+                "name": "Herramientas de Reparación",
+                "items": "Puntas, Estaciones de Soldadura, Microscopios"
+            },
+            "parts": {
+                "name": "Componentes Menores",
+                "items": "Cables Flexibles, Cámaras, Carcasas, Circuitos Integrados"
+            }
+        },
+        "cta": {
+            "title": "¿Necesita un componente específico?",
+            "desc": "Suministramos directamente de fábricas OEM y de posventa de alta gama. Cuéntenos lo que necesita.",
+            "btn_submit": "Enviar Consulta"
+        }
+    },
+    "Footer": {
+        "cta": {
+            "title": "¿Listo para Escalar?",
+            "btn_start": "Inicie su Proyecto"
+        },
+        "brand": {
+            "desc": "Su socio de confianza sobre el terreno en Shenzhen. Garantizamos calidad, estabilidad y abastecimiento ético para empresas globales.",
+            "location": "Shenzhen, China"
+        },
+        "nav": {
+            "solutions": {
+                "label": "Soluciones",
+                "quality": "Control de Calidad",
+                "sourcing": "Abastecimiento",
+                "logistics": "Logística",
+                "wholesale": "Venta al por Mayor"
+            },
+            "industries": {
+                "label": "Industrias",
+                "pcb": "Electrónica y PCB",
+                "cnc": "Mecanizado CNC",
+                "repair": "Repuestos"
+            },
+            "company": {
+                "label": "Empresa",
+                "about": "Sobre Nosotros",
+                "work": "Cómo Trabajamos",
+                "contact": "Contacto"
+            },
+            "resources": {
+                "label": "Recursos",
+                "guides": "Guías Técnicas",
+                "audit": "Auditoría de Fábricas CNC",
+                "native": "Sourcing Nativo",
+                "incoterms": "Guía de Incoterms"
+            }
+        },
+        "connect": {
+            "label": "Conectar"
+        },
+        "copyright": "CTR Supply Solutions. Todos los derechos reservados."
     }
 }

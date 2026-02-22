@@ -5,39 +5,37 @@ import { Container } from "@/components/ui/Container";
 import Image from "next/image";
 import { FadeIn } from "@/components/ui/motion/FadeIn";
 import { motion, useScroll, useTransform } from "framer-motion";
-
-const steps = [
-    {
-        title: "Send Your Spec",
-        description:
-            "Share your product requirements, target price, and quality standards. We review everything within 48 hours.",
-        image: "/images/home/process-discover.webp",
-        alt: "Engineering Schematics and Blueprints"
-    },
-    {
-        title: "We Verify & Source",
-        description:
-            "Our boots-on-the-ground team identifies verified manufacturers. We visit factories to audit capabilities.",
-        image: "/images/home/process-source.webp",
-        alt: "Factory Floor Inspection"
-    },
-    {
-        title: "Sample & Test",
-        description:
-            "We procure samples and run independent testing in our Shenzhen lab. You get a video report before mass production.",
-        image: "/images/home/process-verify.webp",
-        alt: "Electronics Lab Testing"
-    },
-    {
-        title: "Production & QC",
-        description:
-            "Ongoing monitoring during mass production. We perform a final Pre-Shipment Inspection to ensure zero defects.",
-        image: "/images/home/process-deliver.webp",
-        alt: "Global Shipping and Logistics"
-    },
-];
+import { useTranslations } from "next-intl";
 
 export function ScrollytellingProcess() {
+    const t = useTranslations('Process');
+
+    const steps = [
+        {
+            title: t('s1.title'),
+            description: t('s1.desc'),
+            image: "/images/home/process-discover.webp",
+            alt: "Engineering Schematics and Blueprints"
+        },
+        {
+            title: t('s2.title'),
+            description: t('s2.desc'),
+            image: "/images/home/process-source.webp",
+            alt: "Factory Floor Inspection"
+        },
+        {
+            title: t('s3.title'),
+            description: t('s3.desc'),
+            image: "/images/home/process-verify.webp",
+            alt: "Electronics Lab Testing"
+        },
+        {
+            title: t('s4.title'),
+            description: t('s4.desc'),
+            image: "/images/home/process-deliver.webp",
+            alt: "Global Shipping and Logistics"
+        },
+    ];
     const containerRef = useRef<HTMLDivElement>(null);
     const { scrollYProgress } = useScroll({
         target: containerRef,
@@ -49,9 +47,9 @@ export function ScrollytellingProcess() {
             <Container>
                 <div className="mx-auto max-w-2xl lg:text-center mb-16">
                     <FadeIn>
-                        <h2 className="text-base font-semibold leading-7 text-ctr-blue">Process</h2>
+                        <h2 className="text-base font-semibold leading-7 text-ctr-blue">{t('badge')}</h2>
                         <p className="mt-2 text-3xl font-heading font-bold tracking-tight text-ctr-slate sm:text-4xl">
-                            How we work
+                            {t('title')}
                         </p>
                     </FadeIn>
                 </div>

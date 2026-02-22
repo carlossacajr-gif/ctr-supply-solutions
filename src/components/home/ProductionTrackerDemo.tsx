@@ -5,16 +5,20 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Container } from "@/components/ui/Container";
 import { CheckCircle2, Package, Truck, Search, Camera } from "lucide-react";
 import { Button } from "@/components/ui/Button";
-
-const timeline = [
-    { id: 1, status: "Order Received", date: "Oct 24", icon: Package },
-    { id: 2, status: "Raw Material Check", date: "Oct 26", icon: Search },
-    { id: 3, status: "Production Line", date: "Nov 02", icon: Camera },
-    { id: 4, status: "Final QC (PSI)", date: "Nov 10", icon: CheckCircle2 },
-    { id: 5, status: "Shipped", date: "Nov 12", icon: Truck },
-];
+import { useTranslations } from "next-intl";
 
 export function ProductionTrackerDemo() {
+    const t = useTranslations('Tracker');
+
+    const timeline = [
+        { id: 1, status: t('steps.s1.status'), date: t('steps.s1.date'), icon: Package },
+        { id: 2, status: t('steps.s2.status'), date: t('steps.s2.date'), icon: Search },
+        { id: 3, status: t('steps.s3.status'), date: t('steps.s3.date'), icon: Camera },
+        { id: 4, status: t('steps.s4.status'), date: t('steps.s4.date'), icon: CheckCircle2 },
+        { id: 5, status: t('steps.s5.status'), date: t('steps.s5.date'), icon: Truck },
+    ];
+
+
     const [currentStep, setCurrentStep] = useState(0);
     const [isPlaying, setIsPlaying] = useState(false);
 
@@ -41,16 +45,16 @@ export function ProductionTrackerDemo() {
             <Container className="relative z-10">
                 <div className="flex flex-col lg:flex-row gap-16 items-center">
                     <div className="lg:w-1/2">
-                        <h2 className="text-3xl font-heading font-bold mb-6">Transparency isn't a buzzword. It's our standard.</h2>
+                        <h2 className="text-3xl font-heading font-bold mb-6">{t('title')}</h2>
                         <p className="text-slate-300 text-lg mb-8">
-                            Most sourcing agents go dark after the deposit. We provide detailed milestone tracking, bringing clarity to every step from raw material checks to final shipment.
+                            {t('desc')}
                         </p>
                         <Button
                             onClick={handleDemo}
                             disabled={isPlaying}
                             className="bg-ctr-blue hover:bg-sky-500 text-white"
                         >
-                            {isPlaying ? "Loading Timeline..." : "View Process Flow"}
+                            {isPlaying ? t('btn_load') : t('btn_flow')}
                         </Button>
                     </div>
 
@@ -60,11 +64,11 @@ export function ProductionTrackerDemo() {
 
                         <div className="flex justify-between items-center mb-8 border-b border-white/10 pb-4 relative z-10">
                             <div>
-                                <p className="text-xs text-slate-400">TRACKING NUMBER</p>
+                                <p className="text-xs text-slate-400">{t('tracking_label')}</p>
                                 <p className="font-mono text-ctr-blue">PO-2026-CTR-882</p>
                             </div>
                             <div className="px-3 py-1 rounded-full bg-ctr-blue/10 text-ctr-blue text-xs font-bold">
-                                ACTIVE
+                                {t('active_label')}
                             </div>
                         </div>
 
@@ -103,7 +107,7 @@ export function ProductionTrackerDemo() {
                                                 animate={{ scale: 1 }}
                                                 className={`absolute right-0 text-xs px-2 py-1 rounded ${index === timeline.length - 1 && !isPlaying ? 'bg-green-500/20 text-green-400 font-bold' : 'bg-slate-800 text-slate-300'}`}
                                             >
-                                                {index === timeline.length - 1 && !isPlaying ? "Delivered" : "Checking..."}
+                                                {index === timeline.length - 1 && !isPlaying ? t('delivered_status') : t('checking_status')}
                                             </motion.div>
                                         )}
                                     </motion.div>

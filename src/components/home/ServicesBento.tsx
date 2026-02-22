@@ -6,6 +6,7 @@ import Image from "next/image";
 import { ReactNode } from "react";
 import { ShieldCheck, Globe2, Gauge, Search, ArrowUpRight } from "lucide-react";
 import { SpotlightCard } from "../ui/motion/SpotlightCard";
+import { useTranslations } from "next-intl";
 
 export const BentoGrid = ({
     className,
@@ -33,6 +34,7 @@ export const BentoGridItem = ({
     header,
     icon,
     href,
+    learnMore,
 }: {
     className?: string;
     title?: string | ReactNode;
@@ -40,6 +42,7 @@ export const BentoGridItem = ({
     header?: ReactNode;
     icon?: ReactNode;
     href?: string;
+    learnMore?: string;
 }) => {
     return (
         <SpotlightCard
@@ -59,7 +62,7 @@ export const BentoGridItem = ({
                 </div>
                 {href && (
                     <Link href={href} className="mt-4 flex items-center text-sm font-semibold text-ctr-blue">
-                        Learn more <ArrowUpRight className="h-4 w-4 ml-1" />
+                        {learnMore || 'Learn more'} <ArrowUpRight className="h-4 w-4 ml-1" />
                     </Link>
                 )}
             </div>
@@ -70,6 +73,80 @@ export const BentoGridItem = ({
 import { FadeIn } from "../ui/motion/FadeIn";
 
 export function ServicesBento() {
+    const t = useTranslations('ServicesBento');
+
+    const items = [
+        {
+            title: t('qc.title'),
+            description: t('qc.desc'),
+            header: (
+                <div className="relative flex flex-1 w-full h-full min-h-[14rem] md:min-h-[8rem] rounded-xl overflow-hidden">
+                    <Image
+                        src="/images/home/bento-quality.webp"
+                        alt="Professional Quality Control inspector verifying electronics components in a Shenzhen factory"
+                        fill
+                        className="object-cover transition-transform duration-500 group-hover/bento:scale-110"
+                    />
+                    <div className="absolute inset-0 bg-slate-900/10 group-hover/bento:bg-slate-900/0 transition-colors" />
+                </div>
+            ),
+            icon: <ShieldCheck className="h-4 w-4 text-ctr-blue" />,
+            href: "/services/quality-control",
+            learnMore: t('learnMore')
+        },
+        {
+            title: t('sourcing.title'),
+            description: t('sourcing.desc'),
+            header: (
+                <div className="relative flex flex-1 w-full h-full min-h-[14rem] md:min-h-[8rem] rounded-xl overflow-hidden">
+                    <Image
+                        src="/images/home/bento-sourcing.webp"
+                        alt="China sourcing expert negotiating with a manufacturer in a high-tech facility"
+                        fill
+                        className="object-cover object-top transition-transform duration-500 group-hover/bento:scale-110"
+                    />
+                </div>
+            ),
+            icon: <Globe2 className="h-4 w-4 text-ctr-blue" />,
+            href: "/services/sourcing",
+            learnMore: t('learnMore')
+        },
+        {
+            title: t('testing.title'),
+            description: t('testing.desc'),
+            header: (
+                <div className="relative flex flex-1 w-full h-full min-h-[14rem] md:min-h-[8rem] rounded-xl overflow-hidden">
+                    <Image
+                        src="/images/home/bento-testing.webp"
+                        alt="Precision component testing using advanced laboratory equipment"
+                        fill
+                        className="object-cover transition-transform duration-500 group-hover/bento:scale-110"
+                    />
+                </div>
+            ),
+            icon: <Gauge className="h-4 w-4 text-ctr-blue" />,
+            href: "/services/quality-control",
+            learnMore: t('learnMore')
+        },
+        {
+            title: t('logistics.title'),
+            description: t('logistics.desc'),
+            header: (
+                <div className="relative flex flex-1 w-full h-full min-h-[14rem] md:min-h-[8rem] rounded-xl overflow-hidden">
+                    <Image
+                        src="/images/home/bento-logistics.webp"
+                        alt="Global shipping logistics container ship moving freight from China to the world"
+                        fill
+                        className="object-cover object-bottom transition-transform duration-500 group-hover/bento:scale-110"
+                    />
+                </div>
+            ),
+            icon: <Search className="h-4 w-4 text-ctr-blue" />,
+            href: "/services/logistics",
+            learnMore: t('learnMore')
+        },
+    ];
+
     return (
         <BentoGrid className="max-w-4xl mx-auto">
             {items.map((item, i) => (
@@ -81,6 +158,7 @@ export function ServicesBento() {
                         icon={item.icon}
                         className="h-full"
                         href={item.href}
+                        learnMore={item.learnMore}
                     />
                 </FadeIn>
             ))}
@@ -91,72 +169,3 @@ export function ServicesBento() {
 const Skeleton = () => (
     <div className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl bg-gradient-to-br from-neutral-200 to-neutral-100" />
 );
-
-const items = [
-    {
-        title: "Quality Control",
-        description: "Pre-shipment inspections and factory audits to ensure zero defects.",
-        header: (
-            <div className="relative flex flex-1 w-full h-full min-h-[14rem] md:min-h-[8rem] rounded-xl overflow-hidden">
-                <Image
-                    src="/images/home/bento-quality.webp"
-                    alt="Professional Quality Control inspector verifying electronics components in a Shenzhen factory"
-                    fill
-                    className="object-cover transition-transform duration-500 group-hover/bento:scale-110"
-                />
-                <div className="absolute inset-0 bg-slate-900/10 group-hover/bento:bg-slate-900/0 transition-colors" />
-            </div>
-        ),
-        icon: <ShieldCheck className="h-4 w-4 text-ctr-blue" />,
-        href: "/services/quality-control",
-    },
-    {
-        title: "Global Sourcing",
-        description: "Direct access to verified manufacturers in Shenzhen.",
-        header: (
-            <div className="relative flex flex-1 w-full h-full min-h-[14rem] md:min-h-[8rem] rounded-xl overflow-hidden">
-                <Image
-                    src="/images/home/bento-sourcing.webp"
-                    alt="China sourcing expert negotiating with a manufacturer in a high-tech facility"
-                    fill
-                    className="object-cover object-top transition-transform duration-500 group-hover/bento:scale-110"
-                />
-            </div>
-        ),
-        icon: <Globe2 className="h-4 w-4 text-ctr-blue" />,
-        href: "/services/sourcing",
-    },
-    {
-        title: "Component Testing",
-        description: "Lab-grade testing for electronics and raw materials.",
-        header: (
-            <div className="relative flex flex-1 w-full h-full min-h-[14rem] md:min-h-[8rem] rounded-xl overflow-hidden">
-                <Image
-                    src="/images/home/bento-testing.webp"
-                    alt="Precision component testing using advanced laboratory equipment"
-                    fill
-                    className="object-cover transition-transform duration-500 group-hover/bento:scale-110"
-                />
-            </div>
-        ),
-        icon: <Gauge className="h-4 w-4 text-ctr-blue" />,
-        href: "/services/quality-control",
-    },
-    {
-        title: "Supply Chain Logistics",
-        description:
-            "Seamless freight forwarding, warehousing, and customs clearance from factory to final destination.",
-        header: (
-            <div className="relative flex flex-1 w-full h-full min-h-[14rem] md:min-h-[8rem] rounded-xl overflow-hidden">
-                <Image
-                    src="/images/home/bento-logistics.webp"
-                    alt="Global shipping logistics container ship moving freight from China to the world"
-                    fill
-                    className="object-cover object-bottom transition-transform duration-500 group-hover/bento:scale-110"
-                />
-            </div>
-        ),
-        icon: <Search className="h-4 w-4 text-ctr-blue" />,
-        href: "/services/logistics",
-    },
-];

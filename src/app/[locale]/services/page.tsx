@@ -10,32 +10,8 @@ import { Link } from '@/navigation';
 import { ShieldCheck, Globe2, Truck, ArrowRight } from 'lucide-react';
 import { FadeIn } from '@/components/ui/motion/FadeIn';
 import { TextReveal } from '@/components/ui/motion/TextReveal';
-import { ServicesBento } from '@/components/home/ServicesBento';
 import { setRequestLocale } from 'next-intl/server';
-
-const services = [
-    {
-        name: 'Quality Control',
-        description: 'On-site inspections and factory audits to ensure your products meet international standards.',
-        icon: ShieldCheck,
-        href: '/services/quality-control',
-        image: '/images/services/card-quality.webp',
-    },
-    {
-        name: 'Global Sourcing',
-        description: 'We identify verified manufacturers, negotiate terms, and manage the procurement process.',
-        icon: Globe2,
-        href: '/services/sourcing',
-        image: '/images/services/card-sourcing.webp',
-    },
-    {
-        name: 'Logistics Management',
-        description: 'Door-to-door shipping, customs clearance, and warehousing solutions tailored to your timeline.',
-        icon: Truck,
-        href: '/services/logistics',
-        image: '/images/services/card-logistics.webp',
-    },
-];
+import { useTranslations } from 'next-intl';
 
 export const metadata: Metadata = {
     title: 'Supply Chain Services',
@@ -44,6 +20,29 @@ export const metadata: Metadata = {
 
 export default function ServicesPage({ params: { locale } }: { params: { locale: string } }) {
     setRequestLocale(locale);
+    const t = useTranslations('ServicesPage');
+
+    const services = [
+        {
+            key: 's1',
+            icon: ShieldCheck,
+            href: '/services/quality-control',
+            image: '/images/services/card-quality.webp',
+        },
+        {
+            key: 's2',
+            icon: Globe2,
+            href: '/services/sourcing',
+            image: '/images/services/card-sourcing.webp',
+        },
+        {
+            key: 's3',
+            icon: Truck,
+            href: '/services/logistics',
+            image: '/images/services/card-logistics.webp',
+        },
+    ];
+
     return (
         <main className="min-h-screen bg-white">
             <Navbar />
@@ -70,12 +69,12 @@ export default function ServicesPage({ params: { locale } }: { params: { locale:
                 <Container>
                     <div className="mx-auto max-w-2xl text-center">
                         <TextReveal
-                            text="Comprehensive Supply Chain Services"
+                            text={t('hero.title')}
                             className="text-4xl font-heading font-bold tracking-tight text-white sm:text-6xl"
                         />
                         <FadeIn delay={0.2}>
                             <p className="mt-6 text-lg leading-8 text-slate-300">
-                                From finding the factory to delivering the container. We are your end-to-end partner in China.
+                                {t('hero.desc')}
                             </p>
                         </FadeIn>
                     </div>
@@ -96,13 +95,13 @@ export default function ServicesPage({ params: { locale } }: { params: { locale:
                     <div className="mx-auto max-w-2xl lg:max-w-none">
                         <div className="grid grid-cols-1 gap-8 lg:grid-cols-3">
                             {services.map((service, index) => (
-                                <FadeIn key={service.name} delay={0.1 * index} direction="up" className="flex">
+                                <FadeIn key={service.key} delay={0.1 * index} direction="up" className="flex">
                                     <div className="flex flex-col overflow-hidden glass-white rounded-2xl shadow-glass hover:shadow-glass-lg transition-all duration-300 hover:border-ctr-blue/20 w-full">
                                         {/* Image */}
                                         <div className="relative h-48 w-full group overflow-hidden">
                                             <Image
                                                 src={service.image}
-                                                alt={service.name}
+                                                alt={t(`services.${service.key}.name`)}
                                                 fill
                                                 priority
                                                 sizes="(max-width: 1024px) 100vw, 33vw"
@@ -116,12 +115,12 @@ export default function ServicesPage({ params: { locale } }: { params: { locale:
                                                 <div className="bg-ctr-blue/10 p-3 rounded-lg">
                                                     <service.icon className="h-6 w-6 text-ctr-blue" />
                                                 </div>
-                                                <h3 className="text-xl font-bold text-ctr-slate">{service.name}</h3>
+                                                <h3 className="text-xl font-bold text-ctr-slate">{t(`services.${service.key}.name`)}</h3>
                                             </div>
-                                            <p className="text-slate-600 flex-grow mb-8 text-sm leading-6">{service.description}</p>
+                                            <p className="text-slate-600 flex-grow mb-8 text-sm leading-6">{t(`services.${service.key}.desc`)}</p>
                                             <Link href={service.href}>
                                                 <Button variant="outline" className="w-full group">
-                                                    Learn More
+                                                    {t('btn_learn')}
                                                     <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
                                                 </Button>
                                             </Link>
@@ -145,22 +144,22 @@ export default function ServicesPage({ params: { locale } }: { params: { locale:
                         <div className="mx-auto max-w-2xl text-center">
                             <div className="glass rounded-3xl p-10 sm:p-14">
                                 <h2 className="text-3xl font-heading font-bold tracking-tight text-white sm:text-5xl">
-                                    Need a tailored solution?
+                                    {t('cta.title')}
                                 </h2>
                                 <p className="mx-auto mt-6 max-w-lg text-lg leading-8 text-slate-300">
-                                    Tell us about your product. We&apos;ll build a sourcing and QC plan within 48 hours.
+                                    {t('cta.desc')}
                                 </p>
                                 <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
                                     <Link href="/contact">
                                         <MagneticButton>
                                             <Button size="lg" variant="primary">
-                                                Get a Quote
+                                                {t('cta.btn_primary')}
                                             </Button>
                                         </MagneticButton>
                                     </Link>
                                     <Link href="/wholesale">
                                         <Button size="lg" variant="outline" className="border-white/20 text-white hover:bg-white/10">
-                                            Browse Wholesale
+                                            {t('cta.btn_secondary')}
                                         </Button>
                                     </Link>
                                 </div>

@@ -3,7 +3,21 @@
         "title": "Your Supply Chain, Bulletproof.",
         "subtitle": "From sourcing to delivery — we verify every link so you never have to worry.",
         "getQuote": "Get a Quote",
-        "ourServices": "Our Services"
+        "ourServices": "Our Services",
+        "stats": {
+            "s1": "Products Sourced",
+            "s2": "Countries Reached",
+            "s3": "Defect Rate",
+            "s4": "Years Experience"
+        },
+        "expertise": {
+            "badge": "Our Expertise",
+            "title": "Everything you need to source with confidence"
+        },
+        "globe": {
+            "title": "From Shenzhen to the World",
+            "desc": "Our logistics network covers 50+ countries. Customs, duties, and door-to-door — handled."
+        }
     },
     "Navbar": {
         "solutions": "Solutions",
@@ -12,5 +26,388 @@
         "about": "About",
         "contact": "Contact",
         "getStarted": "Get Started"
+    },
+    "ServicesBento": {
+        "learnMore": "Learn more",
+        "qc": {
+            "title": "Quality Control",
+            "desc": "Pre-shipment inspections and factory audits to ensure zero defects."
+        },
+        "sourcing": {
+            "title": "Global Sourcing",
+            "desc": "Direct access to verified manufacturers in Shenzhen."
+        },
+        "testing": {
+            "title": "Component Testing",
+            "desc": "Lab-grade testing for electronics and raw materials."
+        },
+        "logistics": {
+            "title": "Supply Chain Logistics",
+            "desc": "Seamless freight forwarding, warehousing, and customs clearance from factory to final destination."
+        }
+    },
+    "Testimonials": {
+        "badge": "Testimonials",
+        "title": "Trusted by industry leaders",
+        "t1": {
+            "role": "Client",
+            "content": "If you're looking for a partner who combines deep industry knowledge with a strong understanding of Chinese culture, CTR Supply Solutions is the best choice. Their expertise makes them an invaluable ally for navigating complex business landscapes."
+        },
+        "t2": {
+            "role": "Industry Veteran (14+ Years)",
+            "content": "Working with CTR Supply Solutions has been a standout experience. Your team consistently demonstrates high levels of professionalism, expertise, and a customer-centric approach that exceeds expectations."
+        },
+        "t3": {
+            "role": "Long-term Partner (5 Years)",
+            "content": "I am consistently impressed by their professionalism. The leadership displayed by Crystal in guiding the team is exceptional, with a strong focus on key process details and customer satisfaction."
+        },
+        "t4": {
+            "role": "Client",
+            "content": "We are incredibly grateful for the flexibility and patience the CTR Team has shown. Your ability to adapt to our requirements, especially during challenging situations, has made a significant difference."
+        },
+        "t5": {
+            "role": "Client",
+            "content": "The team at CTR is truly exceptional. They are hardworking, concise, and methodical. It is a pleasure to collaborate with them, as their deep understanding of the Chinese market is complemented by their ability to adapt to Western business practices."
+        },
+        "t6": {
+            "role": "Client",
+            "content": "We are incredibly grateful for the flexibility and patience the CTR Team has shown in handling our needs. Your ability to adapt to our requirements, especially during challenging situations, has made a significant difference."
+        }
+    },
+    "TrustBar": {
+        "title": "Trusted by global brands and repair chains"
+    },
+    "Process": {
+        "badge": "Process",
+        "title": "How we work",
+        "s1": {
+            "title": "Send Your Spec",
+            "desc": "Share your product requirements, target price, and quality standards. We review everything within 48 hours."
+        },
+        "s2": {
+            "title": "We Verify & Source",
+            "desc": "Our boots-on-the-ground team identifies verified manufacturers. We visit factories to audit capabilities."
+        },
+        "s3": {
+            "title": "Sample & Test",
+            "desc": "We procure samples and run independent testing in our Shenzhen lab. You get a video report before mass production."
+        },
+        "s4": {
+            "title": "Production & QC",
+            "desc": "Ongoing monitoring during mass production. We perform a final Pre-Shipment Inspection to ensure zero defects."
+        }
+    },
+    "Tracker": {
+        "title": "Transparency isn't a buzzword. It's our standard.",
+        "desc": "Most sourcing agents go dark after the deposit. We provide detailed milestone tracking, bringing clarity to every step from raw material checks to final shipment.",
+        "btn_load": "Loading Timeline...",
+        "btn_flow": "View Process Flow",
+        "tracking_label": "TRACKING NUMBER",
+        "active_label": "ACTIVE",
+        "delivered_status": "Delivered",
+        "checking_status": "Checking...",
+        "steps": {
+            "s1": {
+                "status": "Order Received",
+                "date": "Oct 24"
+            },
+            "s2": {
+                "status": "Raw Material Check",
+                "date": "Oct 26"
+            },
+            "s3": {
+                "status": "Production Line",
+                "date": "Nov 02"
+            },
+            "s4": {
+                "status": "Final QC (PSI)",
+                "date": "Nov 10"
+            },
+            "s5": {
+                "status": "Shipped",
+                "date": "Nov 12"
+            }
+        }
+    },
+    "Video": {
+        "title": "Inside Our Operations",
+        "desc": "Take a look inside our Shenzhen operations and see how we secure supply chains for global brands."
+    },
+    "Hero": {
+        "tagline_start": "Your boots-on-the-ground team in Shenzhen.",
+        "tagline_link": "Read more",
+        "title": "End-to-End Supply Chain Solutions",
+        "desc": "We don't just find suppliers. We verify, audit, and test to ensure your supply chain never breaks. From factory floor compliance to final component testing.",
+        "btn_primary": "Start Your Project",
+        "btn_secondary": "Explore Services"
+    },
+    "Services": {
+        "badge": "Our Expertise",
+        "title": "Everything you need to source with confidence",
+        "desc": "We act as your eyes and ears on the factory floor, protecting your brand from quality fade and supply chain risks.",
+        "s1": {
+            "name": "Quality Control",
+            "desc": "Pre-shipment inspections and factory audits to ensure zero defects."
+        },
+        "s2": {
+            "name": "Global Sourcing",
+            "desc": "Direct access to verified manufacturers in Shenzhen and beyond."
+        },
+        "s3": {
+            "name": "Component Testing",
+            "desc": "Lab-grade testing for electronics and raw materials."
+        },
+        "s4": {
+            "name": "Supply Chain Audit",
+            "desc": "Deep-dive verification of supplier capabilities and ethics."
+        },
+        "link": "Learn more"
+    },
+    "Globe": {
+        "live_label": "Live Logistics Network"
+    },
+    "HowItWorks": {
+        "badge": "Process",
+        "title": "How we work",
+        "steps": {
+            "s1": {
+                "name": "Send Your Spec",
+                "desc": "Share your product requirements, target price, and quality standards."
+            },
+            "s2": {
+                "name": "We Verify & Source",
+                "desc": "Our team identifies the best qualified factories and conducts initial audits."
+            },
+            "s3": {
+                "name": "Sample & Test",
+                "desc": "We procure samples and run independent functionality testing."
+            },
+            "s4": {
+                "name": "Production & QC",
+                "desc": "Ongoing monitoring during mass production with final pre-shipment inspection."
+            }
+        }
+    },
+    "About": {
+        "metadata": {
+            "title": "About Us | 15+ Years in Shenzhen",
+            "desc": "Based in Shenzhen since 2009, our team of engineers and supply chain veterans execute your China manufacturing strategy with precision."
+        },
+        "hero": {
+            "title": "Your Team on the Ground",
+            "desc": "We bridge the gap between global brands and Chinese manufacturing. Not just a sourcing agent, but a complete supply chain partner."
+        },
+        "stats": {
+            "s1": "Years Experience",
+            "s2": "Factories Audited",
+            "s3": "Countries Served",
+            "s4": "Defects Tolerated"
+        },
+        "mission": {
+            "badge": "Our Mission",
+            "title": "Eliminate the risks of manufacturing in China.",
+            "p1": "Manufacturing in China offers incredible opportunities, but also significant risks. Quality fade, communication breakdowns, and shipping delays can destroy margins.",
+            "p2_start": "CTR Supply Solutions was founded to solve this. Located in",
+            "p2_strong": "Shenzhen",
+            "p2_end": ", the electronics capital of the world, we speak the language, understand the culture, and know the factories personally.",
+            "sus_title": "Sustainability & Ethics",
+            "sus_desc": "We are committed to sustainable practices. From sourcing eco-friendly materials to minimizing waste in packaging, we help you build a greener supply chain.",
+            "lead_title": "Leadership",
+            "lead_desc": "Led by Crystal, our team combines 15+ years of supply chain expertise with a deep commitment to process detail and customer satisfaction. We don't just manage orders; we manage relationships."
+        },
+        "hq": {
+            "title": "HQ: Shenzhen, China",
+            "district": "Futian District"
+        },
+        "cta": {
+            "title": "Work with our team",
+            "desc": "Let us handle the complexity of Chinese manufacturing while you focus on growth.",
+            "btn_primary": "Get a Quote",
+            "btn_secondary": "Explore Services"
+        }
+    },
+    "Contact": {
+        "title": "Start Your Project",
+        "desc": "Skip the generic contact form. Use our engineering-specific project qualifier to get a direct strategic sourcing plan from our onsite team.",
+        "channels": "Direct Channels",
+        "hq_label": "Headquarters",
+        "hq_city": "Futian District, Shenzhen, China"
+    },
+    "TechnicalInquiry": {
+        "industries": {
+            "electronics": "Electronics",
+            "cnc": "CNC Machining",
+            "wholesale": "Wholesale/Retail",
+            "other": "Other Manufacturing"
+        },
+        "step1": {
+            "title": "Select Your Industry",
+            "desc": "This helps us assign the right engineering team to your project.",
+            "btn_continue": "Continue"
+        },
+        "step2": {
+            "btn_back": "Back",
+            "title": "Project Volume & Scale",
+            "desc": "Are you scaling a prototype or managing high-volume mass production?",
+            "volume_pilot": "Pilot/Verification Batch (100 - 500 units)",
+            "volume_scale": "Mass Production Scale (500 - 5,000 units)",
+            "volume_enterprise": "Enterprise/High-Volume (5,000+ units)",
+            "btn_specs": "Technical Specs"
+        },
+        "step3": {
+            "title": "Technical Requirements",
+            "desc": "List any specific tolerances, certifications (CE, UL, RoHS), or material standards.",
+            "placeholder": "e.g. ±0.02mm tolerances on aluminum 6061 components, UL certification required, DDP shipping to USA.",
+            "upload_title": "Upload Blueprints / RFQ",
+            "upload_desc": "Drop your .PDF, .STEP, or .XLSX files here (Max 50MB)",
+            "btn_final": "Final Contact"
+        },
+        "step4": {
+            "title": "Professional Details",
+            "desc": "Complete your inquiry to receive a customized strategic sourcing plan.",
+            "labels": {
+                "first_name": "First Name",
+                "last_name": "Last Name",
+                "company": "Company Website",
+                "email": "Work Email"
+            },
+            "placeholders": {
+                "first_name": "John",
+                "last_name": "Doe",
+                "company": "www.example.com",
+                "email": "john@example.com"
+            },
+            "btn_submitting": "Processing Requirements...",
+            "btn_submit": "Submit Technical Inquiry",
+            "agreement": "By submitting, you agree to our privacy policy and NDA standards."
+        },
+        "success": {
+            "title": "Inquiry Received",
+            "desc_start": "Thank you, ",
+            "desc_mid": ". Our engineering lead for ",
+            "desc_end": " will review your specs and contact you within 24 hours to schedule a deep-dive call.",
+            "guarantee_title": "Confidentiality Guarantee",
+            "guarantee_desc": "All blueprints and data sent via this form are protected by our master NDA. We never share proprietary designs with unqualified vendors."
+        },
+        "error_alert": "Technical error submitting inquiry. Please try direct email: info@ctrsupplysolutions.com"
+    },
+    "ServicesPage": {
+        "metadata": {
+            "title": "Supply Chain Services",
+            "desc": "From factory floor to warehouse door. Explore our comprehensive services including Quality Control, Global Sourcing, and Logistics."
+        },
+        "hero": {
+            "title": "Comprehensive Supply Chain Services",
+            "desc": "From finding the factory to delivering the container. We are your end-to-end partner in China."
+        },
+        "services": {
+            "s1": {
+                "name": "Quality Control",
+                "desc": "On-site inspections and factory audits to ensure your products meet international standards."
+            },
+            "s2": {
+                "name": "Global Sourcing",
+                "desc": "We identify verified manufacturers, negotiate terms, and manage the procurement process."
+            },
+            "s3": {
+                "name": "Logistics Management",
+                "desc": "Door-to-door shipping, customs clearance, and warehousing solutions tailored to your timeline."
+            }
+        },
+        "btn_learn": "Learn More",
+        "cta": {
+            "title": "Need a tailored solution?",
+            "desc": "Tell us about your product. We'll build a sourcing and QC plan within 48 hours.",
+            "btn_primary": "Get a Quote",
+            "btn_secondary": "Browse Wholesale"
+        }
+    },
+    "WholesalePage": {
+        "metadata": {
+            "title": "Wholesale Electronics & Parts",
+            "desc": "Factory-direct pricing on mobile screens, laptop parts, refurbished devices, and repair tools. Secure your B2B supply chain straight from Shenzhen."
+        },
+        "hero": {
+            "title": "Wholesale Components",
+            "desc": "High-quality repair parts and tools for professional service centers. MOQ applies.",
+            "btn_quote": "Request Price List"
+        },
+        "catalog": {
+            "label": "Catalog",
+            "title": "What we supply"
+        },
+        "categories": {
+            "screens": {
+                "name": "Mobile Screens",
+                "items": "iPhone, Samsung, Huawei, Xiaomi"
+            },
+            "laptop": {
+                "name": "Laptop Parts",
+                "items": "MacBook Screens, Batteries, Keyboards"
+            },
+            "refurbished": {
+                "name": "Refurbished Devices",
+                "items": "iPhones, iPads, MacBooks (Grade A/B)"
+            },
+            "smart": {
+                "name": "Smart Home & IoT",
+                "items": "Sensors, Hubs, Security Cameras"
+            },
+            "tools": {
+                "name": "Repair Tools",
+                "items": "Tips, Soldering Stations, Microscopes"
+            },
+            "parts": {
+                "name": "Small Parts",
+                "items": "Flex Cables, Cameras, Housings, ICs"
+            }
+        },
+        "cta": {
+            "title": "Need a specific part?",
+            "desc": "We source directly from OEM and high-quality aftermarket factories. Tell us what you need.",
+            "btn_submit": "Send Inquiry"
+        }
+    },
+    "Footer": {
+        "cta": {
+            "title": "Ready to Scale?",
+            "btn_start": "Start Your Project"
+        },
+        "brand": {
+            "desc": "Your boots-on-the-ground partner in Shenzhen. Ensuring quality, stability, and ethical sourcing for global businesses.",
+            "location": "Shenzhen, China"
+        },
+        "nav": {
+            "solutions": {
+                "label": "Solutions",
+                "quality": "Quality Control",
+                "sourcing": "Sourcing",
+                "logistics": "Logistics",
+                "wholesale": "Wholesale"
+            },
+            "industries": {
+                "label": "Industries",
+                "pcb": "Electronics & PCB",
+                "cnc": "CNC Machining",
+                "repair": "Repair Parts"
+            },
+            "company": {
+                "label": "Company",
+                "about": "About Us",
+                "work": "How We Work",
+                "contact": "Contact"
+            },
+            "resources": {
+                "label": "Resources",
+                "guides": "Technical Guides",
+                "audit": "CNC Factory Audit",
+                "native": "Native Sourcing",
+                "incoterms": "Incoterms Guide"
+            }
+        },
+        "connect": {
+            "label": "Connect"
+        },
+        "copyright": "CTR Supply Solutions. All rights reserved."
     }
 }

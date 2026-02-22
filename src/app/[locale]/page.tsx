@@ -18,11 +18,11 @@ import { FadeIn } from '@/components/ui/motion/FadeIn';
 import { TrustBar } from '@/components/sections/TrustBar';
 import { setRequestLocale } from 'next-intl/server';
 
-const stats = [
-    { value: 500, suffix: '+', label: 'Products Sourced' },
-    { value: 50, suffix: '+', label: 'Countries Reached' },
-    { value: 0.3, suffix: '%', label: 'Defect Rate', isDecimal: true },
-    { value: 15, suffix: '+', label: 'Years Experience' },
+const getStats = (t: any) => [
+    { value: 500, suffix: '+', label: t('stats.s1') },
+    { value: 50, suffix: '+', label: t('stats.s2') },
+    { value: 0.3, suffix: '%', label: t('stats.s3'), isDecimal: true },
+    { value: 15, suffix: '+', label: t('stats.s4') },
 ];
 
 export default function Home({ params: { locale } }: { params: { locale: string } }) {
@@ -67,7 +67,7 @@ export default function Home({ params: { locale } }: { params: { locale: string 
                     <FadeIn delay={0.6}>
                         <div className="mx-auto max-w-4xl mt-8">
                             <div className="glass rounded-2xl p-6 sm:p-8 grid grid-cols-2 sm:grid-cols-4 gap-6 sm:gap-8">
-                                {stats.map((stat, i) => (
+                                {getStats(t).map((stat, i) => (
                                     <div key={i} className="text-center">
                                         <div className="text-2xl sm:text-3xl font-heading font-bold text-white">
                                             {stat.isDecimal ? (
@@ -102,9 +102,9 @@ export default function Home({ params: { locale } }: { params: { locale: string 
                 <Container>
                     <div className="mx-auto max-w-2xl text-center mb-16">
                         <FadeIn>
-                            <h2 className="text-base font-semibold leading-7 text-ctr-blue">Our Expertise</h2>
+                            <h2 className="text-base font-semibold leading-7 text-ctr-blue">{t('expertise.badge')}</h2>
                             <p className="mt-2 text-3xl font-heading font-bold tracking-tight text-ctr-slate sm:text-4xl">
-                                Everything you need to source with confidence
+                                {t('expertise.title')}
                             </p>
                         </FadeIn>
                     </div>
@@ -138,10 +138,10 @@ export default function Home({ params: { locale } }: { params: { locale: string 
                 <Container className="relative z-20 text-center mb-12">
                     <FadeIn>
                         <h2 className="text-3xl font-heading font-bold tracking-tight text-ctr-slate sm:text-4xl mb-4">
-                            From Shenzhen to the World
+                            {t('globe.title')}
                         </h2>
                         <p className="text-slate-500 max-w-xl mx-auto">
-                            Our logistics network covers 50+ countries. Customs, duties, and door-to-door — handled.
+                            {t('globe.desc')}
                         </p>
                     </FadeIn>
                 </Container>

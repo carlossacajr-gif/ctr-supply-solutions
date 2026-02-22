@@ -19,6 +19,7 @@ import {
     Globe
 } from 'lucide-react';
 import { cn } from '@/lib/utils';
+import { useTranslations } from 'next-intl';
 
 type FormData = {
     industry: string;
@@ -38,6 +39,7 @@ const industries = [
 ];
 
 export function TechnicalInquiry() {
+    const t = useTranslations('TechnicalInquiry');
     const [step, setStep] = useState(1);
     const [formData, setFormData] = useState<FormData>({
         industry: '',
@@ -68,7 +70,7 @@ export function TechnicalInquiry() {
             if (response.ok) {
                 setIsSubmitted(true);
             } else {
-                alert('Technical error submitting inquiry. Please try direct email: info@ctrsupplysolutions.com');
+                alert(t('error_alert'));
             }
         } catch (error) {
             console.error('Submission failed:', error);
@@ -108,8 +110,8 @@ export function TechnicalInquiry() {
                                         animate={{ opacity: 1, x: 0 }}
                                         exit={{ opacity: 0, x: -20 }}
                                     >
-                                        <h3 className="text-2xl font-bold text-ctr-slate mb-2">Select Your Industry</h3>
-                                        <p className="text-slate-500 mb-8">This helps us assign the right engineering team to your project.</p>
+                                        <h3 className="text-2xl font-bold text-ctr-slate mb-2">{t('step1.title')}</h3>
+                                        <p className="text-slate-500 mb-8">{t('step1.desc')}</p>
 
                                         <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
                                             {industries.map((ind) => (
@@ -131,7 +133,7 @@ export function TechnicalInquiry() {
                                                     <span className={cn(
                                                         "text-sm font-bold",
                                                         formData.industry === ind.id ? "text-ctr-slate" : "text-slate-500"
-                                                    )}>{ind.label}</span>
+                                                    )}>{t(`industries.${ind.id}`)}</span>
                                                 </button>
                                             ))}
                                         </div>
@@ -143,7 +145,7 @@ export function TechnicalInquiry() {
                                                 disabled={!formData.industry}
                                                 className="bg-ctr-blue"
                                             >
-                                                Continue <ArrowRight className="ml-2 w-4 h-4" />
+                                                {t('step1.btn_continue')} <ArrowRight className="ml-2 w-4 h-4" />
                                             </Button>
                                         </div>
                                     </motion.div>
@@ -157,16 +159,16 @@ export function TechnicalInquiry() {
                                         exit={{ opacity: 0, x: -20 }}
                                     >
                                         <button onClick={prevStep} className="flex items-center gap-2 text-slate-400 hover:text-ctr-blue mb-6 text-sm font-bold uppercase tracking-widest">
-                                            <ChevronLeft className="w-4 h-4" /> Back
+                                            <ChevronLeft className="w-4 h-4" /> {t('step2.btn_back')}
                                         </button>
-                                        <h3 className="text-2xl font-bold text-ctr-slate mb-2">Project Volume & Scale</h3>
-                                        <p className="text-slate-500 mb-8">Are you scaling a prototype or managing high-volume mass production?</p>
+                                        <h3 className="text-2xl font-bold text-ctr-slate mb-2">{t('step2.title')}</h3>
+                                        <p className="text-slate-500 mb-8">{t('step2.desc')}</p>
 
                                         <div className="space-y-4 mb-8">
                                             {[
-                                                { id: 'pilot', label: 'Pilot/Verification Batch (100 - 500 units)', icon: Target },
-                                                { id: 'scale', label: 'Mass Production Scale (500 - 5,000 units)', icon: Truck },
-                                                { id: 'enterprise', label: 'Enterprise/High-Volume (5,000+ units)', icon: Globe },
+                                                { id: 'pilot', label: t('step2.volume_pilot'), icon: Target },
+                                                { id: 'scale', label: t('step2.volume_scale'), icon: Truck },
+                                                { id: 'enterprise', label: t('step2.volume_enterprise'), icon: Globe },
                                             ].map((v) => (
                                                 <button
                                                     key={v.id}
@@ -200,7 +202,7 @@ export function TechnicalInquiry() {
                                                 disabled={!formData.volume}
                                                 className="bg-ctr-blue"
                                             >
-                                                Technical Specs <ArrowRight className="ml-2 w-4 h-4" />
+                                                {t('step2.btn_specs')} <ArrowRight className="ml-2 w-4 h-4" />
                                             </Button>
                                         </div>
                                     </motion.div>
@@ -214,23 +216,23 @@ export function TechnicalInquiry() {
                                         exit={{ opacity: 0, x: -20 }}
                                     >
                                         <button onClick={prevStep} className="flex items-center gap-2 text-slate-400 hover:text-ctr-blue mb-6 text-sm font-bold uppercase tracking-widest">
-                                            <ChevronLeft className="w-4 h-4" /> Back
+                                            <ChevronLeft className="w-4 h-4" /> {t('step2.btn_back')}
                                         </button>
-                                        <h3 className="text-2xl font-bold text-ctr-slate mb-2">Technical Requirements</h3>
-                                        <p className="text-slate-500 mb-8">List any specific tolerances, certifications (CE, UL, RoHS), or material standards.</p>
+                                        <h3 className="text-2xl font-bold text-ctr-slate mb-2">{t('step3.title')}</h3>
+                                        <p className="text-slate-500 mb-8">{t('step3.desc')}</p>
 
                                         <div className="space-y-6 mb-8">
                                             <textarea
                                                 className="w-full h-40 p-6 rounded-2xl bg-slate-50 border-2 border-slate-100 focus:border-ctr-blue/50 focus:ring-4 focus:ring-ctr-blue/5 outline-none transition-all text-slate-700 placeholder:text-slate-400"
-                                                placeholder="e.g. ±0.02mm tolerances on aluminum 6061 components, UL certification required, DDP shipping to USA."
+                                                placeholder={t('step3.placeholder')}
                                                 value={formData.technicalSpecs}
                                                 onChange={(e) => updateField('technicalSpecs', e.target.value)}
                                             />
 
                                             <div className="p-8 rounded-2xl border-2 border-dashed border-slate-200 bg-slate-50 flex flex-col items-center justify-center text-center hover:bg-slate-100/50 transition-colors cursor-pointer group">
                                                 <Upload className="w-10 h-10 text-slate-300 mb-4 group-hover:text-ctr-blue transition-colors" />
-                                                <h4 className="font-bold text-slate-700 mb-1">Upload Blueprints / RFQ</h4>
-                                                <p className="text-sm text-slate-500">Drop your .PDF, .STEP, or .XLSX files here (Max 50MB)</p>
+                                                <h4 className="font-bold text-slate-700 mb-1">{t('step3.upload_title')}</h4>
+                                                <p className="text-sm text-slate-500">{t('step3.upload_desc')}</p>
                                             </div>
                                         </div>
 
@@ -240,7 +242,7 @@ export function TechnicalInquiry() {
                                                 onClick={nextStep}
                                                 className="bg-ctr-blue"
                                             >
-                                                Final Contact <ArrowRight className="ml-2 w-4 h-4" />
+                                                {t('step3.btn_final')} <ArrowRight className="ml-2 w-4 h-4" />
                                             </Button>
                                         </div>
                                     </motion.div>
@@ -254,44 +256,44 @@ export function TechnicalInquiry() {
                                         exit={{ opacity: 0, x: -20 }}
                                     >
                                         <button onClick={prevStep} className="flex items-center gap-2 text-slate-400 hover:text-ctr-blue mb-6 text-sm font-bold uppercase tracking-widest">
-                                            <ChevronLeft className="w-4 h-4" /> Back
+                                            <ChevronLeft className="w-4 h-4" /> {t('step2.btn_back')}
                                         </button>
-                                        <h3 className="text-2xl font-bold text-ctr-slate mb-2">Professional Details</h3>
-                                        <p className="text-slate-500 mb-8">Complete your inquiry to receive a customized strategic sourcing plan.</p>
+                                        <h3 className="text-2xl font-bold text-ctr-slate mb-2">{t('step4.title')}</h3>
+                                        <p className="text-slate-500 mb-8">{t('step4.desc')}</p>
 
                                         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
                                             <div className="space-y-2">
-                                                <label className="text-xs font-bold text-slate-500 uppercase tracking-widest px-1">First Name</label>
+                                                <label className="text-xs font-bold text-slate-500 uppercase tracking-widest px-1">{t('step4.labels.first_name')}</label>
                                                 <Input
-                                                    placeholder="John"
+                                                    placeholder={t('step4.placeholders.first_name')}
                                                     value={formData.firstName}
                                                     onChange={(e) => updateField('firstName', e.target.value)}
                                                     required
                                                 />
                                             </div>
                                             <div className="space-y-2">
-                                                <label className="text-xs font-bold text-slate-500 uppercase tracking-widest px-1">Last Name</label>
+                                                <label className="text-xs font-bold text-slate-500 uppercase tracking-widest px-1">{t('step4.labels.last_name')}</label>
                                                 <Input
-                                                    placeholder="Wick"
+                                                    placeholder={t('step4.placeholders.last_name')}
                                                     value={formData.lastName}
                                                     onChange={(e) => updateField('lastName', e.target.value)}
                                                     required
                                                 />
                                             </div>
                                             <div className="space-y-2">
-                                                <label className="text-xs font-bold text-slate-500 uppercase tracking-widest px-1">Company Website</label>
+                                                <label className="text-xs font-bold text-slate-500 uppercase tracking-widest px-1">{t('step4.labels.company')}</label>
                                                 <Input
-                                                    placeholder="www.example.com"
+                                                    placeholder={t('step4.placeholders.company')}
                                                     value={formData.company}
                                                     onChange={(e) => updateField('company', e.target.value)}
                                                     required
                                                 />
                                             </div>
                                             <div className="space-y-2">
-                                                <label className="text-xs font-bold text-slate-500 uppercase tracking-widest px-1">Work Email</label>
+                                                <label className="text-xs font-bold text-slate-500 uppercase tracking-widest px-1">{t('step4.labels.email')}</label>
                                                 <Input
                                                     type="email"
-                                                    placeholder="john@example.com"
+                                                    placeholder={t('step4.placeholders.email')}
                                                     value={formData.email}
                                                     onChange={(e) => updateField('email', e.target.value)}
                                                     required
@@ -304,11 +306,11 @@ export function TechnicalInquiry() {
                                             disabled={isSubmitting}
                                             className="w-full h-14 bg-ctr-slate text-white hover:bg-ctr-blue transition-all text-lg"
                                         >
-                                            {isSubmitting ? 'Processing Requirements...' : 'Submit Technical Inquiry'}
+                                            {isSubmitting ? t('step4.btn_submitting') : t('step4.btn_submit')}
                                             {!isSubmitting && <ArrowRight className="ml-2 w-5 h-5" />}
                                         </Button>
                                         <p className="mt-4 text-center text-xs text-slate-400">
-                                            By submitting, you agree to our privacy policy and NDA standards.
+                                            {t('step4.agreement')}
                                         </p>
                                     </motion.div>
                                 )}
@@ -322,15 +324,15 @@ export function TechnicalInquiry() {
                         <div className="h-24 w-24 bg-green-500/10 text-green-500 rounded-full flex items-center justify-center mx-auto mb-8 animate-bounce-subtle">
                             <CheckCircle2 className="w-12 h-12" />
                         </div>
-                        <h2 className="text-4xl font-bold text-ctr-slate mb-4">Inquiry Received</h2>
+                        <h2 className="text-4xl font-bold text-ctr-slate mb-4">{t('success.title')}</h2>
                         <p className="text-xl text-slate-600 mb-10 max-w-xl mx-auto">
-                            Thank you, {formData.firstName}. Our engineering lead for {formData.industry} will review your specs and contact you within 24 hours to schedule a deep-dive call.
+                            {t('success.desc_start')}{formData.firstName}{t('success.desc_mid')}{formData.industry ? t(`industries.${formData.industry}`) : 'your industry'}{t('success.desc_end')}
                         </p>
                         <div className="bg-slate-50 rounded-2xl p-8 max-w-lg mx-auto border border-slate-100 flex items-start gap-4 text-left">
                             <ShieldCheck className="w-6 h-6 text-ctr-blue flex-shrink-0 mt-1" />
                             <div>
-                                <h4 className="font-bold text-ctr-slate">Confidentiality Guarantee</h4>
-                                <p className="text-sm text-slate-500 mt-1">All blueprints and data sent via this form are protected by our master NDA. We never share proprietary designs with unqualified vendors.</p>
+                                <h4 className="font-bold text-ctr-slate">{t('success.guarantee_title')}</h4>
+                                <p className="text-sm text-slate-500 mt-1">{t('success.guarantee_desc')}</p>
                             </div>
                         </div>
                     </div>

@@ -1,8 +1,11 @@
 import { Container } from '@/components/ui/Container';
 import { Play } from 'lucide-react';
 import { FadeIn } from '@/components/ui/motion/FadeIn';
+import { useTranslations } from 'next-intl';
 
 export function CompanyVideo() {
+    const t = useTranslations('Video');
+
     return (
         <section className="relative py-20 sm:py-24 bg-ctr-dark overflow-hidden">
             {/* Ambient Background Glow */}
@@ -12,10 +15,10 @@ export function CompanyVideo() {
                 <div className="mx-auto max-w-4xl text-center mb-12">
                     <FadeIn>
                         <h2 className="text-3xl font-heading font-bold tracking-tight text-white sm:text-4xl mb-4">
-                            Inside Our Operations
+                            {t('title')}
                         </h2>
                         <p className="text-lg text-slate-300 max-w-2xl mx-auto">
-                            Take a look inside our Shenzhen operations and see how we secure supply chains for global brands.
+                            {t('desc')}
                         </p>
                     </FadeIn>
                 </div>

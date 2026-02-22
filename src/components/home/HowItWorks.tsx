@@ -1,36 +1,40 @@
 import { Container } from '@/components/ui/Container';
-
-const steps = [
-    {
-        id: '01',
-        name: 'Send Your Spec',
-        description: 'Share your product requirements, target price, and quality standards.',
-    },
-    {
-        id: '02',
-        name: 'We Verify & Source',
-        description: 'Our team identifies the best qualified factories and conducts initial audits.',
-    },
-    {
-        id: '03',
-        name: 'Sample & Test',
-        description: 'We procure samples and run independent functionality testing.',
-    },
-    {
-        id: '04',
-        name: 'Production & QC',
-        description: 'Ongoing monitoring during mass production with final pre-shipment inspection.',
-    },
-];
+import { useTranslations } from 'next-intl';
 
 export function HowItWorks() {
+    const t = useTranslations('HowItWorks');
+
+    const steps = [
+        {
+            id: '01',
+            name: t('steps.s1.name'),
+            description: t('steps.s1.desc'),
+        },
+        {
+            id: '02',
+            name: t('steps.s2.name'),
+            description: t('steps.s2.desc'),
+        },
+        {
+            id: '03',
+            name: t('steps.s3.name'),
+            description: t('steps.s3.desc'),
+        },
+        {
+            id: '04',
+            name: t('steps.s4.name'),
+            description: t('steps.s4.desc'),
+        },
+    ];
+
+
     return (
         <section id="how-it-works" className="bg-slate-50 py-24 sm:py-32">
             <Container>
                 <div className="mx-auto max-w-2xl lg:text-center">
-                    <h2 className="text-base font-semibold leading-7 text-ctr-blue">Process</h2>
+                    <h2 className="text-base font-semibold leading-7 text-ctr-blue">{t('badge')}</h2>
                     <p className="mt-2 text-3xl font-heading font-bold tracking-tight text-ctr-slate sm:text-4xl">
-                        How we work
+                        {t('title')}
                     </p>
                 </div>
                 <div className="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-none">

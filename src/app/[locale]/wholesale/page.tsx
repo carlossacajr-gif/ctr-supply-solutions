@@ -10,15 +10,9 @@ import { MagneticButton } from '@/components/ui/motion/MagneticButton';
 import { Link } from '@/navigation';
 import { Smartphone, Laptop, RefreshCw, Wifi, Wrench, Cpu, ArrowRight } from 'lucide-react';
 import { setRequestLocale } from 'next-intl/server';
+import { useTranslations } from 'next-intl';
 
-const categories = [
-    { name: 'Mobile Screens', items: 'iPhone, Samsung, Huawei, Xiaomi', icon: Smartphone },
-    { name: 'Laptop Parts', items: 'MacBook Screens, Batteries, Keyboards', icon: Laptop },
-    { name: 'Refurbished Devices', items: 'iPhones, iPads, MacBooks (Grade A/B)', icon: RefreshCw },
-    { name: 'Smart Home & IoT', items: 'Sensors, Hubs, Security Cameras', icon: Wifi },
-    { name: 'Repair Tools', items: 'Tips, Soldering Stations, Microscopes', icon: Wrench },
-    { name: 'Small Parts', items: 'Flex Cables, Cameras, Housings, ICs', icon: Cpu },
-];
+
 
 export const metadata: Metadata = {
     title: 'Wholesale Electronics & Parts',
@@ -27,6 +21,17 @@ export const metadata: Metadata = {
 
 export default function WholesalePage({ params: { locale } }: { params: { locale: string } }) {
     setRequestLocale(locale);
+    const t = useTranslations('WholesalePage');
+
+    const categories = [
+        { key: 'screens', icon: Smartphone },
+        { key: 'laptop', icon: Laptop },
+        { key: 'refurbished', icon: RefreshCw },
+        { key: 'smart', icon: Wifi },
+        { key: 'tools', icon: Wrench },
+        { key: 'parts', icon: Cpu },
+    ];
+
     return (
         <main className="min-h-screen bg-white">
             <Navbar />
@@ -40,19 +45,19 @@ export default function WholesalePage({ params: { locale } }: { params: { locale
                 <Container>
                     <div className="mx-auto max-w-2xl text-center">
                         <TextReveal
-                            text="Wholesale Components"
+                            text={t('hero.title')}
                             className="text-4xl font-heading font-bold tracking-tight text-white sm:text-6xl"
                         />
                         <FadeIn delay={0.2}>
                             <p className="mt-6 text-lg leading-8 text-slate-300">
-                                High-quality repair parts and tools for professional service centers. MOQ applies.
+                                {t('hero.desc')}
                             </p>
                         </FadeIn>
                         <FadeIn delay={0.4}>
                             <div className="mt-10 flex items-center justify-center gap-x-6">
                                 <Link href="/contact">
                                     <MagneticButton>
-                                        <Button size="lg">Request Price List</Button>
+                                        <Button size="lg">{t('hero.btn_quote')}</Button>
                                     </MagneticButton>
                                 </Link>
                             </div>
@@ -73,23 +78,23 @@ export default function WholesalePage({ params: { locale } }: { params: { locale
                 <Container>
                     <FadeIn>
                         <div className="mx-auto max-w-2xl text-center mb-16">
-                            <h2 className="text-base font-semibold leading-7 text-ctr-blue">Catalog</h2>
+                            <h2 className="text-base font-semibold leading-7 text-ctr-blue">{t('catalog.label')}</h2>
                             <p className="mt-2 text-3xl font-heading font-bold tracking-tight text-ctr-slate sm:text-4xl">
-                                What we supply
+                                {t('catalog.title')}
                             </p>
                         </div>
                     </FadeIn>
                     <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
                         {categories.map((category, index) => (
-                            <FadeIn key={category.name} delay={0.08 * index} direction="up">
+                            <FadeIn key={category.key} delay={0.08 * index} direction="up">
                                 <div className="glass-white rounded-2xl p-6 shadow-glass hover:shadow-glass-lg transition-all duration-300 group hover:border-ctr-blue/20">
                                     <div className="flex items-center gap-4 mb-3">
                                         <div className="h-10 w-10 rounded-xl bg-ctr-blue/10 flex items-center justify-center group-hover:bg-ctr-blue/20 transition-colors">
                                             <category.icon className="h-5 w-5 text-ctr-blue" />
                                         </div>
-                                        <h3 className="text-lg font-bold text-ctr-slate">{category.name}</h3>
+                                        <h3 className="text-lg font-bold text-ctr-slate">{t(`categories.${category.key}.name`)}</h3>
                                     </div>
-                                    <p className="text-slate-500 text-sm leading-relaxed">{category.items}</p>
+                                    <p className="text-slate-500 text-sm leading-relaxed">{t(`categories.${category.key}.items`)}</p>
                                 </div>
                             </FadeIn>
                         ))}
@@ -104,14 +109,14 @@ export default function WholesalePage({ params: { locale } }: { params: { locale
                             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[400px] h-[400px] rounded-full bg-ctr-blue/10 blur-[120px]" />
                             <div className="relative z-10">
                                 <div className="glass rounded-2xl p-8 sm:p-12 max-w-xl mx-auto">
-                                    <h2 className="text-2xl font-bold text-white mb-4">Need a specific part?</h2>
+                                    <h2 className="text-2xl font-bold text-white mb-4">{t('cta.title')}</h2>
                                     <p className="text-slate-300 mb-8 max-w-md mx-auto text-sm">
-                                        We source directly from OEM and high-quality aftermarket factories. Tell us what you need.
+                                        {t('cta.desc')}
                                     </p>
                                     <Link href="/contact">
                                         <MagneticButton>
                                             <Button variant="primary" className="group">
-                                                Send Inquiry
+                                                {t('cta.btn_submit')}
                                                 <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
                                             </Button>
                                         </MagneticButton>

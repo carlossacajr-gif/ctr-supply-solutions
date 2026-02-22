@@ -11,9 +11,12 @@ import { FadeIn } from '@/components/ui/motion/FadeIn';
 import { MagneticButton } from '@/components/ui/motion/MagneticButton';
 import { TechnicalInquiry } from '@/components/forms/TechnicalInquiry';
 import { setRequestLocale } from 'next-intl/server';
+import { useTranslations } from 'next-intl';
 
 export default function ContactPage({ params: { locale } }: { params: { locale: string } }) {
     setRequestLocale(locale);
+    const t = useTranslations('Contact');
+
     return (
         <main className="min-h-screen bg-slate-900 overflow-hidden relative">
             <Navbar />
@@ -35,12 +38,12 @@ export default function ContactPage({ params: { locale } }: { params: { locale: 
                 <Container>
                     <div className="mx-auto max-w-2xl text-center mb-16">
                         <TextReveal
-                            text="Start Your Project"
+                            text={t('title')}
                             className="text-4xl font-heading font-bold tracking-tight text-white sm:text-6xl"
                         />
                         <FadeIn delay={0.2}>
                             <p className="mt-6 text-lg leading-8 text-slate-300">
-                                Skip the generic contact form. Use our engineering-specific project qualifier to get a direct strategic sourcing plan from our onsite team.
+                                {t('desc')}
                             </p>
                         </FadeIn>
                     </div>
@@ -53,15 +56,15 @@ export default function ContactPage({ params: { locale } }: { params: { locale: 
                         {/* Direct Channels Cards */}
                         <FadeIn delay={0.3}>
                             <div className="glass-dark rounded-2xl p-8 space-y-8 shadow-glass-lg">
-                                <h2 className="text-2xl font-bold text-white mb-8">Direct Channels</h2>
+                                <h2 className="text-2xl font-bold text-white mb-8">{t('channels')}</h2>
 
                                 <div className="flex items-center gap-6 group cursor-pointer">
                                     <div className="h-14 w-14 rounded-2xl bg-purple-500/20 flex items-center justify-center group-hover:scale-110 transition-transform ring-1 ring-white/10 group-hover:ring-purple-500/50">
                                         <MapPin className="h-6 w-6 text-purple-400" />
                                     </div>
                                     <div>
-                                        <p className="text-sm text-slate-400 font-medium uppercase tracking-wide">Headquarters</p>
-                                        <p className="text-lg font-semibold text-white group-hover:text-purple-400 transition-colors">Futian District, Shenzhen, China</p>
+                                        <p className="text-sm text-slate-400 font-medium uppercase tracking-wide">{t('hq_label')}</p>
+                                        <p className="text-lg font-semibold text-white group-hover:text-purple-400 transition-colors">{t('hq_city')}</p>
                                     </div>
                                 </div>
                             </div>

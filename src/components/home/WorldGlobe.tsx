@@ -2,12 +2,14 @@
 
 import createGlobe from "cobe";
 import { useEffect, useRef } from "react";
+import { useTranslations } from "next-intl";
 
 interface WorldGlobeProps {
     showLabel?: boolean;
 }
 
 export function WorldGlobe({ showLabel = true }: WorldGlobeProps = {}) {
+    const t = useTranslations('Globe');
     const canvasRef = useRef<HTMLCanvasElement>(null);
 
     useEffect(() => {
@@ -95,7 +97,7 @@ export function WorldGlobe({ showLabel = true }: WorldGlobeProps = {}) {
                         <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-ctr-blue opacity-75"></span>
                         <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-ctr-blue"></span>
                     </span>
-                    <p className="text-xs text-slate-600 font-bold tracking-widest uppercase mb-0">Live Logistics Network</p>
+                    <p className="text-xs text-slate-600 font-bold tracking-widest uppercase mb-0">{t('live_label')}</p>
                 </div>
             )}
         </div>
