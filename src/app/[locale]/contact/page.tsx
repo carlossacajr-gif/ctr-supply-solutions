@@ -4,7 +4,7 @@ import { Footer } from '@/components/layout/Footer';
 import { Container } from '@/components/ui/Container';
 import { Button } from '@/components/ui/Button';
 import { SectionDivider } from '@/components/ui/SectionDivider';
-import { Mail, MessageSquare, MapPin, Send } from 'lucide-react';
+import { Mail, MessageSquare, MapPin, Send, Phone } from 'lucide-react';
 import { WorldGlobe } from '@/components/home/WorldGlobe';
 import { TextReveal } from '@/components/ui/motion/TextReveal';
 import { FadeIn } from '@/components/ui/motion/FadeIn';
@@ -52,21 +52,56 @@ export default function ContactPage({ params: { locale } }: { params: { locale: 
                         <TechnicalInquiry />
                     </div>
 
-                    <div className="mt-24 grid grid-cols-1 md:grid-cols-3 gap-8">
-                        {/* Direct Channels Cards */}
+                    <div className="mt-24 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                        {/* HQ */}
                         <FadeIn delay={0.3}>
-                            <div className="glass-dark rounded-2xl p-8 space-y-8 shadow-glass-lg">
-                                <h2 className="text-2xl font-bold text-white mb-8">{t('channels')}</h2>
-
-                                <div className="flex items-center gap-6 group cursor-pointer">
-                                    <div className="h-14 w-14 rounded-2xl bg-purple-500/20 flex items-center justify-center group-hover:scale-110 transition-transform ring-1 ring-white/10 group-hover:ring-purple-500/50">
-                                        <MapPin className="h-6 w-6 text-purple-400" />
+                            <div className="glass-dark rounded-2xl p-8 shadow-glass-lg h-full">
+                                <div className="flex items-center gap-4 mb-4">
+                                    <div className="h-12 w-12 rounded-2xl bg-purple-500/20 flex items-center justify-center ring-1 ring-white/10">
+                                        <MapPin className="h-5 w-5 text-purple-400" />
                                     </div>
-                                    <div>
-                                        <p className="text-sm text-slate-400 font-medium uppercase tracking-wide">{t('hq_label')}</p>
-                                        <p className="text-lg font-semibold text-white group-hover:text-purple-400 transition-colors">{t('hq_city')}</p>
-                                    </div>
+                                    <p className="text-sm text-slate-400 font-medium uppercase tracking-wide">{t('hq_label')}</p>
                                 </div>
+                                <p className="text-white font-semibold">{t('hq_city')}</p>
+                            </div>
+                        </FadeIn>
+
+                        {/* Email */}
+                        <FadeIn delay={0.4}>
+                            <a href="mailto:info@ctrsupplysolutions.com" className="group block glass-dark rounded-2xl p-8 shadow-glass-lg h-full hover:ring-1 hover:ring-sky-500/30 transition-all">
+                                <div className="flex items-center gap-4 mb-4">
+                                    <div className="h-12 w-12 rounded-2xl bg-sky-500/20 flex items-center justify-center ring-1 ring-white/10 group-hover:ring-sky-500/50 transition-all">
+                                        <Mail className="h-5 w-5 text-sky-400" />
+                                    </div>
+                                    <p className="text-sm text-slate-400 font-medium uppercase tracking-wide">Email</p>
+                                </div>
+                                <p className="text-white font-semibold group-hover:text-sky-400 transition-colors">info@ctrsupplysolutions.com</p>
+                            </a>
+                        </FadeIn>
+
+                        {/* WhatsApp */}
+                        <FadeIn delay={0.5}>
+                            <a href="https://api.whatsapp.com/send/?phone=8613638645191&text&type=phone_number&app_absent=0" target="_blank" rel="noopener noreferrer" className="group block glass-dark rounded-2xl p-8 shadow-glass-lg h-full hover:ring-1 hover:ring-green-500/30 transition-all">
+                                <div className="flex items-center gap-4 mb-4">
+                                    <div className="h-12 w-12 rounded-2xl bg-green-500/20 flex items-center justify-center ring-1 ring-white/10 group-hover:ring-green-500/50 transition-all">
+                                        <Phone className="h-5 w-5 text-green-400" />
+                                    </div>
+                                    <p className="text-sm text-slate-400 font-medium uppercase tracking-wide">WhatsApp</p>
+                                </div>
+                                <p className="text-white font-semibold group-hover:text-green-400 transition-colors">+86 136 3864 5191</p>
+                            </a>
+                        </FadeIn>
+
+                        {/* WeChat */}
+                        <FadeIn delay={0.6}>
+                            <div className="glass-dark rounded-2xl p-8 shadow-glass-lg h-full">
+                                <div className="flex items-center gap-4 mb-4">
+                                    <div className="h-12 w-12 rounded-2xl bg-emerald-500/20 flex items-center justify-center ring-1 ring-white/10">
+                                        <MessageSquare className="h-5 w-5 text-emerald-400" />
+                                    </div>
+                                    <p className="text-sm text-slate-400 font-medium uppercase tracking-wide">WeChat</p>
+                                </div>
+                                <p className="text-white font-semibold">CTRSupply</p>
                             </div>
                         </FadeIn>
                     </div>

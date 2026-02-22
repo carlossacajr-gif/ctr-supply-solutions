@@ -3,7 +3,7 @@
         "title": "Sourcing maîtrisé. Qualité garantie.",
         "subtitle": "Votre équipe sur le terrain à Shenzhen. On construit la chaîne. Vous développez le business.",
         "getQuote": "Lancer un projet",
-        "ourServices": "Nos Services",
+        "ourServices": "Nos services",
         "stats": {
             "s1": "Produits gérés",
             "s2": "Pays desservis",
@@ -138,8 +138,8 @@
         "tagline_link": "En savoir plus",
         "title": "Supply chain. Inébranlable.",
         "desc": "On ne cherche pas juste des fournisseurs. On les audite. On les teste. De l'usine au produit fini, votre opération est blindée.",
-        "btn_primary": "Lancer un Projet",
-        "btn_secondary": "Explorer les Services"
+        "btn_primary": "Lancer un projet",
+        "btn_secondary": "Explorer les services"
     },
     "Services": {
         "badge": "Capacités",
@@ -233,8 +233,8 @@
         "cta": {
             "title": "Construisons ensemble.",
             "desc": "Nous gérons la complexité industrielle. Vous vous concentrez sur la croissance maximale.",
-            "btn_primary": "Demander un Devis",
-            "btn_secondary": "Voir les Services"
+            "btn_primary": "Demander un devis",
+            "btn_secondary": "Voir les services"
         }
     },
     "Contact": {
@@ -289,7 +289,7 @@
                 "email": "pierre@entreprise.fr"
             },
             "btn_submitting": "En cours...",
-            "btn_submit": "Envoyer la Demande Technique",
+            "btn_submit": "Envoyer la demande technique",
             "agreement": "En soumettant, vous acceptez notre accord de confidentialité NDA strict."
         },
         "success": {
@@ -329,8 +329,8 @@
         "cta": {
             "title": "Besoin d'une solution sur mesure ?",
             "desc": "Décrivez votre produit. Nous montons le plan en 48 heures.",
-            "btn_primary": "Obtenir un Devis",
-            "btn_secondary": "Catalogue Grossiste"
+            "btn_primary": "Obtenir un devis",
+            "btn_secondary": "Catalogue grossiste"
         }
     },
     "WholesalePage": {
@@ -341,7 +341,7 @@
         "hero": {
             "title": "Hardware en gros. Sans détour.",
             "desc": "Pièces de rechange et outils premium pour centres de service professionnels.",
-            "btn_quote": "Demander la Grille Tarifaire"
+            "btn_quote": "Demander la grille tarifaire"
         },
         "catalog": {
             "label": "Catalogue",
@@ -376,13 +376,13 @@
         "cta": {
             "title": "Vous cherchez un composant spécifique ?",
             "desc": "Nous nous approvisionnons directement auprès de fabricants OEM de haute qualité. Dites-nous ce qu'il vous faut.",
-            "btn_submit": "Envoyer une Demande"
+            "btn_submit": "Envoyer une demande"
         }
     },
     "Footer": {
         "cta": {
             "title": "Prêt à passer à l'échelle ?",
-            "btn_start": "Lancer le Projet"
+            "btn_start": "Lancer le projet"
         },
         "brand": {
             "desc": "Vos opérateurs à Shenzhen. Qualité blindée. Portée mondiale. Marges intactes.",
@@ -420,6 +420,31 @@
             "label": "Se Connecter"
         },
         "copyright": "CTR Supply Solutions. Tous droits réservés."
+    },
+    "Resources": {
+        "badge": "Centre de ressources",
+        "title": "Ressources de fabrication et",
+        "title_highlight": "d'approvisionnement",
+        "subtitle": "Des informations pratiques pour les responsables achats et ingénieurs B2B. Nous partageons plus de 15 ans d'expérience terrain dans l'écosystème industriel de Shenzhen.",
+        "category_label": "Catégorie :",
+        "back": "Retour aux ressources",
+        "read_time": "{minutes} min de lecture",
+        "cta_title": "Besoin d'une assistance technique locale ?",
+        "cta_desc": "Notre équipe d'ingénierie à Shenzhen peut réaliser ces audits techniques pour vous. Ne laissez pas votre chaîne d'approvisionnement au hasard.",
+        "cta_btn": "Lancer un audit technique",
+        "related": "Ressources connexes",
+        "lead": {
+            "badge": "Guide technique exclusif",
+            "title": "Téléchargez notre checklist d'",
+            "title_highlight": "audit d'usine",
+            "title_end": "Shenzhen 2026",
+            "desc": "Assurez la résilience de votre chaîne d'approvisionnement. Obtenez le document de vérification en 10 étapes utilisé par nos ingénieurs sur le terrain.",
+            "placeholder": "Saisissez votre e-mail professionnel",
+            "btn": "Obtenir le PDF gratuit",
+            "success_title": "Checklist envoyée !",
+            "success_desc": "Vérifiez votre boîte de réception pour le lien de téléchargement.",
+            "trust": "Rejoignez plus de 500 responsables achats recevant des analyses mensuelles sur les chaînes d'approvisionnement en Chine. Aucun spam."
+        }
     },
     "ResourcesData": {
         "articles": {

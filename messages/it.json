@@ -3,7 +3,7 @@
         "title": "Produzione senza limiti. Qualità senza scuse.",
         "subtitle": "La tua squadra a Shenzhen. Noi costruiamo la rete. Tu costruisci il business.",
         "getQuote": "Inizia ora",
-        "ourServices": "I nostri Servizi",
+        "ourServices": "I nostri servizi",
         "stats": {
             "s1": "Prodotti Gestiti",
             "s2": "Paesi Raggiunti",
@@ -138,8 +138,8 @@
         "tagline_link": "Scopri di più",
         "title": "Catene di fornitura. Infrangibili.",
         "desc": "Non cerchiamo solo fornitori. Li verifichiamo. Li testiamo. Dalla fabbrica all'ultimo componente, la tua operazione è sicura.",
-        "btn_primary": "Inizia un Progetto",
-        "btn_secondary": "Esplora i Servizi"
+        "btn_primary": "Inizia un progetto",
+        "btn_secondary": "Esplora i servizi"
     },
     "Services": {
         "badge": "Capacità",
@@ -233,8 +233,8 @@
         "cta": {
             "title": "Costruiamo il futuro.",
             "desc": "Noi gestiamo la complessità produttiva. Tu ti concentri sulla crescita estrema.",
-            "btn_primary": "Richiedi Preventivo",
-            "btn_secondary": "Vedi Servizi"
+            "btn_primary": "Richiedi preventivo",
+            "btn_secondary": "Vedi servizi"
         }
     },
     "Contact": {
@@ -289,7 +289,7 @@
                 "email": "luca@azienda.it"
             },
             "btn_submitting": "Elaborazione...",
-            "btn_submit": "Invia Richiesta",
+            "btn_submit": "Invia richiesta",
             "agreement": "Inviando, accetti il nostro rigoroso accordo NDA."
         },
         "success": {
@@ -329,8 +329,8 @@
         "cta": {
             "title": "Hai bisogno di una soluzione su misura?",
             "desc": "Parlaci del tuo prodotto. Costruiremo il piano in 48 ore.",
-            "btn_primary": "Ottieni Preventivo",
-            "btn_secondary": "Catalogo Ingrosso"
+            "btn_primary": "Ottieni preventivo",
+            "btn_secondary": "Catalogo ingrosso"
         }
     },
     "WholesalePage": {
@@ -341,7 +341,7 @@
         "hero": {
             "title": "Hardware all'ingrosso. Senza filtri.",
             "desc": "Parti di ricambio e strumenti premium per centri di assistenza professionali.",
-            "btn_quote": "Listino Prezzi"
+            "btn_quote": "Listino prezzi"
         },
         "catalog": {
             "label": "Catalogo",
@@ -376,13 +376,13 @@
         "cta": {
             "title": "Cerchi un componente specifico?",
             "desc": "Ci riforniamo direttamente dalle fabbriche OEM di alta qualità. Dicci cosa ti serve.",
-            "btn_submit": "Invia una Richiesta"
+            "btn_submit": "Invia una richiesta"
         }
     },
     "Footer": {
         "cta": {
             "title": "Pronto per scalare?",
-            "btn_start": "Inizia il Progetto"
+            "btn_start": "Inizia il progetto"
         },
         "brand": {
             "desc": "I tuoi operativi a Shenzhen. Qualità blindata. Scala globale. Margini intatti.",
@@ -420,6 +420,31 @@
             "label": "Connetti"
         },
         "copyright": "CTR Supply Solutions. Tutti i diritti riservati."
+    },
+    "Resources": {
+        "badge": "Centro risorse",
+        "title": "Risorse per la produzione e",
+        "title_highlight": "l'approvvigionamento",
+        "subtitle": "Approfondimenti pratici per responsabili acquisti e ingegneri B2B. Condividiamo oltre 15 anni di esperienza pratica nell'ecosistema manifatturiero di Shenzhen.",
+        "category_label": "Categoria:",
+        "back": "Torna alle risorse",
+        "read_time": "{minutes} min di lettura",
+        "cta_title": "Serve assistenza tecnica locale?",
+        "cta_desc": "Il nostro team di ingegneria a Shenzhen può eseguire queste verifiche tecniche per te. Non lasciare la tua supply chain al caso.",
+        "cta_btn": "Esegui audit tecnico",
+        "related": "Risorse correlate",
+        "lead": {
+            "badge": "Guida tecnica esclusiva",
+            "title": "Scarica la nostra checklist di",
+            "title_highlight": "audit di fabbrica",
+            "title_end": "Shenzhen 2026",
+            "desc": "Assicura la resilienza della tua catena di fornitura. Ottieni il documento di verifica in 10 step che i nostri ingegneri usano sul campo.",
+            "placeholder": "Inserisci la tua email professionale",
+            "btn": "Scarica PDF gratuito",
+            "success_title": "Checklist inviata!",
+            "success_desc": "Controlla la posta per il link di download.",
+            "trust": "Unisciti a oltre 500 responsabili acquisti che ricevono insight mensili sulle supply chain cinesi. Niente spam."
+        }
     },
     "ResourcesData": {
         "articles": {

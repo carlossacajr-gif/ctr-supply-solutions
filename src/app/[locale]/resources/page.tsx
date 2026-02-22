@@ -20,6 +20,7 @@ export const metadata: Metadata = {
 export default function ResourcesPage({ params: { locale } }: { params: { locale: string } }) {
     setRequestLocale(locale);
     const t = useTranslations('ResourcesData');
+    const r = useTranslations('Resources');
     return (
         <main className="min-h-screen bg-white">
             <Navbar />
@@ -31,13 +32,13 @@ export default function ResourcesPage({ params: { locale } }: { params: { locale
                         <FadeIn>
                             <span className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-ctr-blue/10 text-ctr-blue text-xs font-bold mb-6 uppercase tracking-widest">
                                 <BookOpen className="w-4 h-4" />
-                                KNOWLEDGE HUB
+                                {r('badge')}
                             </span>
                             <h1 className="text-4xl md:text-5xl font-bold text-ctr-slate mb-6">
-                                Manufacturing & Sourcing <span className="text-ctr-blue">Resources</span>
+                                {r('title')} <span className="text-ctr-blue">{r('title_highlight')}</span>
                             </h1>
                             <p className="text-lg text-slate-600 leading-relaxed">
-                                Actionable insights for B2B procurement managers and engineers. We share our 15+ years of onsite experience in the Shenzhen manufacturing ecosystem.
+                                {r('subtitle')}
                             </p>
                         </FadeIn>
                     </div>
@@ -69,7 +70,7 @@ export default function ResourcesPage({ params: { locale } }: { params: { locale
                                             {excerpt}
                                         </p>
                                         <div className="flex items-center text-xs font-bold tracking-widest text-slate-400 uppercase">
-                                            CATEGORY: {category}
+                                            {r('category_label')} {category}
                                         </div>
                                     </Link>
                                 </FadeIn>

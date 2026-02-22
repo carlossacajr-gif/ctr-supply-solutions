@@ -2,8 +2,8 @@
     "Index": {
         "title": "Fornecimento dominado. Qualidade blindada.",
         "subtitle": "Sua equipe no chão de fábrica em Shenzhen. Nós montamos a cadeia. Você escala o negócio.",
-        "getQuote": "Iniciar Projeto",
-        "ourServices": "Nossos Serviços",
+        "getQuote": "Iniciar projeto",
+        "ourServices": "Nossos serviços",
         "stats": {
             "s1": "Produtos Gerenciados",
             "s2": "Países Atendidos",
@@ -138,8 +138,8 @@
         "tagline_link": "Saiba mais",
         "title": "Supply chain. À prova de falhas.",
         "desc": "Não apenas buscamos fornecedores. Auditamos. Testamos. Da fábrica ao componente final, sua operação está protegida.",
-        "btn_primary": "Iniciar Projeto",
-        "btn_secondary": "Explorar Serviços"
+        "btn_primary": "Iniciar projeto",
+        "btn_secondary": "Explorar serviços"
     },
     "Services": {
         "badge": "Capacidades",
@@ -233,8 +233,8 @@
         "cta": {
             "title": "Vamos construir juntos.",
             "desc": "Nós cuidamos da complexidade fabril. Você foca na expansão brutal do negócio.",
-            "btn_primary": "Solicitar Orçamento",
-            "btn_secondary": "Ver Serviços"
+            "btn_primary": "Solicitar orçamento",
+            "btn_secondary": "Ver serviços"
         }
     },
     "Contact": {
@@ -289,7 +289,7 @@
                 "email": "joao@empresa.com.br"
             },
             "btn_submitting": "Processando...",
-            "btn_submit": "Enviar Consulta Técnica",
+            "btn_submit": "Enviar consulta técnica",
             "agreement": "Ao enviar, você concorda com nosso rigoroso acordo de NDA."
         },
         "success": {
@@ -329,8 +329,8 @@
         "cta": {
             "title": "Precisa de uma solução sob medida?",
             "desc": "Descreva seu produto. Montamos o plano em 48 horas.",
-            "btn_primary": "Solicitar Orçamento",
-            "btn_secondary": "Catálogo Atacado"
+            "btn_primary": "Solicitar orçamento",
+            "btn_secondary": "Catálogo atacado"
         }
     },
     "WholesalePage": {
@@ -341,7 +341,7 @@
         "hero": {
             "title": "Hardware no atacado. Sem intermediários.",
             "desc": "Peças de reposição e ferramentas premium para centros de assistência técnica profissionais.",
-            "btn_quote": "Tabela de Preços"
+            "btn_quote": "Tabela de preços"
         },
         "catalog": {
             "label": "Catálogo",
@@ -376,13 +376,13 @@
         "cta": {
             "title": "Procurando um componente específico?",
             "desc": "Trabalhamos diretamente com fábricas OEM de alto padrão. Diga o que precisa.",
-            "btn_submit": "Enviar Solicitação"
+            "btn_submit": "Enviar solicitação"
         }
     },
     "Footer": {
         "cta": {
             "title": "Pronto para escalar?",
-            "btn_start": "Iniciar Projeto"
+            "btn_start": "Iniciar projeto"
         },
         "brand": {
             "desc": "Seus operativos em Shenzhen. Qualidade blindada. Escala global. Margens intactas.",
@@ -420,6 +420,31 @@
             "label": "Conectar"
         },
         "copyright": "CTR Supply Solutions. Todos os direitos reservados."
+    },
+    "Resources": {
+        "badge": "Central de conhecimento",
+        "title": "Recursos de fabricação e",
+        "title_highlight": "sourcing",
+        "subtitle": "Insights práticos para gerentes de compras e engenheiros B2B. Compartilhamos mais de 15 anos de experiência no ecossistema industrial de Shenzhen.",
+        "category_label": "Categoria:",
+        "back": "Voltar aos recursos",
+        "read_time": "{minutes} min de leitura",
+        "cta_title": "Precisa de assistência técnica local?",
+        "cta_desc": "Nossa equipe de engenharia em Shenzhen pode executar essas auditorias técnicas por você. Não deixe sua cadeia de suprimentos ao acaso.",
+        "cta_btn": "Executar auditoria técnica",
+        "related": "Recursos relacionados",
+        "lead": {
+            "badge": "Guia técnico exclusivo",
+            "title": "Baixe nosso checklist de",
+            "title_highlight": "auditoria de fábrica",
+            "title_end": "Shenzhen 2026",
+            "desc": "Garanta a resiliência da sua cadeia de suprimentos. Obtenha o documento de verificação in loco de 10 etapas que nossos engenheiros usam em campo.",
+            "placeholder": "Insira seu e-mail profissional",
+            "btn": "Baixar PDF grátis",
+            "success_title": "Checklist enviado!",
+            "success_desc": "Verifique sua caixa de entrada para o link de download.",
+            "trust": "Junte-se a mais de 500 gerentes de compras que recebem insights mensais sobre cadeias de suprimentos na China. Sem spam."
+        }
     },
     "ResourcesData": {
         "articles": {

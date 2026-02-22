@@ -422,6 +422,31 @@
         },
         "copyright": "CTR Supply Solutions 联合出品。捍卫国际版权。"
     },
+    "Resources": {
+        "badge": "知识中心",
+        "title": "制造与采购",
+        "title_highlight": "资源库",
+        "subtitle": "为B2B采购经理和工程师提供实用洞察。我们分享在深圳制造生态系统中超过15年的实地经验。",
+        "category_label": "分类：",
+        "back": "返回资源",
+        "read_time": "{minutes} 分钟阅读",
+        "cta_title": "需要本地专家支持？",
+        "cta_desc": "我们在深圳的驻场工程团队可以为您执行这些技术审计。不要让供应链听天由命。",
+        "cta_btn": "执行技术审计",
+        "related": "相关资源",
+        "lead": {
+            "badge": "独家技术指南",
+            "title": "下载我们的2026深圳",
+            "title_highlight": "工厂审计",
+            "title_end": "清单",
+            "desc": "确保您的供应链保持韧性。获取我们工程师在现场使用的10步验证文档。",
+            "placeholder": "输入您的企业邮箱",
+            "btn": "免费获取PDF",
+            "success_title": "清单已发送！",
+            "success_desc": "请查看您的邮箱获取PDF下载链接。",
+            "trust": "加入500+采购经理的行列，每月获取中国供应链洞察。绝无垃圾邮件。"
+        }
+    },
     "ResourcesData": {
         "articles": {
             "attention-china-sourcing-risks": {

@@ -421,6 +421,31 @@
         },
         "copyright": "CTR Supply Solutions. All rights reserved."
     },
+    "Resources": {
+        "badge": "Knowledge Hub",
+        "title": "Manufacturing & Sourcing",
+        "title_highlight": "Resources",
+        "subtitle": "Actionable insights for B2B procurement managers and engineers. We share our 15+ years of onsite experience in the Shenzhen manufacturing ecosystem.",
+        "category_label": "Category:",
+        "back": "Back to Resources",
+        "read_time": "{minutes} min read",
+        "cta_title": "Need Expert Local Assistance?",
+        "cta_desc": "Our onsite engineering team in Shenzhen can execute these technical audits for you. Don't leave your supply chain to chance.",
+        "cta_btn": "Execute Technical Audit",
+        "related": "Related Resources",
+        "lead": {
+            "badge": "Exclusive Technical Guide",
+            "title": "Download our 2026 Shenzhen",
+            "title_highlight": "Factory Audit",
+            "title_end": "Checklist",
+            "desc": "Ensure your supply chain stays resilient. Get the exact 10-step onsite verification document our engineers use in the field.",
+            "placeholder": "Enter your professional email",
+            "btn": "Get Free PDF",
+            "success_title": "Checklist Sent!",
+            "success_desc": "Check your inbox for the PDF download link.",
+            "trust": "Join 500+ procurement managers receiving monthly China supply chain insights. No spam."
+        }
+    },
     "ResourcesData": {
         "articles": {
             "attention-china-sourcing-risks": {

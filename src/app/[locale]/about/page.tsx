@@ -129,17 +129,6 @@ export default function AboutPage({ params: { locale } }: { params: { locale: st
                                         <div className="absolute inset-0 bg-gradient-to-t from-slate-900/40 to-transparent" />
                                     </div>
                                 </FadeIn>
-                                <div className="absolute -bottom-8 -left-8 glass-white p-6 rounded-xl shadow-glass border border-white/50 hidden md:block z-20">
-                                    <div className="flex items-center gap-4">
-                                        <div className="bg-ctr-blue/10 p-3 rounded-full">
-                                            <MapPin className="text-ctr-blue h-6 w-6" />
-                                        </div>
-                                        <div>
-                                            <p className="font-bold text-ctr-slate">{t('hq.title')}</p>
-                                            <p className="text-sm text-slate-500">{t('hq.district')}</p>
-                                        </div>
-                                    </div>
-                                </div>
                             </div>
                         </div>
                     </Container>

@@ -421,6 +421,31 @@
         },
         "copyright": "CTR Supply Solutions. Alle Rechte vorbehalten."
     },
+    "Resources": {
+        "badge": "Wissenszentrum",
+        "title": "Ressourcen für Fertigung und",
+        "title_highlight": "Beschaffung",
+        "subtitle": "Praxisnahe Einblicke für B2B-Einkaufsleiter und Ingenieure. Wir teilen über 15 Jahre Erfahrung im Fertigungsökosystem Shenzhen.",
+        "category_label": "Kategorie:",
+        "back": "Zurück zu Ressourcen",
+        "read_time": "{minutes} Min. Lesezeit",
+        "cta_title": "Lokale Expertenunterstützung benötigt?",
+        "cta_desc": "Unser Ingenieurteam vor Ort in Shenzhen kann diese technischen Audits für Sie durchführen. Überlassen Sie Ihre Lieferkette nicht dem Zufall.",
+        "cta_btn": "Technisches Audit starten",
+        "related": "Verwandte Ressourcen",
+        "lead": {
+            "badge": "Exklusiver technischer Leitfaden",
+            "title": "Laden Sie unsere 2026 Shenzhen",
+            "title_highlight": "Fabrikaudit",
+            "title_end": "Checkliste herunter",
+            "desc": "Sichern Sie die Resilienz Ihrer Lieferkette. Erhalten Sie das exakte 10-Schritte-Verifizierungsdokument, das unsere Ingenieure vor Ort verwenden.",
+            "placeholder": "Geschäftliche E-Mail-Adresse eingeben",
+            "btn": "Kostenloses PDF anfordern",
+            "success_title": "Checkliste gesendet!",
+            "success_desc": "Überprüfen Sie Ihren Posteingang für den Download-Link.",
+            "trust": "Schließen Sie sich über 500 Einkaufsleitern an, die monatlich Einblicke in Chinas Lieferketten erhalten. Kein Spam."
+        }
+    },
     "ResourcesData": {
         "articles": {
             "attention-china-sourcing-risks": {

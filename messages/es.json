@@ -2,13 +2,13 @@
     "Index": {
         "title": "Fabricación sin límites. Calidad sin excusas.",
         "subtitle": "Tu equipo sobre el terreno en Shenzhen. Nosotros construimos la cadena. Tú impulsas el negocio.",
-        "getQuote": "Empezar Producción",
-        "ourServices": "Explorar Servicios",
+        "getQuote": "Empezar producción",
+        "ourServices": "Explorar servicios",
         "stats": {
-            "s1": "Productos Gestionados",
-            "s2": "Países Alcanzados",
-            "s3": "Tasa de Defectos",
-            "s4": "Años de Experiencia"
+            "s1": "Productos gestionados",
+            "s2": "Países alcanzados",
+            "s3": "Tasa de defectos",
+            "s4": "Años de experiencia"
         },
         "expertise": {
             "badge": "Capacidades",
@@ -21,28 +21,28 @@
     },
     "Navbar": {
         "solutions": "Soluciones",
-        "wholesale": "Provedores",
+        "wholesale": "Proveedores",
         "resources": "Recursos",
-        "about": "La Empresa",
+        "about": "Nosotros",
         "contact": "Contacto",
         "getStarted": "Empezar"
     },
     "ServicesBento": {
         "learnMore": "Saber más",
         "qc": {
-            "title": "Control de Calidad.",
+            "title": "Control de calidad.",
             "desc": "Auditorías de fábrica. Inspecciones pre-embarque. Cero defectos."
         },
         "sourcing": {
-            "title": "Sourcing Global.",
+            "title": "Sourcing global.",
             "desc": "Acceso directo. Fabricantes verificados. Precios invencibles."
         },
         "testing": {
-            "title": "Análisis de Componentes.",
+            "title": "Análisis de componentes.",
             "desc": "Pruebas de laboratorio para electrónica y materias primas."
         },
         "logistics": {
-            "title": "Logística Integral.",
+            "title": "Logística integral.",
             "desc": "Gestión de fletes. Despacho de aduanas. De la fábrica a tu puerta."
         }
     },
@@ -54,11 +54,11 @@
             "content": "Conocimiento profundo de la industria. Fluidez cultural real. CTR es un aliado invaluable en un mercado complejo."
         },
         "t2": {
-            "role": "Veterano de la Industria",
+            "role": "Veterano de la industria",
             "content": "Profesionalismo inigualable. No solo cumplen expectativas; las redefinen."
         },
         "t3": {
-            "role": "Socio Comercial",
+            "role": "Socio comercial",
             "content": "Liderazgo fenomenal. La atención al detalle y el enfoque en el cliente son simplemente excepcionales."
         },
         "t4": {
@@ -81,19 +81,19 @@
         "badge": "Metodología",
         "title": "Así trabajamos.",
         "s1": {
-            "title": "Envía las Especificaciones.",
+            "title": "Envía las especificaciones.",
             "desc": "Comparte tus requisitos. Precio objetivo. Estándares de calidad. Evaluamos en 48 horas."
         },
         "s2": {
-            "title": "Validar y Sourcing.",
+            "title": "Validar y sourcing.",
             "desc": "Nuestro equipo audita capacidades reales. Encontramos la fábrica correcta, no la primera."
         },
         "s3": {
-            "title": "Muestras y Testeo.",
+            "title": "Muestras y testeo.",
             "desc": "Adquisición. Pruebas independientes. Videos de reporte. Todo antes de iniciar la producción en masa."
         },
         "s4": {
-            "title": "Producir e Inspeccionar.",
+            "title": "Producir e inspeccionar.",
             "desc": "Monitoreo continuo. Ejecución impecable. Una inspección final para garantizar cero defectos."
         }
     },
@@ -101,26 +101,26 @@
         "title": "Visibilidad total. Sorpresas cero.",
         "desc": "Porque 'ya lo vamos a revisar' no es una estrategia. Ofrecemos seguimiento de hitos reales, desde materia prima hasta la entrega final.",
         "btn_load": "Cargando Timeline...",
-        "btn_flow": "Ver el Proceso",
+        "btn_flow": "Ver el proceso",
         "tracking_label": "NÚMERO DE RASTREO",
         "active_label": "ACTIVO",
         "delivered_status": "Entregado",
         "checking_status": "Revisando...",
         "steps": {
             "s1": {
-                "status": "Orden Recibida",
+                "status": "Orden recibida",
                 "date": "Oct 24"
             },
             "s2": {
-                "status": "Check de Material",
+                "status": "Check de material",
                 "date": "Oct 26"
             },
             "s3": {
-                "status": "Línea de Producción",
+                "status": "Línea de producción",
                 "date": "Nov 02"
             },
             "s4": {
-                "status": "Control Final (QC)",
+                "status": "Control final (QC)",
                 "date": "Nov 10"
             },
             "s5": {
@@ -138,27 +138,27 @@
         "tagline_link": "Saber más",
         "title": "Cadenas de suministro. Intactas.",
         "desc": "No solo buscamos proveedores. Auditamos. Verificamos. Probamos. Desde la fábrica hasta el último componente, tu operación está segura.",
-        "btn_primary": "Iniciar un Proyecto",
-        "btn_secondary": "Explorar Servicios"
+        "btn_primary": "Iniciar un proyecto",
+        "btn_secondary": "Explorar servicios"
     },
     "Services": {
         "badge": "Capacidades",
         "title": "Importa con absoluta confianza.",
         "desc": "Tus ojos y oídos en la fábrica. Protegemos tu marca contra el fraude y las irregularidades de calidad.",
         "s1": {
-            "name": "Control de Calidad",
+            "name": "Control de calidad",
             "desc": "Auditorías de fábrica. Inspecciones pre-embarque. Cero defectos."
         },
         "s2": {
-            "name": "Sourcing Global",
+            "name": "Sourcing global",
             "desc": "Acceso directo. Fabricantes verificados. Escala infinita."
         },
         "s3": {
-            "name": "Análisis de Componentes",
+            "name": "Análisis de componentes",
             "desc": "Pruebas de laboratorio a nivel industrial."
         },
         "s4": {
-            "name": "Auditoría de Proveedores",
+            "name": "Auditoría de proveedores",
             "desc": "Inmersión profunda en capacidades éticas y técnicas."
         },
         "link": "Saber más"
@@ -171,26 +171,26 @@
         "title": "Así trabajamos.",
         "steps": {
             "s1": {
-                "name": "Envía las Especificaciones",
+                "name": "Envía las especificaciones",
                 "desc": "Requisitos técnicos. Precios objetivo. Calidad absoluta."
             },
             "s2": {
-                "name": "Validar y Sourcing",
+                "name": "Validar y sourcing",
                 "desc": "Identificación de fábricas reales y capacidades técnicas."
             },
             "s3": {
-                "name": "Muestras y Testeo",
+                "name": "Muestras y testeo",
                 "desc": "Obtención de muestras y pruebas en laboratorios independientes."
             },
             "s4": {
-                "name": "Producir e Inspeccionar",
+                "name": "Producir e inspeccionar",
                 "desc": "Monitoreo constante e inspección final pre-embarque."
             }
         }
     },
     "About": {
         "metadata": {
-            "title": "La Empresa | CTR Supply Solutions",
+            "title": "Nosotros | CTR Supply Solutions",
             "desc": "Más de 15 años en Shenzhen. Tu equipo en el terreno. Aseguramos la fabricación china con precisión milimétrica."
         },
         "hero": {
@@ -198,10 +198,10 @@
             "desc": "Unimos marcas globales con la mejor maquinaria china. No un simple agente. Un socio de extremo a extremo."
         },
         "stats": {
-            "s1": "Años de Experiencia",
-            "s2": "Fábricas Auditadas",
-            "s3": "Países Alcanzados",
-            "s4": "Defectos Tolerados"
+            "s1": "Años de experiencia",
+            "s2": "Fábricas auditadas",
+            "s3": "Países alcanzados",
+            "s4": "Defectos tolerados"
         },
         "mission": {
             "badge": "Misión",
@@ -210,10 +210,10 @@
             "p2_start": "Por eso existe CTR. Basados en",
             "p2_strong": "Shenzhen",
             "p2_end": "—la capital mundial del hardware. Hablamos el idioma. Conocemos la cultura. Y conocemos a los fabricantes personalmente.",
-            "sus_title": "Desarrollo Sostenible.",
+            "sus_title": "Desarrollo sostenible.",
             "sus_desc": "Materiales amigables con el medio ambiente. Menos residuos. Construimos una cadena de suministro más verde e inteligente.",
-            "lead_title": "Liderados por la Autoridad.",
-            "lead_desc": "Más de 15 años de experiencia. Estándares intransigentes. No solo administramos órdenes. Administramos relaciones comerciales de alto nivel."
+            "lead_title": "Liderados por la autoridad.",
+            "lead_desc": "Más de 15 años de experiencia. Estándares intransigentes. No solo gestionamos pedidos. Gestionamos relaciones comerciales de alto nivel."
         },
         "hq": {
             "title": "Sede: Shenzhen, China",
@@ -221,7 +221,7 @@
         },
         "contact_info": {
             "title": "Hablemos.",
-            "offices_label": "Nuestras Oficinas",
+            "offices_label": "Nuestras oficinas",
             "sz_office": "Oficina Shenzhen",
             "sz_address": "Liuwei Business Center, No. 6, Longjing Community, Yangmei Community, Bantian Street, Longgang District, Shenzhen",
             "hk_office": "Oficina Hong Kong",
@@ -233,15 +233,15 @@
         "cta": {
             "title": "Construyamos el futuro.",
             "desc": "Nos encargamos de la complejidad de fabricar. Tú te enfocas en el crecimiento extremo.",
-            "btn_primary": "Cotizar Ahora",
-            "btn_secondary": "Ver Servicios"
+            "btn_primary": "Cotizar ahora",
+            "btn_secondary": "Ver servicios"
         }
     },
     "Contact": {
         "title": "Empieza tu proyecto.",
         "desc": "Basta de los formularios de siempre. Usa nuestro clasificador técnico. Consigue una ruta estratégica de nuestros ingenieros locales.",
         "channels": "Canales Directos",
-        "hq_label": "Nuestra Sede",
+        "hq_label": "Nuestra sede",
         "hq_city": "Distrito de Longgang, Shenzhen, China"
     },
     "TechnicalInquiry": {
@@ -252,35 +252,35 @@
             "other": "Otra Manufactura"
         },
         "step1": {
-            "title": "Selecciona tu Industria.",
+            "title": "Selecciona tu industria.",
             "desc": "Ayúdanos a enviarte directamente con el equipo correcto.",
             "btn_continue": "Continuar"
         },
         "step2": {
             "btn_back": "Atrás",
-            "title": "Volumen y Escala.",
+            "title": "Volumen y escala.",
             "desc": "¿Estás experimentando prototipos o escalando una producción en masa?",
-            "volume_pilot": "Lote de Piloto (100 - 500 u.)",
-            "volume_scale": "Escala Masiva (500 - 5,000 u.)",
-            "volume_enterprise": "Nivel Empresarial (5,000+ u.)",
-            "btn_specs": "Especificaciones Técnicas"
+            "volume_pilot": "Lote piloto (100 - 500 u.)",
+            "volume_scale": "Escala masiva (500 - 5,000 u.)",
+            "volume_enterprise": "Nivel empresarial (5,000+ u.)",
+            "btn_specs": "Especificaciones técnicas"
         },
         "step3": {
-            "title": "Especificaciones Mecánicas.",
+            "title": "Especificaciones mecánicas.",
             "desc": "Tolerancias. Certificaciones. Estándares. Cuéntanoslo todo.",
             "placeholder": "Ej. Tolerancias de ±0.02mm, Aluminio 6061, sello UL, despacho DDP a México.",
-            "upload_title": "Sube tus Archivos",
-            "upload_desc": "Suelte sus diseños .PDF, .STEP o .XLSX (Max 50MB)",
-            "btn_final": "Configuración Final"
+            "upload_title": "Sube tus archivos",
+            "upload_desc": "Suelte sus diseños .PDF, .STEP o .XLSX (máx. 50MB)",
+            "btn_final": "Configuración final"
         },
         "step4": {
-            "title": "Detalles Profesionales.",
+            "title": "Detalles profesionales.",
             "desc": "Casi listo. Ingresa tus datos corporativos para generar el plan de suministro.",
             "labels": {
                 "first_name": "Nombre",
                 "last_name": "Apellido",
-                "company": "Sitio Web (Empresa)",
-                "email": "Correo Laboral"
+                "company": "Sitio web (empresa)",
+                "email": "Correo laboral"
             },
             "placeholders": {
                 "first_name": "Carlos",
@@ -288,16 +288,16 @@
                 "company": "www.empresa.com",
                 "email": "carlos@empresa.com"
             },
-            "btn_submitting": "Procesando Datos...",
-            "btn_submit": "Enviar a Operaciones",
-            "agreement": "Al enviar, usted acepta el Acuerdo de Confidencialidad (NDA)."
+            "btn_submitting": "Procesando datos...",
+            "btn_submit": "Enviar a operaciones",
+            "agreement": "Al enviar, usted acepta el acuerdo de confidencialidad (NDA)."
         },
         "success": {
-            "title": "Requerimiento Recibido.",
+            "title": "Requerimiento recibido.",
             "desc_start": "Gracias, ",
             "desc_mid": ". Nuestro ingeniero jefe de ",
             "desc_end": " te contactará en las próximas 24 horas.",
-            "guarantee_title": "Protección Confidencial.",
+            "guarantee_title": "Protección confidencial.",
             "guarantee_desc": "Tus planos y esquemas técnicos están sellados por un estricto NDA. Nunca compartimos diseños propietarios con terceros ajenos."
         },
         "error_alert": "Fallo técnico en la solicitud. Por favor contacte info@ctrsupplysolutions.com directamente."
@@ -313,15 +313,15 @@
         },
         "services": {
             "s1": {
-                "name": "Control de Calidad",
+                "name": "Control de calidad",
                 "desc": "Inspecciones en terreno. Defectos nulos."
             },
             "s2": {
-                "name": "Sourcing Global",
+                "name": "Sourcing global",
                 "desc": "Negociación de fuerza. Fábricas con reputación intachable."
             },
             "s3": {
-                "name": "Logística Aduanera",
+                "name": "Logística aduanera",
                 "desc": "Puerta a puerta. Desaduanaje veloz."
             }
         },
@@ -329,8 +329,8 @@
         "cta": {
             "title": "¿Requieres algo a medida?",
             "desc": "Cuéntanoslo. Desarrollamos la estrategia comercial en 48 horas.",
-            "btn_primary": "Cotización de Proyecto",
-            "btn_secondary": "Ver Venta al por Mayor"
+            "btn_primary": "Cotización de proyecto",
+            "btn_secondary": "Ver venta al por mayor"
         }
     },
     "WholesalePage": {
@@ -341,7 +341,7 @@
         "hero": {
             "title": "Hardware B2B. Directo de fábrica.",
             "desc": "Herramientas técnicas y componentes premium para centros de servicio en todo el mundo.",
-            "btn_quote": "Lista de Precios"
+            "btn_quote": "Lista de precios"
         },
         "catalog": {
             "label": "El Catálogo",
@@ -376,13 +376,13 @@
         "cta": {
             "title": "¿Buscas algo en específico?",
             "desc": "Compramos grandes volúmenes a las fábricas que producen repuestos Originales y Aftermarket High-Quality. Dinos qué modelo exiges.",
-            "btn_submit": "Levantar una Consulta"
+            "btn_submit": "Levantar una consulta"
         }
     },
     "Footer": {
         "cta": {
             "title": "¿Listo para escalar?",
-            "btn_start": "Arrancar Proyecto"
+            "btn_start": "Arrancar proyecto"
         },
         "brand": {
             "desc": "Tus operativos in-situ en Shenzhen. Calidad blindada. Escala global. Márgenes intactos.",
@@ -404,7 +404,7 @@
             },
             "company": {
                 "label": "Nosotros",
-                "about": "Acerca del equipo",
+                "about": "Sobre nosotros",
                 "work": "Filosofía laboral",
                 "contact": "Contactar Soporte"
             },
@@ -420,6 +420,31 @@
             "label": "Alianzas"
         },
         "copyright": "CTR Supply Solutions. Derechos Internacionales."
+    },
+    "Resources": {
+        "badge": "Centro de conocimiento",
+        "title": "Recursos de fabricación y",
+        "title_highlight": "abastecimiento",
+        "subtitle": "Información práctica para gerentes de compras e ingenieros B2B. Compartimos más de 15 años de experiencia en el ecosistema industrial de Shenzhen.",
+        "category_label": "Categoría:",
+        "back": "Volver a recursos",
+        "read_time": "{minutes} min de lectura",
+        "cta_title": "¿Necesitas asistencia técnica local?",
+        "cta_desc": "Nuestro equipo de ingeniería en Shenzhen puede ejecutar estas auditorías técnicas por ti. No dejes tu cadena de suministro al azar.",
+        "cta_btn": "Ejecutar auditoría técnica",
+        "related": "Recursos relacionados",
+        "lead": {
+            "badge": "Guía técnica exclusiva",
+            "title": "Descarga nuestro checklist de",
+            "title_highlight": "auditoría de fábricas",
+            "title_end": "Shenzhen 2026",
+            "desc": "Asegura la resiliencia de tu cadena de suministro. Obtén el documento exacto de verificación in situ de 10 pasos que usan nuestros ingenieros en campo.",
+            "placeholder": "Ingresa tu correo profesional",
+            "btn": "Obtener PDF gratis",
+            "success_title": "¡Checklist enviado!",
+            "success_desc": "Revisa tu bandeja de entrada para el enlace de descarga.",
+            "trust": "Únete a más de 500 gerentes de compras que reciben información mensual sobre cadenas de suministro en China. Sin spam."
+        }
     },
     "ResourcesData": {
         "articles": {

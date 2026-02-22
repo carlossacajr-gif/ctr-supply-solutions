@@ -1,0 +1,330 @@
+
+> ctr-supply-solutions@0.1.0 dev
+> next dev -p 3042
+
+   ▲ Next.js 14.1.0
+   - Local:        http://localhost:3042
+
+ ✓ Ready in 2.5s
+<w> [webpack.cache.PackFileCacheStrategy/webpack.FileSystemInfo] Parsing of /Users/carlossacajr./Documents/Antigravity/CTR/ctr-supply-solutions/node_modules/next-intl/dist/esm/production/extractor/format/index.js for build dependencies failed at 'import(t)'.
+<w> Build dependencies behind this expression are ignored and might cause incorrect cache invalidation.
+ ○ Compiling /src/middleware ...
+ ✓ Compiled /src/middleware in 925ms (220 modules)
+ ○ Compiling /[locale] ...
+<w> [webpack.cache.PackFileCacheStrategy/webpack.FileSystemInfo] Parsing of /Users/carlossacajr./Documents/Antigravity/CTR/ctr-supply-solutions/node_modules/next-intl/dist/esm/production/extractor/format/index.js for build dependencies failed at 'import(t)'.
+<w> Build dependencies behind this expression are ignored and might cause incorrect cache invalidation.
+ ✓ Compiled /[locale] in 4.7s (1822 modules)
+ ✓ Compiled in 408ms (814 modules)
+<w> [webpack.cache.PackFileCacheStrategy/webpack.FileSystemInfo] Parsing of /Users/carlossacajr./Documents/Antigravity/CTR/ctr-supply-solutions/node_modules/next-intl/dist/esm/production/extractor/format/index.js for build dependencies failed at 'import(t)'.
+<w> Build dependencies behind this expression are ignored and might cause incorrect cache invalidation.
+[i18n-static-debug] requestLocale resolved to: es
+[layout-debug] Locale: es, Messages keys: [
+  'Index',            'Navbar',
+  'ServicesBento',    'Testimonials',
+  'TrustBar',         'Process',
+  'Tracker',          'Video',
+  'Hero',             'Services',
+  'Globe',            'HowItWorks',
+  'About',            'Contact',
+  'TechnicalInquiry', 'ServicesPage',
+  'WholesalePage',    'Footer',
+  'Resources',        'ResourcesData'
+]
+ ○ Compiling /[locale]/about ...
+ ✓ Compiled /[locale]/about in 587ms (1797 modules)
+[i18n-static-debug] requestLocale resolved to: es
+[layout-debug] Locale: es, Messages keys: [
+  'Index',            'Navbar',
+  'ServicesBento',    'Testimonials',
+  'TrustBar',         'Process',
+  'Tracker',          'Video',
+  'Hero',             'Services',
+  'Globe',            'HowItWorks',
+  'About',            'Contact',
+  'TechnicalInquiry', 'ServicesPage',
+  'WholesalePage',    'Footer',
+  'Resources',        'ResourcesData'
+]
+ ○ Compiling /[locale]/contact ...
+ ✓ Compiled /[locale]/contact in 625ms (1825 modules)
+[i18n-static-debug] requestLocale resolved to: es
+[layout-debug] Locale: es, Messages keys: [
+  'Index',            'Navbar',
+  'ServicesBento',    'Testimonials',
+  'TrustBar',         'Process',
+  'Tracker',          'Video',
+  'Hero',             'Services',
+  'Globe',            'HowItWorks',
+  'About',            'Contact',
+  'TechnicalInquiry', 'ServicesPage',
+  'WholesalePage',    'Footer',
+  'Resources',        'ResourcesData'
+]
+ ○ Compiling /[locale]/resources ...
+ ✓ Compiled /[locale]/resources in 759ms (1846 modules)
+[i18n-static-debug] requestLocale resolved to: es
+[layout-debug] Locale: es, Messages keys: [
+  'Index',            'Navbar',
+  'ServicesBento',    'Testimonials',
+  'TrustBar',         'Process',
+  'Tracker',          'Video',
+  'Hero',             'Services',
+  'Globe',            'HowItWorks',
+  'About',            'Contact',
+  'TechnicalInquiry', 'ServicesPage',
+  'WholesalePage',    'Footer',
+  'Resources',        'ResourcesData'
+]
+ ○ Compiling /[locale]/resources/[slug] ...
+ ✓ Compiled /[locale]/resources/[slug] in 817ms (1887 modules)
+[i18n-static-debug] requestLocale resolved to: es
+[layout-debug] Locale: es, Messages keys: [
+  'Index',            'Navbar',
+  'ServicesBento',    'Testimonials',
+  'TrustBar',         'Process',
+  'Tracker',          'Video',
+  'Hero',             'Services',
+  'Globe',            'HowItWorks',
+  'About',            'Contact',
+  'TechnicalInquiry', 'ServicesPage',
+  'WholesalePage',    'Footer',
+  'Resources',        'ResourcesData'
+]
+[i18n-static-debug] requestLocale resolved to: es
+IntlError: INVALID_MESSAGE: INVALID_TAG (<p class="text-xl text-slate-600 leading-relaxed mb-8 font-medium">Encontraste al proveedor perfecto en línea. Instalaciones inmensas. Certificados ISO. Un video corporativo espectacular. El precio cuadra. Parece demasiado bueno para ser real.</p><p class="text-xl text-slate-800 leading-relaxed mb-8 font-bold">Y, por desgracia, casi siempre lo es.</p><h2 class="text-3xl font-bold text-ctr-slate mt-12 mb-6">La Ilusión del Proveedor Virtual.</h2><p class="mb-6">Hace poco, un comprador nos pidió revisar 10 perfiles prometedores de fábricas que habían contactado para producir hardware. Las credenciales en sus páginas webs se veían intachables.</p><p class="mb-6">¿Pero qué hallamos cuando visitamos físicamente los domicilios?</p><ul class="list-disc pl-6 mb-8 mt-4 space-y-2 text-slate-700"><li>Dos eran «traders» compartiendo una diminuta oficina.</li><li>Siete no poseían equipo industrial; compraron los videos en internet.</li><li><strong>Sólo un proveedor</strong> era realmente dueño de las instalaciones listadas.</li></ul><h2 class="text-3xl font-bold text-ctr-slate mt-12 mb-6">Operar a Ciegas.</h2><p class="mb-6">Ingresar al comercio asiático desde tu oficina es caminar por un campo minado. Depender únicamente de Zoom te expone a daños de capital irreversibles:</p><div class="p-8 rounded-2xl bg-red-50 border border-red-100 my-10"><h4 class="font-bold text-red-600 mb-4 uppercase tracking-widest text-sm">Riesgo Mudo 1: La Desaparición</h4><p class="text-slate-700">Agencias disfrazadas no tienen fondos de respaldo. Si hay un defecto masivo en 10,000 unidades, simplemente apagan sus celulares, cierran su página, y abren otra bajo un nuevo nombre.</p></div><div class="p-8 rounded-2xl bg-orange-50 border border-orange-100 my-10"><h4 class="font-bold text-orange-600 mb-4 uppercase tracking-widest text-sm">Riesgo Mudo 2: El Reemplazo</h4><p class="text-slate-700">Te envían una "Golden Sample" impecable armada por ingeniería experta. Luego, por detrás, subcontratan la caja entera en talleres clandestinos de bajo costo.</p></div><h2 class="text-3xl font-bold text-ctr-slate mt-12 mb-6">La Solución: Auditorías Contundentes.</h2><p class="mb-6">Si aspiras a una logística inquebrantable, requieres expertos con botas sobre el terreno que inspeccionen metódicamente el entorno y los planos legales.</p><p class="font-bold text-ctr-blue mt-8 text-lg">No dejes tu producción al azar. Deja que nuestros ingenieros verifiquen tu futuro lote.</p>)
+    at getFallbackFromErrorAndNotify (webpack-internal:///(rsc)/./node_modules/use-intl/dist/esm/development/initializeConfig-DzxNJxi9.js:91:23)
+    at translateBaseFn (webpack-internal:///(rsc)/./node_modules/use-intl/dist/esm/development/initializeConfig-DzxNJxi9.js:145:20)
+    at translateFn (webpack-internal:///(rsc)/./node_modules/use-intl/dist/esm/development/initializeConfig-DzxNJxi9.js:149:24)
+    at ResourceDetailPage (webpack-internal:///(rsc)/./src/app/[locale]/resources/[slug]/page.tsx:68:21)
+    at ej (/Users/carlossacajr./Documents/Antigravity/CTR/ctr-supply-solutions/node_modules/next/dist/compiled/next-server/app-page.runtime.dev.js:35:264151)
+    at ez (/Users/carlossacajr./Documents/Antigravity/CTR/ctr-supply-solutions/node_modules/next/dist/compiled/next-server/app-page.runtime.dev.js:35:267802)
+    at eH (/Users/carlossacajr./Documents/Antigravity/CTR/ctr-supply-solutions/node_modules/next/dist/compiled/next-server/app-page.runtime.dev.js:35:268559)
+    at Timeout._onTimeout (/Users/carlossacajr./Documents/Antigravity/CTR/ctr-supply-solutions/node_modules/next/dist/compiled/next-server/app-page.runtime.dev.js:35:265057)
+    at listOnTimeout (node:internal/timers:605:17)
+    at process.processTimers (node:internal/timers:541:7) {
+  code: 'INVALID_MESSAGE',
+  originalMessage: 'INVALID_TAG (<p class="text-xl text-slate-600 leading-relaxed mb-8 font-medium">Encontraste al proveedor perfecto en línea. Instalaciones inmensas. Certificados ISO. Un video corporativo espectacular. El precio cuadra. Parece demasiado bueno para ser real.</p><p class="text-xl text-slate-800 leading-relaxed mb-8 font-bold">Y, por desgracia, casi siempre lo es.</p><h2 class="text-3xl font-bold text-ctr-slate mt-12 mb-6">La Ilusión del Proveedor Virtual.</h2><p class="mb-6">Hace poco, un comprador nos pidió revisar 10 perfiles prometedores de fábricas que habían contactado para producir hardware. Las credenciales en sus páginas webs se veían intachables.</p><p class="mb-6">¿Pero qué hallamos cuando visitamos físicamente los domicilios?</p><ul class="list-disc pl-6 mb-8 mt-4 space-y-2 text-slate-700"><li>Dos eran «traders» compartiendo una diminuta oficina.</li><li>Siete no poseían equipo industrial; compraron los videos en internet.</li><li><strong>Sólo un proveedor</strong> era realmente dueño de las instalaciones listadas.</li></ul><h2 class="text-3xl font-bold text-ctr-slate mt-12 mb-6">Operar a Ciegas.</h2><p class="mb-6">Ingresar al comercio asiático desde tu oficina es caminar por un campo minado. Depender únicamente de Zoom te expone a daños de capital irreversibles:</p><div class="p-8 rounded-2xl bg-red-50 border border-red-100 my-10"><h4 class="font-bold text-red-600 mb-4 uppercase tracking-widest text-sm">Riesgo Mudo 1: La Desaparición</h4><p class="text-slate-700">Agencias disfrazadas no tienen fondos de respaldo. Si hay un defecto masivo en 10,000 unidades, simplemente apagan sus celulares, cierran su página, y abren otra bajo un nuevo nombre.</p></div><div class="p-8 rounded-2xl bg-orange-50 border border-orange-100 my-10"><h4 class="font-bold text-orange-600 mb-4 uppercase tracking-widest text-sm">Riesgo Mudo 2: El Reemplazo</h4><p class="text-slate-700">Te envían una "Golden Sample" impecable armada por ingeniería experta. Luego, por detrás, subcontratan la caja entera en talleres clandestinos de bajo costo.</p></div><h2 class="text-3xl font-bold text-ctr-slate mt-12 mb-6">La Solución: Auditorías Contundentes.</h2><p class="mb-6">Si aspiras a una logística inquebrantable, requieres expertos con botas sobre el terreno que inspeccionen metódicamente el entorno y los planos legales.</p><p class="font-bold text-ctr-blue mt-8 text-lg">No dejes tu producción al azar. Deja que nuestros ingenieros verifiquen tu futuro lote.</p>)'
+}
+Warning: React does not recognize the `asChild` prop on a DOM element. If you intentionally want it to appear in the DOM as a custom attribute, spell it as lowercase `aschild` instead. If you accidentally passed it from a parent component, remove it from the DOM element.
+    at button
+    at div
+    at div
+    at div
+    at MotionDOMComponent (webpack-internal:///(ssr)/./node_modules/framer-motion/dist/es/motion/index.mjs:63:65)
+    at FadeIn (webpack-internal:///(ssr)/./src/components/ui/motion/FadeIn.tsx:14:19)
+    at Lazy
+    at div
+    at article
+    at main
+    at InnerLayoutRouter (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/layout-router.js:241:11)
+    at RedirectErrorBoundary (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/redirect-boundary.js:72:9)
+    at RedirectBoundary (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/redirect-boundary.js:80:11)
+    at NotFoundBoundary (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/not-found-boundary.js:84:11)
+    at LoadingBoundary (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/layout-router.js:333:11)
+    at ErrorBoundary (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/error-boundary.js:159:11)
+    at InnerScrollAndFocusHandler (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/layout-router.js:152:9)
+    at ScrollAndFocusHandler (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/layout-router.js:227:11)
+    at RenderFromTemplateContext (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/render-from-template-context.js:16:44)
+    at Lazy
+    at OuterLayoutRouter (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/layout-router.js:351:11)
+    at Lazy
+    at InnerLayoutRouter (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/layout-router.js:241:11)
+    at RedirectErrorBoundary (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/redirect-boundary.js:72:9)
+    at RedirectBoundary (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/redirect-boundary.js:80:11)
+    at NotFoundBoundary (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/not-found-boundary.js:84:11)
+    at LoadingBoundary (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/layout-router.js:333:11)
+    at ErrorBoundary (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/error-boundary.js:159:11)
+    at InnerScrollAndFocusHandler (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/layout-router.js:152:9)
+    at ScrollAndFocusHandler (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/layout-router.js:227:11)
+    at RenderFromTemplateContext (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/render-from-template-context.js:16:44)
+    at Lazy
+    at OuterLayoutRouter (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/layout-router.js:351:11)
+    at Lazy
+    at InnerLayoutRouter (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/layout-router.js:241:11)
+    at RedirectErrorBoundary (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/redirect-boundary.js:72:9)
+    at RedirectBoundary (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/redirect-boundary.js:80:11)
+    at NotFoundBoundary (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/not-found-boundary.js:84:11)
+    at LoadingBoundary (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/layout-router.js:333:11)
+    at ErrorBoundary (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/error-boundary.js:159:11)
+    at InnerScrollAndFocusHandler (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/layout-router.js:152:9)
+    at ScrollAndFocusHandler (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/layout-router.js:227:11)
+    at RenderFromTemplateContext (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/render-from-template-context.js:16:44)
+    at Lazy
+    at div
+    at MotionDOMComponent (webpack-internal:///(ssr)/./node_modules/framer-motion/dist/es/motion/index.mjs:63:65)
+    at Template (webpack-internal:///(ssr)/./src/app/[locale]/template.tsx:10:21)
+    at Lazy
+    at OuterLayoutRouter (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/layout-router.js:351:11)
+    at Lazy
+    at main
+    at IntlProvider (webpack-internal:///(ssr)/./node_modules/use-intl/dist/esm/development/react.js:21:25)
+    at NextIntlClientProvider (webpack-internal:///(ssr)/./node_modules/next-intl/dist/esm/development/shared/NextIntlClientProvider.js:9:35)
+    at Lazy
+    at body
+    at html
+    at InnerLayoutRouter (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/layout-router.js:241:11)
+    at RedirectErrorBoundary (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/redirect-boundary.js:72:9)
+    at RedirectBoundary (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/redirect-boundary.js:80:11)
+    at NotFoundErrorBoundary (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/not-found-boundary.js:76:9)
+    at NotFoundBoundary (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/not-found-boundary.js:84:11)
+    at LoadingBoundary (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/layout-router.js:333:11)
+    at ErrorBoundary (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/error-boundary.js:159:11)
+    at InnerScrollAndFocusHandler (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/layout-router.js:152:9)
+    at ScrollAndFocusHandler (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/layout-router.js:227:11)
+    at RenderFromTemplateContext (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/render-from-template-context.js:16:44)
+    at Lazy
+    at OuterLayoutRouter (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/layout-router.js:351:11)
+    at Lazy
+    at RedirectErrorBoundary (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/redirect-boundary.js:72:9)
+    at RedirectBoundary (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/redirect-boundary.js:80:11)
+    at ReactDevOverlay (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/react-dev-overlay/internal/ReactDevOverlay.js:84:9)
+    at HotReload (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/react-dev-overlay/hot-reloader-client.js:308:11)
+    at Router (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/app-router.js:176:11)
+    at ErrorBoundaryHandler (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/error-boundary.js:113:9)
+    at ErrorBoundary (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/error-boundary.js:159:11)
+    at AppRouter (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/app-router.js:515:13)
+    at Lazy
+    at Lazy
+    at rS (/Users/carlossacajr./Documents/Antigravity/CTR/ctr-supply-solutions/node_modules/next/dist/compiled/next-server/app-page.runtime.dev.js:39:15614)
+    at rS (/Users/carlossacajr./Documents/Antigravity/CTR/ctr-supply-solutions/node_modules/next/dist/compiled/next-server/app-page.runtime.dev.js:39:15614)
+    at ServerInsertedHTMLProvider (/Users/carlossacajr./Documents/Antigravity/CTR/ctr-supply-solutions/node_modules/next/dist/compiled/next-server/app-page.runtime.dev.js:39:21176)
+[i18n-static-debug] requestLocale resolved to: en
+[layout-debug] Locale: en, Messages keys: [
+  'Index',            'Navbar',
+  'ServicesBento',    'Testimonials',
+  'TrustBar',         'Process',
+  'Tracker',          'Video',
+  'Hero',             'Services',
+  'Globe',            'HowItWorks',
+  'About',            'Contact',
+  'TechnicalInquiry', 'ServicesPage',
+  'WholesalePage',    'Footer',
+  'Resources',        'ResourcesData'
+]
+[i18n-static-debug] requestLocale resolved to: en
+IntlError: INVALID_MESSAGE: INVALID_TAG (<p class="text-xl text-slate-600 leading-relaxed mb-8 font-medium">You found the perfect supplier online. Huge factory. ISO certifications. Sleek video. The price is exactly what you budgeted for. It seems too good to be true.</p><p class="text-xl text-slate-800 leading-relaxed mb-8 font-bold">And unfortunately, it usually is.</p><h2 class="text-3xl font-bold text-ctr-slate mt-12 mb-6">The Illusion of the Manufacturer.</h2><p class="mb-6">A client recently asked our Shenzhen team to audit 10 promising "manufacturers" they found online for a massive consumer electronics order.</p><p class="mb-6">What did our audit team find on the ground?</p><ul class="list-disc pl-6 mb-8 mt-4 space-y-2 text-slate-700"><li>Two "companies" were trading agencies operating out of the same small room.</li><li>Seven used stock footage. They owned zero manufacturing equipment.</li><li><strong>Only one</strong> matched their online profile.</li></ul><h2 class="text-3xl font-bold text-ctr-slate mt-12 mb-6">Operating Blind.</h2><p class="mb-6">Navigating the B2B marketplace from another continent is a minefield. Relying solely on digital communication exposes your business to severe risks:</p><div class="p-8 rounded-2xl bg-red-50 border border-red-100 my-10"><h4 class="font-bold text-red-600 mb-4 uppercase tracking-widest text-sm">Risk 1: The Ghost Supplier</h4><p class="text-slate-700">Agencies posing as manufacturers lack capital. If a massive defect occurs, they close their account and disappear.</p></div><div class="p-8 rounded-2xl bg-orange-50 border border-orange-100 my-10"><h4 class="font-bold text-orange-600 mb-4 uppercase tracking-widest text-sm">Risk 2: The Bait and Switch</h4><p class="text-slate-700">They send a flawless "golden sample" from a high-end factory, but outsource mass production to a sweatshop to maximize profit.</p></div><h2 class="text-3xl font-bold text-ctr-slate mt-12 mb-6">The Solution: Trust, but Verify.</h2><p class="mb-6">If you want a bulletproof supply chain, you need professionals to physically visit the site, execute audits, and validate compliance.</p><p class="font-bold text-ctr-blue mt-8 text-lg">Don't gamble your production run. Let our engineers verify the factory floor.</p>)
+    at getFallbackFromErrorAndNotify (webpack-internal:///(rsc)/./node_modules/use-intl/dist/esm/development/initializeConfig-DzxNJxi9.js:91:23)
+    at translateBaseFn (webpack-internal:///(rsc)/./node_modules/use-intl/dist/esm/development/initializeConfig-DzxNJxi9.js:145:20)
+    at translateFn (webpack-internal:///(rsc)/./node_modules/use-intl/dist/esm/development/initializeConfig-DzxNJxi9.js:149:24)
+    at ResourceDetailPage (webpack-internal:///(rsc)/./src/app/[locale]/resources/[slug]/page.tsx:68:21)
+    at ej (/Users/carlossacajr./Documents/Antigravity/CTR/ctr-supply-solutions/node_modules/next/dist/compiled/next-server/app-page.runtime.dev.js:35:264151)
+    at ez (/Users/carlossacajr./Documents/Antigravity/CTR/ctr-supply-solutions/node_modules/next/dist/compiled/next-server/app-page.runtime.dev.js:35:267802)
+    at eH (/Users/carlossacajr./Documents/Antigravity/CTR/ctr-supply-solutions/node_modules/next/dist/compiled/next-server/app-page.runtime.dev.js:35:268559)
+    at Timeout._onTimeout (/Users/carlossacajr./Documents/Antigravity/CTR/ctr-supply-solutions/node_modules/next/dist/compiled/next-server/app-page.runtime.dev.js:35:265057)
+    at listOnTimeout (node:internal/timers:605:17)
+    at process.processTimers (node:internal/timers:541:7) {
+  code: 'INVALID_MESSAGE',
+  originalMessage: `INVALID_TAG (<p class="text-xl text-slate-600 leading-relaxed mb-8 font-medium">You found the perfect supplier online. Huge factory. ISO certifications. Sleek video. The price is exactly what you budgeted for. It seems too good to be true.</p><p class="text-xl text-slate-800 leading-relaxed mb-8 font-bold">And unfortunately, it usually is.</p><h2 class="text-3xl font-bold text-ctr-slate mt-12 mb-6">The Illusion of the Manufacturer.</h2><p class="mb-6">A client recently asked our Shenzhen team to audit 10 promising "manufacturers" they found online for a massive consumer electronics order.</p><p class="mb-6">What did our audit team find on the ground?</p><ul class="list-disc pl-6 mb-8 mt-4 space-y-2 text-slate-700"><li>Two "companies" were trading agencies operating out of the same small room.</li><li>Seven used stock footage. They owned zero manufacturing equipment.</li><li><strong>Only one</strong> matched their online profile.</li></ul><h2 class="text-3xl font-bold text-ctr-slate mt-12 mb-6">Operating Blind.</h2><p class="mb-6">Navigating the B2B marketplace from another continent is a minefield. Relying solely on digital communication exposes your business to severe risks:</p><div class="p-8 rounded-2xl bg-red-50 border border-red-100 my-10"><h4 class="font-bold text-red-600 mb-4 uppercase tracking-widest text-sm">Risk 1: The Ghost Supplier</h4><p class="text-slate-700">Agencies posing as manufacturers lack capital. If a massive defect occurs, they close their account and disappear.</p></div><div class="p-8 rounded-2xl bg-orange-50 border border-orange-100 my-10"><h4 class="font-bold text-orange-600 mb-4 uppercase tracking-widest text-sm">Risk 2: The Bait and Switch</h4><p class="text-slate-700">They send a flawless "golden sample" from a high-end factory, but outsource mass production to a sweatshop to maximize profit.</p></div><h2 class="text-3xl font-bold text-ctr-slate mt-12 mb-6">The Solution: Trust, but Verify.</h2><p class="mb-6">If you want a bulletproof supply chain, you need professionals to physically visit the site, execute audits, and validate compliance.</p><p class="font-bold text-ctr-blue mt-8 text-lg">Don't gamble your production run. Let our engineers verify the factory floor.</p>)`
+}
+ ✓ Compiled in 3.5s (1886 modules)
+[i18n-static-debug] requestLocale resolved to: en
+[layout-debug] Locale: en, Messages keys: [
+  'Index',            'Navbar',
+  'ServicesBento',    'Testimonials',
+  'TrustBar',         'Process',
+  'Tracker',          'Video',
+  'Hero',             'Services',
+  'Globe',            'HowItWorks',
+  'About',            'Contact',
+  'TechnicalInquiry', 'ServicesPage',
+  'WholesalePage',    'Footer',
+  'Resources',        'ResourcesData'
+]
+[i18n-static-debug] requestLocale resolved to: en
+[i18n-static-debug] requestLocale resolved to: es
+[layout-debug] Locale: es, Messages keys: [
+  'Index',            'Navbar',
+  'ServicesBento',    'Testimonials',
+  'TrustBar',         'Process',
+  'Tracker',          'Video',
+  'Hero',             'Services',
+  'Globe',            'HowItWorks',
+  'About',            'Contact',
+  'TechnicalInquiry', 'ServicesPage',
+  'WholesalePage',    'Footer',
+  'Resources',        'ResourcesData'
+]
+[i18n-static-debug] requestLocale resolved to: es
+Warning: React does not recognize the `asChild` prop on a DOM element. If you intentionally want it to appear in the DOM as a custom attribute, spell it as lowercase `aschild` instead. If you accidentally passed it from a parent component, remove it from the DOM element.
+    at button
+    at div
+    at div
+    at div
+    at MotionDOMComponent (webpack-internal:///(ssr)/./node_modules/framer-motion/dist/es/motion/index.mjs:63:65)
+    at FadeIn (webpack-internal:///(ssr)/./src/components/ui/motion/FadeIn.tsx:14:19)
+    at Lazy
+    at div
+    at article
+    at main
+    at InnerLayoutRouter (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/layout-router.js:241:11)
+    at RedirectErrorBoundary (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/redirect-boundary.js:72:9)
+    at RedirectBoundary (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/redirect-boundary.js:80:11)
+    at NotFoundBoundary (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/not-found-boundary.js:84:11)
+    at LoadingBoundary (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/layout-router.js:333:11)
+    at ErrorBoundary (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/error-boundary.js:159:11)
+    at InnerScrollAndFocusHandler (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/layout-router.js:152:9)
+    at ScrollAndFocusHandler (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/layout-router.js:227:11)
+    at RenderFromTemplateContext (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/render-from-template-context.js:16:44)
+    at Lazy
+    at OuterLayoutRouter (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/layout-router.js:351:11)
+    at Lazy
+    at InnerLayoutRouter (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/layout-router.js:241:11)
+    at RedirectErrorBoundary (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/redirect-boundary.js:72:9)
+    at RedirectBoundary (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/redirect-boundary.js:80:11)
+    at NotFoundBoundary (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/not-found-boundary.js:84:11)
+    at LoadingBoundary (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/layout-router.js:333:11)
+    at ErrorBoundary (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/error-boundary.js:159:11)
+    at InnerScrollAndFocusHandler (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/layout-router.js:152:9)
+    at ScrollAndFocusHandler (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/layout-router.js:227:11)
+    at RenderFromTemplateContext (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/render-from-template-context.js:16:44)
+    at Lazy
+    at OuterLayoutRouter (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/layout-router.js:351:11)
+    at Lazy
+    at InnerLayoutRouter (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/layout-router.js:241:11)
+    at RedirectErrorBoundary (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/redirect-boundary.js:72:9)
+    at RedirectBoundary (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/redirect-boundary.js:80:11)
+    at NotFoundBoundary (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/not-found-boundary.js:84:11)
+    at LoadingBoundary (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/layout-router.js:333:11)
+    at ErrorBoundary (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/error-boundary.js:159:11)
+    at InnerScrollAndFocusHandler (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/layout-router.js:152:9)
+    at ScrollAndFocusHandler (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/layout-router.js:227:11)
+    at RenderFromTemplateContext (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/render-from-template-context.js:16:44)
+    at Lazy
+    at div
+    at MotionDOMComponent (webpack-internal:///(ssr)/./node_modules/framer-motion/dist/es/motion/index.mjs:63:65)
+    at Template (webpack-internal:///(ssr)/./src/app/[locale]/template.tsx:10:21)
+    at Lazy
+    at OuterLayoutRouter (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/layout-router.js:351:11)
+    at Lazy
+    at main
+    at IntlProvider (webpack-internal:///(ssr)/./node_modules/use-intl/dist/esm/development/react.js:21:25)
+    at NextIntlClientProvider (webpack-internal:///(ssr)/./node_modules/next-intl/dist/esm/development/shared/NextIntlClientProvider.js:9:35)
+    at Lazy
+    at body
+    at html
+    at InnerLayoutRouter (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/layout-router.js:241:11)
+    at RedirectErrorBoundary (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/redirect-boundary.js:72:9)
+    at RedirectBoundary (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/redirect-boundary.js:80:11)
+    at NotFoundErrorBoundary (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/not-found-boundary.js:76:9)
+    at NotFoundBoundary (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/not-found-boundary.js:84:11)
+    at LoadingBoundary (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/layout-router.js:333:11)
+    at ErrorBoundary (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/error-boundary.js:159:11)
+    at InnerScrollAndFocusHandler (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/layout-router.js:152:9)
+    at ScrollAndFocusHandler (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/layout-router.js:227:11)
+    at RenderFromTemplateContext (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/render-from-template-context.js:16:44)
+    at Lazy
+    at OuterLayoutRouter (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/layout-router.js:351:11)
+    at Lazy
+    at RedirectErrorBoundary (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/redirect-boundary.js:72:9)
+    at RedirectBoundary (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/redirect-boundary.js:80:11)
+    at ReactDevOverlay (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/react-dev-overlay/internal/ReactDevOverlay.js:84:9)
+    at HotReload (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/react-dev-overlay/hot-reloader-client.js:308:11)
+    at Router (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/app-router.js:176:11)
+    at ErrorBoundaryHandler (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/error-boundary.js:113:9)
+    at ErrorBoundary (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/error-boundary.js:159:11)
+    at AppRouter (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/app-router.js:515:13)
+    at Lazy
+    at Lazy
+    at rS (/Users/carlossacajr./Documents/Antigravity/CTR/ctr-supply-solutions/node_modules/next/dist/compiled/next-server/app-page.runtime.dev.js:39:15614)
+    at rS (/Users/carlossacajr./Documents/Antigravity/CTR/ctr-supply-solutions/node_modules/next/dist/compiled/next-server/app-page.runtime.dev.js:39:15614)
+    at ServerInsertedHTMLProvider (/Users/carlossacajr./Documents/Antigravity/CTR/ctr-supply-solutions/node_modules/next/dist/compiled/next-server/app-page.runtime.dev.js:39:21176)
