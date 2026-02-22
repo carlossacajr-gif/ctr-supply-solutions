@@ -15,6 +15,12 @@ const footerNavigation = {
         { name: 'How We Work', href: '/#how-it-works' },
         { name: 'Contact', href: '/contact' },
     ],
+    resources: [
+        { name: 'Technical Guides', href: '/resources' },
+        { name: 'CNC Factory Audit', href: '/resources/verify-cnc-factory-china' },
+        { name: 'Native Sourcing', href: '/resources/native-sourcing-china' },
+        { name: 'Incoterms Guide', href: '/resources/ddp-vs-cif-incoterms' },
+    ],
     connect: [
         { name: 'LinkedIn', href: 'https://www.linkedin.com/company/ctr-supply-solutions/about/?viewAsMember=true' },
         { name: 'WhatsApp', href: 'https://api.whatsapp.com/send/?phone=8613638645191&text&type=phone_number&app_absent=0' },
@@ -92,18 +98,32 @@ export function Footer() {
                                 </ul>
                             </div>
                         </div>
-                        <div>
-                            <h3 className="text-xs font-semibold leading-6 text-slate-400 uppercase tracking-widest">Connect</h3>
-                            <ul role="list" className="mt-6 space-y-4">
-                                {footerNavigation.connect.map((item) => (
-                                    <li key={item.name}>
-                                        <a href={item.href} target="_blank" rel="noopener noreferrer" className="text-sm leading-6 text-slate-300 hover:text-white transition-colors duration-200 inline-flex items-center gap-1">
-                                            {item.name}
-                                            <ArrowUpRight className="h-3 w-3" />
-                                        </a>
-                                    </li>
-                                ))}
-                            </ul>
+                        <div className="md:grid md:grid-cols-2 md:gap-8">
+                            <div>
+                                <h3 className="text-xs font-semibold leading-6 text-slate-400 uppercase tracking-widest">Resources</h3>
+                                <ul role="list" className="mt-6 space-y-4">
+                                    {footerNavigation.resources.map((item) => (
+                                        <li key={item.name}>
+                                            <Link href={item.href} className="text-sm leading-6 text-slate-300 hover:text-white transition-colors duration-200">
+                                                {item.name}
+                                            </Link>
+                                        </li>
+                                    ))}
+                                </ul>
+                            </div>
+                            <div className="mt-10 md:mt-0">
+                                <h3 className="text-xs font-semibold leading-6 text-slate-400 uppercase tracking-widest">Connect</h3>
+                                <ul role="list" className="mt-6 space-y-4">
+                                    {footerNavigation.connect.map((item) => (
+                                        <li key={item.name}>
+                                            <a href={item.href} target="_blank" rel="noopener noreferrer" className="text-sm leading-6 text-slate-300 hover:text-white transition-colors duration-200 inline-flex items-center gap-1">
+                                                {item.name}
+                                                <ArrowUpRight className="h-3 w-3" />
+                                            </a>
+                                        </li>
+                                    ))}
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
