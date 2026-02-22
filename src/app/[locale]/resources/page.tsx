@@ -9,6 +9,7 @@ import { LeadCapture } from '@/components/ui/LeadCapture';
 
 import { setRequestLocale } from 'next-intl/server';
 
+import { useTranslations } from 'next-intl';
 import { RESOURCE_ARTICLES } from '@/lib/resources-data';
 
 export const metadata: Metadata = {
@@ -18,6 +19,7 @@ export const metadata: Metadata = {
 
 export default function ResourcesPage({ params: { locale } }: { params: { locale: string } }) {
     setRequestLocale(locale);
+    const t = useTranslations('ResourcesData');
     return (
         <main className="min-h-screen bg-white">
             <Navbar />
@@ -46,27 +48,33 @@ export default function ResourcesPage({ params: { locale } }: { params: { locale
             <section className="py-24">
                 <Container>
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-24">
-                        {Object.entries(RESOURCE_ARTICLES).map(([slug, data], idx) => (
-                            <FadeIn key={slug} delay={idx * 0.1}>
-                                <Link
-                                    href={`/resources/${slug}`}
-                                    className="group flex flex-col h-full p-8 rounded-2xl bg-white border border-slate-200 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300"
-                                >
-                                    <div className="h-12 w-12 rounded-xl bg-ctr-slate/5 flex items-center justify-center mb-6 group-hover:bg-ctr-blue/10 transition-colors">
-                                        <data.icon className="w-6 h-6 text-ctr-blue" />
-                                    </div>
-                                    <h3 className="text-xl font-bold text-ctr-slate mb-4 group-hover:text-ctr-blue transition-colors">
-                                        {data.title}
-                                    </h3>
-                                    <p className="text-slate-600 text-sm leading-relaxed mb-6 flex-grow">
-                                        {data.excerpt}
-                                    </p>
-                                    <div className="flex items-center text-xs font-bold tracking-widest text-slate-400 uppercase">
-                                        CATEGORY: {data.category}
-                                    </div>
-                                </Link>
-                            </FadeIn>
-                        ))}
+                        {Object.entries(RESOURCE_ARTICLES).map(([slug, data], idx) => {
+                            const title = t(`articles.${slug}.title`);
+                            const excerpt = t(`articles.${slug}.excerpt`);
+                            const category = t(`articles.${slug}.category`);
+
+                            return (
+                                <FadeIn key={slug} delay={idx * 0.1}>
+                                    <Link
+                                        href={`/resources/${slug}`}
+                                        className="group flex flex-col h-full p-8 rounded-2xl bg-white border border-slate-200 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300"
+                                    >
+                                        <div className="h-12 w-12 rounded-xl bg-ctr-slate/5 flex items-center justify-center mb-6 group-hover:bg-ctr-blue/10 transition-colors">
+                                            <data.icon className="w-6 h-6 text-ctr-blue" />
+                                        </div>
+                                        <h3 className="text-xl font-bold text-ctr-slate mb-4 group-hover:text-ctr-blue transition-colors">
+                                            {title}
+                                        </h3>
+                                        <p className="text-slate-600 text-sm leading-relaxed mb-6 flex-grow">
+                                            {excerpt}
+                                        </p>
+                                        <div className="flex items-center text-xs font-bold tracking-widest text-slate-400 uppercase">
+                                            CATEGORY: {category}
+                                        </div>
+                                    </Link>
+                                </FadeIn>
+                            );
+                        })}
                     </div>
 
                     <LeadCapture />

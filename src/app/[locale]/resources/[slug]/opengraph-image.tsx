@@ -1,4 +1,5 @@
 import { ImageResponse } from 'next/og';
+import { getTranslations } from 'next-intl/server';
 import { RESOURCE_ARTICLES } from '@/lib/resources-data';
 
 export const runtime = 'edge';
@@ -11,8 +12,13 @@ export const size = {
 
 export const contentType = 'image/png';
 
-export default async function Image({ params }: { params: { slug: string } }) {
-    const article = RESOURCE_ARTICLES[params.slug as keyof typeof RESOURCE_ARTICLES];
+export default async function Image({ params }: { params: { slug: string, locale: string } }) {
+    const articleMeta = RESOURCE_ARTICLES[params.slug as keyof typeof RESOURCE_ARTICLES];
+    if (!articleMeta) return new Response('Not Found', { status: 404 });
+
+    const t = await getTranslations({ locale: params.locale || 'en', namespace: 'ResourcesData.articles' });
+    const title = t(`${params.slug}.title`);
+    const category = t(`${params.slug}.category`);
 
     return new ImageResponse(
         (
@@ -85,7 +91,7 @@ export default async function Image({ params }: { params: { slug: string } }) {
                         maxWidth: '900px',
                     }}
                 >
-                    {article?.title || 'CTR Supply Solutions'}
+                    {title || 'CTR Supply Solutions'}
                 </h1>
 
                 <p
@@ -97,7 +103,7 @@ export default async function Image({ params }: { params: { slug: string } }) {
                         marginBottom: '60px',
                     }}
                 >
-                    {article?.category} • Expert Shenzhen Insights
+                    {category} • Expert Shenzhen Insights
                 </p>
 
                 <div

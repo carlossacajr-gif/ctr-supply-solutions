@@ -10,24 +10,45 @@ import { notFound } from 'next/navigation';
 import { Metadata } from 'next';
 import { setRequestLocale } from 'next-intl/server';
 
+import { getTranslations } from 'next-intl/server';
+import { useTranslations } from 'next-intl';
+
+function calculateReadTime(htmlContent: string): string {
+    const text = htmlContent.replace(/<[^>]*>?/gm, '');
+    const wordCount = text.split(/\s+/).length;
+    const readTimeMinutes = Math.ceil(wordCount / 200);
+    return `${readTimeMinutes} min read`;
+}
+
 export async function generateMetadata({ params }: { params: { slug: string, locale: string } }): Promise<Metadata> {
     setRequestLocale(params.locale);
-    const article = RESOURCE_ARTICLES[params.slug as keyof typeof RESOURCE_ARTICLES];
-    if (!article) return { title: 'Not Found' };
+    const articleMeta = RESOURCE_ARTICLES[params.slug as keyof typeof RESOURCE_ARTICLES];
+    if (!articleMeta) return { title: 'Not Found' };
+
+    const t = await getTranslations({ locale: params.locale, namespace: 'ResourcesData' });
 
     return {
-        title: article.title,
-        description: article.excerpt,
+        title: t(`articles.${params.slug}.title`),
+        description: t(`articles.${params.slug}.excerpt`),
     };
 }
 
 export default function ResourceDetailPage({ params }: { params: { slug: string, locale: string } }) {
     setRequestLocale(params.locale);
-    const article = RESOURCE_ARTICLES[params.slug as keyof typeof RESOURCE_ARTICLES];
+    const articleMeta = RESOURCE_ARTICLES[params.slug as keyof typeof RESOURCE_ARTICLES];
 
-    if (!article) {
+    if (!articleMeta) {
         notFound();
     }
+
+    const t = useTranslations('ResourcesData');
+
+    // Dynamic content
+    const title = t(`articles.${params.slug}.title`);
+    const category = t(`articles.${params.slug}.category`);
+    const author = t(`articles.${params.slug}.author`);
+    const content = t(`articles.${params.slug}.content`);
+    const readTime = calculateReadTime(content);
 
     const relatedArticles = Object.entries(RESOURCE_ARTICLES)
         .filter(([slug]) => slug !== params.slug)
@@ -50,26 +71,26 @@ export default function ResourceDetailPage({ params }: { params: { slug: string,
 
                         <div className="max-w-3xl">
                             <span className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-ctr-blue/10 text-ctr-blue text-xs font-bold mb-6 uppercase tracking-widest">
-                                {article.category}
+                                {category}
                             </span>
                             <h1 className="text-4xl md:text-5xl font-bold text-ctr-slate mb-8 leading-tight">
-                                {article.title}
+                                {title}
                             </h1>
 
                             <div className="flex flex-wrap items-center gap-6 text-sm text-slate-500 mb-12 py-6 border-y border-slate-100">
                                 <div className="flex items-center gap-2">
                                     <User className="w-4 h-4" />
-                                    <span>{article.author}</span>
+                                    <span>{author}</span>
                                 </div>
                                 <div className="flex items-center gap-2">
                                     <Clock className="w-4 h-4" />
-                                    <span>{article.readTime}</span>
+                                    <span>{readTime}</span>
                                 </div>
                             </div>
 
                             <div
                                 className="prose prose-lg prose-slate max-w-none prose-headings:text-ctr-slate prose-a:text-ctr-blue"
-                                dangerouslySetInnerHTML={{ __html: article.content }}
+                                dangerouslySetInnerHTML={{ __html: content }}
                             />
 
                             <div className="p-8 rounded-2xl bg-ctr-slate text-white mt-20 relative overflow-hidden group">
@@ -89,15 +110,20 @@ export default function ResourceDetailPage({ params }: { params: { slug: string,
                             <div className="mt-24 pt-24 border-t border-slate-100">
                                 <h3 className="text-2xl font-bold text-ctr-slate mb-12">Related Resources</h3>
                                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                                    {relatedArticles.map(([slug, data]) => (
-                                        <Link key={slug} href={`/resources/${slug}`} className="group">
-                                            <div className="p-6 rounded-2xl bg-slate-50 border border-slate-100 group-hover:bg-white group-hover:border-ctr-blue/20 group-hover:shadow-xl transition-all duration-300">
-                                                <span className="text-xs font-bold text-ctr-blue mb-2 block uppercase tracking-widest">{data.category}</span>
-                                                <h4 className="text-lg font-bold text-ctr-slate mb-2 group-hover:text-ctr-blue transition-colors line-clamp-2">{data.title}</h4>
-                                                <p className="text-sm text-slate-500 line-clamp-2">{data.excerpt}</p>
-                                            </div>
-                                        </Link>
-                                    ))}
+                                    {relatedArticles.map(([slug]) => {
+                                        const relatedTitle = t(`articles.${slug}.title`);
+                                        const relatedExcerpt = t(`articles.${slug}.excerpt`);
+                                        const relatedCategory = t(`articles.${slug}.category`);
+                                        return (
+                                            <Link key={slug} href={`/resources/${slug}`} className="group">
+                                                <div className="p-6 rounded-2xl bg-slate-50 border border-slate-100 group-hover:bg-white group-hover:border-ctr-blue/20 group-hover:shadow-xl transition-all duration-300">
+                                                    <span className="text-xs font-bold text-ctr-blue mb-2 block uppercase tracking-widest">{relatedCategory}</span>
+                                                    <h4 className="text-lg font-bold text-ctr-slate mb-2 group-hover:text-ctr-blue transition-colors line-clamp-2">{relatedTitle}</h4>
+                                                    <p className="text-sm text-slate-500 line-clamp-2">{relatedExcerpt}</p>
+                                                </div>
+                                            </Link>
+                                        );
+                                    })}
                                 </div>
                             </div>
                         </div>
