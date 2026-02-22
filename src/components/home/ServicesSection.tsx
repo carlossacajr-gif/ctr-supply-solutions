@@ -1,4 +1,4 @@
-import Link from 'next/link';
+import { Link } from '@/navigation';
 import { Container } from '@/components/ui/Container';
 import { ShieldCheck, Globe2, Gauge, Search } from 'lucide-react';
 

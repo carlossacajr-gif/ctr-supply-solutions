@@ -1,0 +1,16 @@
+{
+    "Index": {
+        "title": "Su cadena de suministro, a prueba de balas.",
+        "subtitle": "Desde el abastecimiento hasta la entrega: verificamos cada eslabón para que nunca tenga que preocuparse.",
+        "getQuote": "Obtener cotización",
+        "ourServices": "Nuestros servicios"
+    },
+    "Navbar": {
+        "solutions": "Soluciones",
+        "wholesale": "Venta al por mayor",
+        "resources": "Recursos",
+        "about": "Nosotros",
+        "contact": "Contacto",
+        "getStarted": "Empezar"
+    }
+}

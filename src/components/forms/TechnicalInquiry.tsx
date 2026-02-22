@@ -49,13 +49,32 @@ export function TechnicalInquiry() {
         lastName: '',
     });
     const [isSubmitted, setIsSubmitted] = useState(false);
+    const [isSubmitting, setIsSubmitting] = useState(false);
 
     const nextStep = () => setStep(step + 1);
     const prevStep = () => setStep(step - 1);
 
-    const handleSubmit = (e: React.FormEvent) => {
+    const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault();
-        setIsSubmitted(true);
+        setIsSubmitting(true);
+
+        try {
+            const response = await fetch('/api/leads', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(formData),
+            });
+
+            if (response.ok) {
+                setIsSubmitted(true);
+            } else {
+                alert('Technical error submitting inquiry. Please try direct email: info@ctrsupplysolutions.com');
+            }
+        } catch (error) {
+            console.error('Submission failed:', error);
+        } finally {
+            setIsSubmitting(false);
+        }
     };
 
     const updateField = (field: keyof FormData, value: string) => {
@@ -282,10 +301,11 @@ export function TechnicalInquiry() {
 
                                         <Button
                                             type="submit"
+                                            disabled={isSubmitting}
                                             className="w-full h-14 bg-ctr-slate text-white hover:bg-ctr-blue transition-all text-lg"
                                         >
-                                            Submit Technical Inquiry
-                                            <ArrowRight className="ml-2 w-5 h-5" />
+                                            {isSubmitting ? 'Processing Requirements...' : 'Submit Technical Inquiry'}
+                                            {!isSubmitting && <ArrowRight className="ml-2 w-5 h-5" />}
                                         </Button>
                                         <p className="mt-4 text-center text-xs text-slate-400">
                                             By submitting, you agree to our privacy policy and NDA standards.

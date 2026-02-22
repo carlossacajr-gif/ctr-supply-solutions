@@ -1,8 +1,8 @@
 import { ServiceLayout } from '@/components/services/ServiceLayout';
 import { Search, Users, Scale, Truck, Handshake, Globe } from 'lucide-react';
 import Image from 'next/image';
-import sourcingHeroImg from '../../../../public/images/services/sourcing/sourcing-hero.webp';
 import { FadeIn } from '@/components/ui/motion/FadeIn';
+import { setRequestLocale } from 'next-intl/server';
 
 const features = [
     {
@@ -27,7 +27,8 @@ const features = [
     },
 ];
 
-export default function SourcingPage() {
+export default function SourcingPage({ params: { locale } }: { params: { locale: string } }) {
+    setRequestLocale(locale);
     return (
         <ServiceLayout
             title="Global Sourcing"
@@ -87,8 +88,8 @@ export default function SourcingPage() {
             <FadeIn delay={0.1}>
                 <div className="relative rounded-2xl overflow-hidden mb-16 aspect-video md:aspect-[21/9] shadow-2xl">
                     <Image
-                        src={sourcingHeroImg}
-                        alt="Professional B2B sourcing meeting between CTR experts and factory management in China"
+                        src="/images/services/sourcing/sourcing-hero.webp"
+                        alt="International trade scene with CTR sourcing experts negotiating at a factory showroom"
                         fill
                         priority
                         className="object-cover"

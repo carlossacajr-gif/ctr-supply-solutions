@@ -8,13 +8,15 @@ import { CompanyVideo } from '@/components/home/CompanyVideo';
 import { Button } from '@/components/ui/Button';
 import { Container } from '@/components/ui/Container';
 import { SectionDivider } from '@/components/ui/SectionDivider';
-import Link from 'next/link';
+import { Link } from '@/navigation';
+import { useTranslations } from 'next-intl';
 import { TextReveal } from '@/components/ui/motion/TextReveal';
 import { WorldGlobe } from '@/components/home/WorldGlobe';
 import { MagneticButton } from '@/components/ui/motion/MagneticButton';
 import { AnimatedCounter } from '@/components/ui/motion/AnimatedCounter';
 import { FadeIn } from '@/components/ui/motion/FadeIn';
 import { TrustBar } from '@/components/sections/TrustBar';
+import { setRequestLocale } from 'next-intl/server';
 
 const stats = [
     { value: 500, suffix: '+', label: 'Products Sourced' },
@@ -23,7 +25,10 @@ const stats = [
     { value: 15, suffix: '+', label: 'Years Experience' },
 ];
 
-export default function Home() {
+export default function Home({ params: { locale } }: { params: { locale: string } }) {
+    setRequestLocale(locale);
+    const t = useTranslations('Index');
+
     return (
         <main className="min-h-screen bg-white">
             <Navbar />
@@ -40,20 +45,20 @@ export default function Home() {
                 <Container className="pt-24 lg:pt-32">
                     <div className="mx-auto max-w-3xl py-8 lg:py-12 text-center">
                         <TextReveal
-                            text="Your Supply Chain, Bulletproof."
+                            text={t('title')}
                             className="text-4xl font-heading font-bold tracking-tight text-white sm:text-6xl lg:text-7xl mb-6"
                         />
                         <p className="mt-6 text-lg leading-8 text-slate-300 max-w-xl mx-auto">
-                            From sourcing to delivery — we verify every link so you never have to worry.
+                            {t('subtitle')}
                         </p>
                         <div className="mt-10 flex items-center justify-center gap-x-6">
                             <Link href="/contact">
                                 <MagneticButton>
-                                    <Button size="lg">Get a Quote</Button>
+                                    <Button size="lg">{t('getQuote')}</Button>
                                 </MagneticButton>
                             </Link>
                             <Link href="/services" className="text-sm font-semibold leading-6 text-white hover:text-ctr-blue transition-colors">
-                                Our Services <span aria-hidden="true">→</span>
+                                {t('ourServices')} <span aria-hidden="true">→</span>
                             </Link>
                         </div>
                     </div>
@@ -156,22 +161,22 @@ export default function Home() {
                         <div className="mx-auto max-w-2xl text-center">
                             <div className="glass rounded-3xl p-10 sm:p-14">
                                 <h2 className="text-3xl font-heading font-bold tracking-tight text-white sm:text-5xl">
-                                    Ready to build a bulletproof supply chain?
+                                    {t('title')}
                                 </h2>
                                 <p className="mx-auto mt-6 max-w-lg text-lg leading-8 text-slate-300">
-                                    Send your specs. We'll deliver a strategic sourcing plan within 48 hours.
+                                    {t('subtitle')}
                                 </p>
                                 <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
                                     <Link href="/contact">
                                         <MagneticButton>
                                             <Button size="lg" variant="primary">
-                                                Get a Quote
+                                                {t('getQuote')}
                                             </Button>
                                         </MagneticButton>
                                     </Link>
                                     <Link href="/services">
                                         <Button size="lg" variant="outline" className="border-white/20 text-white hover:bg-white/10">
-                                            Explore Services
+                                            {t('ourServices')}
                                         </Button>
                                     </Link>
                                 </div>

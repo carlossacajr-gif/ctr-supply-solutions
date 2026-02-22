@@ -3,14 +3,16 @@ import { Footer } from '@/components/layout/Footer';
 import { Container } from '@/components/ui/Container';
 import { FadeIn } from '@/components/ui/motion/FadeIn';
 import { Button } from '@/components/ui/Button';
-import Link from 'next/link';
+import { Link } from '@/navigation';
 import Image from 'next/image';
 import { ChevronRight, ArrowRight, CheckCircle2 } from 'lucide-react';
 import { INDUSTRY_DATA } from '@/lib/industry-data';
 import { notFound } from 'next/navigation';
 import { Metadata } from 'next';
+import { setRequestLocale } from 'next-intl/server';
 
-export async function generateMetadata({ params }: { params: { niche: string } }): Promise<Metadata> {
+export async function generateMetadata({ params }: { params: { niche: string, locale: string } }): Promise<Metadata> {
+    setRequestLocale(params.locale);
     const data = INDUSTRY_DATA[params.niche as keyof typeof INDUSTRY_DATA];
     if (!data) return { title: 'Not Found' };
 
@@ -20,7 +22,8 @@ export async function generateMetadata({ params }: { params: { niche: string } }
     };
 }
 
-export default function IndustryPage({ params }: { params: { niche: string } }) {
+export default function IndustryPage({ params }: { params: { niche: string, locale: string } }) {
+    setRequestLocale(params.locale);
     const data = INDUSTRY_DATA[params.niche as keyof typeof INDUSTRY_DATA];
 
     if (!data) {

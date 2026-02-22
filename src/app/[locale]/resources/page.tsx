@@ -2,10 +2,12 @@ import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
 import { Container } from '@/components/ui/Container';
 import { FadeIn } from '@/components/ui/motion/FadeIn';
-import Link from 'next/link';
+import { Link } from '@/navigation';
 import { Metadata } from 'next';
 import { BookOpen } from 'lucide-react';
 import { LeadCapture } from '@/components/ui/LeadCapture';
+
+import { setRequestLocale } from 'next-intl/server';
 
 import { RESOURCE_ARTICLES } from '@/lib/resources-data';
 
@@ -14,7 +16,8 @@ export const metadata: Metadata = {
     description: 'Expert guides, case studies, and technical resources for navigating China manufacturing and supply chain logistics.',
 };
 
-export default function ResourcesPage() {
+export default function ResourcesPage({ params: { locale } }: { params: { locale: string } }) {
+    setRequestLocale(locale);
     return (
         <main className="min-h-screen bg-white">
             <Navbar />

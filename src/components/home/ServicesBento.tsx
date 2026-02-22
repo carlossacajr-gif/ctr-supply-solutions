@@ -1,7 +1,7 @@
 "use client";
 
 import { cn } from "@/lib/utils";
-import Link from "next/link";
+import { Link } from "@/navigation";
 import Image from "next/image";
 import { ReactNode } from "react";
 import { ShieldCheck, Globe2, Gauge, Search, ArrowUpRight } from "lucide-react";

@@ -8,7 +8,7 @@ import { Button } from "@/components/ui/Button";
 import { FadeIn } from "@/components/ui/motion/FadeIn";
 import { MagneticButton } from "@/components/ui/motion/MagneticButton";
 import { SectionDivider } from "@/components/ui/SectionDivider";
-import Link from "next/link";
+import { Link } from "@/navigation";
 import { ArrowLeft } from "lucide-react";
 
 interface ServiceLayoutProps {

@@ -1,19 +1,17 @@
 import { Metadata } from 'next';
-import NextImage from 'next/image';
-import servicesHeroImg from '../../../public/images/services/services-hero.webp';
-import cardQualityImg from '../../../public/images/services/card-quality.webp';
-import cardSourcingImg from '../../../public/images/services/card-sourcing.webp';
-import cardLogisticsImg from '../../../public/images/services/card-logistics.webp';
+import Image from 'next/image';
 import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
 import { Container } from '@/components/ui/Container';
 import { Button } from '@/components/ui/Button';
 import { SectionDivider } from '@/components/ui/SectionDivider';
 import { MagneticButton } from '@/components/ui/motion/MagneticButton';
-import Link from 'next/link';
+import { Link } from '@/navigation';
 import { ShieldCheck, Globe2, Truck, ArrowRight } from 'lucide-react';
 import { FadeIn } from '@/components/ui/motion/FadeIn';
 import { TextReveal } from '@/components/ui/motion/TextReveal';
+import { ServicesBento } from '@/components/home/ServicesBento';
+import { setRequestLocale } from 'next-intl/server';
 
 const services = [
     {
@@ -21,21 +19,21 @@ const services = [
         description: 'On-site inspections and factory audits to ensure your products meet international standards.',
         icon: ShieldCheck,
         href: '/services/quality-control',
-        image: cardQualityImg,
+        image: '/images/services/card-quality.webp',
     },
     {
         name: 'Global Sourcing',
         description: 'We identify verified manufacturers, negotiate terms, and manage the procurement process.',
         icon: Globe2,
         href: '/services/sourcing',
-        image: cardSourcingImg,
+        image: '/images/services/card-sourcing.webp',
     },
     {
-        name: 'Logistics & Shipping',
-        description: 'Freight forwarding, warehousing, and customs clearance. We handle the complexity.',
+        name: 'Logistics Management',
+        description: 'Door-to-door shipping, customs clearance, and warehousing solutions tailored to your timeline.',
         icon: Truck,
         href: '/services/logistics',
-        image: cardLogisticsImg,
+        image: '/images/services/card-logistics.webp',
     },
 ];
 
@@ -44,7 +42,8 @@ export const metadata: Metadata = {
     description: 'From factory floor to warehouse door. Explore our comprehensive services including Quality Control, Global Sourcing, and Logistics.',
 };
 
-export default function ServicesPage() {
+export default function ServicesPage({ params: { locale } }: { params: { locale: string } }) {
+    setRequestLocale(locale);
     return (
         <main className="min-h-screen bg-white">
             <Navbar />
@@ -58,8 +57,8 @@ export default function ServicesPage() {
                 </div>
                 <div className="absolute inset-0 -z-10">
                     <FadeIn delay={0.1} className="w-full h-full relative">
-                        <NextImage
-                            src={servicesHeroImg}
+                        <Image
+                            src="/images/services/services-hero.webp"
                             alt="Comprehensive Global Logistics and Sourcing solutions from Shenzhen Guangdong"
                             fill
                             className="object-cover opacity-10"
@@ -101,7 +100,7 @@ export default function ServicesPage() {
                                     <div className="flex flex-col overflow-hidden glass-white rounded-2xl shadow-glass hover:shadow-glass-lg transition-all duration-300 hover:border-ctr-blue/20 w-full">
                                         {/* Image */}
                                         <div className="relative h-48 w-full group overflow-hidden">
-                                            <NextImage
+                                            <Image
                                                 src={service.image}
                                                 alt={service.name}
                                                 fill

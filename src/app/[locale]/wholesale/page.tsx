@@ -7,8 +7,9 @@ import { SectionDivider } from '@/components/ui/SectionDivider';
 import { FadeIn } from '@/components/ui/motion/FadeIn';
 import { TextReveal } from '@/components/ui/motion/TextReveal';
 import { MagneticButton } from '@/components/ui/motion/MagneticButton';
-import Link from 'next/link';
+import { Link } from '@/navigation';
 import { Smartphone, Laptop, RefreshCw, Wifi, Wrench, Cpu, ArrowRight } from 'lucide-react';
+import { setRequestLocale } from 'next-intl/server';
 
 const categories = [
     { name: 'Mobile Screens', items: 'iPhone, Samsung, Huawei, Xiaomi', icon: Smartphone },
@@ -24,7 +25,8 @@ export const metadata: Metadata = {
     description: 'Factory-direct pricing on mobile screens, laptop parts, refurbished devices, and repair tools. Secure your B2B supply chain straight from Shenzhen.',
 };
 
-export default function WholesalePage() {
+export default function WholesalePage({ params: { locale } }: { params: { locale: string } }) {
+    setRequestLocale(locale);
     return (
         <main className="min-h-screen bg-white">
             <Navbar />

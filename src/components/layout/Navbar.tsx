@@ -1,30 +1,31 @@
 "use client";
 
 import { useState, useEffect } from 'react';
-import Link from 'next/link';
+import { Link } from '@/navigation';
 import Image from 'next/image';
-import { usePathname } from 'next/navigation';
 import { Menu, X } from 'lucide-react';
 import { MagneticButton } from '@/components/ui/motion/MagneticButton';
 import { Container } from '../ui/Container';
 import { Button } from '../ui/Button';
 import { motion, useScroll, useMotionValueEvent, AnimatePresence } from 'framer-motion';
-
-const navigation = [
-    { name: 'Services', href: '/services' },
-    { name: 'Wholesale', href: '/wholesale' },
-    { name: 'Resources', href: '/resources' },
-    { name: 'About', href: '/about' },
-    { name: 'Contact', href: '/contact' },
-];
+import { LanguageSwitcher } from '../ui/LanguageSwitcher';
+import { useTranslations } from 'next-intl';
 
 export function Navbar() {
+    const t = useTranslations('Navbar');
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
     const [hidden, setHidden] = useState(false);
     const [isScrolled, setIsScrolled] = useState(false);
     const { scrollY } = useScroll();
 
-    // Fix: Close mobile menu when resizing to desktop to prevent layout bugs
+    const navigation = [
+        { name: t('solutions'), href: '/services' },
+        { name: t('wholesale'), href: '/wholesale' },
+        { name: t('resources'), href: '/resources' },
+        { name: t('about'), href: '/about' },
+        { name: t('contact'), href: '/contact' },
+    ];
+
     useEffect(() => {
         const handleResize = () => {
             if (window.innerWidth >= 1024) {
@@ -79,7 +80,8 @@ export function Navbar() {
                                 />
                             </Link>
                         </div>
-                        <div className="flex lg:hidden">
+                        <div className="flex lg:hidden gap-4">
+                            <LanguageSwitcher />
                             <button
                                 type="button"
                                 className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-ctr-slate"
@@ -95,15 +97,16 @@ export function Navbar() {
                         </div>
                         <div className="hidden lg:flex lg:gap-x-12">
                             {navigation.map((item) => (
-                                <Link key={item.name} href={item.href} className="text-sm font-semibold leading-6 text-ctr-slate hover:text-ctr-blue transition-colors">
+                                <Link key={item.name} href={item.href as any} className="text-sm font-semibold leading-6 text-ctr-slate hover:text-ctr-blue transition-colors">
                                     {item.name}
                                 </Link>
                             ))}
                         </div>
                         <div className="hidden lg:flex lg:flex-1 lg:justify-end gap-6 items-center">
+                            <LanguageSwitcher />
                             <Link href="/contact">
                                 <MagneticButton>
-                                    <Button size="sm" variant="primary">Get a Quote</Button>
+                                    <Button size="sm" variant="primary">{t('getStarted')}</Button>
                                 </MagneticButton>
                             </Link>
                         </div>
@@ -111,7 +114,6 @@ export function Navbar() {
                 </nav>
             </motion.header>
 
-            {/* Mobile Menu with Premium Framer Physics (Drops down under header) */}
             <AnimatePresence>
                 {mobileMenuOpen && (
                     <motion.div
@@ -122,7 +124,6 @@ export function Navbar() {
                         role="dialog"
                         aria-modal="true"
                     >
-                        {/* Backdrop */}
                         <motion.div
                             initial={{ opacity: 0 }}
                             animate={{ opacity: 1 }}
@@ -132,7 +133,6 @@ export function Navbar() {
                             onClick={() => setMobileMenuOpen(false)}
                         />
 
-                        {/* Slide-down Menu Panel */}
                         <motion.div
                             initial={{ y: "-100%" }}
                             animate={{ y: 0 }}
@@ -140,7 +140,6 @@ export function Navbar() {
                             transition={{ type: "spring", damping: 28, stiffness: 250 }}
                             className="absolute inset-x-0 top-0 w-full overflow-y-auto bg-white px-6 pb-8 pt-28 shadow-2xl flex flex-col rounded-b-3xl"
                         >
-                            {/* Staggered Navigation Links */}
                             <div className="flex flex-col gap-2 flex-1">
                                 {navigation.map((item, i) => (
                                     <motion.div
@@ -151,7 +150,7 @@ export function Navbar() {
                                         transition={{ delay: 0.1 + (i * 0.05), type: "spring", stiffness: 300, damping: 24 }}
                                     >
                                         <Link
-                                            href={item.href}
+                                            href={item.href as any}
                                             className="-mx-3 block rounded-xl px-4 py-4 text-2xl font-heading font-bold leading-7 text-ctr-slate hover:bg-slate-50 hover:text-ctr-blue transition-all active:scale-[0.98]"
                                             onClick={() => setMobileMenuOpen(false)}
                                         >
@@ -161,7 +160,6 @@ export function Navbar() {
                                 ))}
                             </div>
 
-                            {/* Footer CTA & Theme */}
                             <motion.div
                                 initial={{ y: 20, opacity: 0 }}
                                 animate={{ y: 0, opacity: 1 }}
@@ -174,7 +172,7 @@ export function Navbar() {
                                     className="flex flex-1 items-center justify-center rounded-xl px-4 py-4 text-center text-lg font-bold text-white bg-ctr-blue hover:bg-ctr-blue/90 shadow-lg shadow-ctr-blue/30 transition-all active:scale-[0.98]"
                                     onClick={() => setMobileMenuOpen(false)}
                                 >
-                                    Get a Quote
+                                    {t('getStarted')}
                                 </Link>
                             </motion.div>
                         </motion.div>

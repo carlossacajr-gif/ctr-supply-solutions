@@ -1,4 +1,3 @@
-"use client";
 
 import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
@@ -11,8 +10,10 @@ import { TextReveal } from '@/components/ui/motion/TextReveal';
 import { FadeIn } from '@/components/ui/motion/FadeIn';
 import { MagneticButton } from '@/components/ui/motion/MagneticButton';
 import { TechnicalInquiry } from '@/components/forms/TechnicalInquiry';
+import { setRequestLocale } from 'next-intl/server';
 
-export default function ContactPage() {
+export default function ContactPage({ params: { locale } }: { params: { locale: string } }) {
+    setRequestLocale(locale);
     return (
         <main className="min-h-screen bg-slate-900 overflow-hidden relative">
             <Navbar />

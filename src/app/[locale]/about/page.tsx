@@ -10,14 +10,16 @@ import { AnimatedCounter } from '@/components/ui/motion/AnimatedCounter';
 import { FadeIn } from '@/components/ui/motion/FadeIn';
 import { MagneticButton } from '@/components/ui/motion/MagneticButton';
 import { MapPin } from 'lucide-react';
-import Link from 'next/link';
+import { Link } from '@/navigation';
+import { setRequestLocale } from 'next-intl/server';
 
 export const metadata: Metadata = {
     title: 'About Us | 15+ Years in Shenzhen',
     description: 'Based in Shenzhen since 2009, our team of engineers and supply chain veterans execute your China manufacturing strategy with precision.',
 };
 
-export default function AboutPage() {
+export default function AboutPage({ params: { locale } }: { params: { locale: string } }) {
+    setRequestLocale(locale);
     return (
         <main className="min-h-screen bg-white">
             <Navbar />

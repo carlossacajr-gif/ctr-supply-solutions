@@ -3,13 +3,15 @@ import { Footer } from '@/components/layout/Footer';
 import { Container } from '@/components/ui/Container';
 import { FadeIn } from '@/components/ui/motion/FadeIn';
 import { Button } from '@/components/ui/Button';
-import Link from 'next/link';
-import { ArrowLeft, Clock, User, Share2, ArrowRight } from 'lucide-react';
+import { Link } from '@/navigation';
+import { ArrowLeft, Clock, User, Share2, ArrowRight, ChevronRight } from 'lucide-react';
 import { RESOURCE_ARTICLES } from '@/lib/resources-data';
 import { notFound } from 'next/navigation';
 import { Metadata } from 'next';
+import { setRequestLocale } from 'next-intl/server';
 
-export async function generateMetadata({ params }: { params: { slug: string } }): Promise<Metadata> {
+export async function generateMetadata({ params }: { params: { slug: string, locale: string } }): Promise<Metadata> {
+    setRequestLocale(params.locale);
     const article = RESOURCE_ARTICLES[params.slug as keyof typeof RESOURCE_ARTICLES];
     if (!article) return { title: 'Not Found' };
 
@@ -19,7 +21,8 @@ export async function generateMetadata({ params }: { params: { slug: string } })
     };
 }
 
-export default function ResourceDetailPage({ params }: { params: { slug: string } }) {
+export default function ResourceDetailPage({ params }: { params: { slug: string, locale: string } }) {
+    setRequestLocale(params.locale);
     const article = RESOURCE_ARTICLES[params.slug as keyof typeof RESOURCE_ARTICLES];
 
     if (!article) {
